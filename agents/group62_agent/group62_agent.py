@@ -1,5 +1,4 @@
 import logging
-from random import randint
 from time import time
 from typing import cast
 
@@ -7,7 +6,6 @@ from geniusweb.actions.Accept import Accept
 from geniusweb.actions.Action import Action
 from geniusweb.actions.Offer import Offer
 from geniusweb.actions.PartyId import PartyId
-from geniusweb.bidspace.AllBidsList import AllBidsList
 from geniusweb.inform.ActionDone import ActionDone
 from geniusweb.inform.Finished import Finished
 from geniusweb.inform.Inform import Inform
@@ -17,6 +15,7 @@ from geniusweb.issuevalue.Bid import Bid
 from geniusweb.issuevalue.Domain import Domain
 from geniusweb.party.Capabilities import Capabilities
 from geniusweb.party.DefaultParty import DefaultParty
+from geniusweb.progress.ProgressRounds import ProgressRounds
 from geniusweb.profile.utilityspace.LinearAdditiveUtilitySpace import (
     LinearAdditiveUtilitySpace,
 )
@@ -29,11 +28,12 @@ from tudelft_utilities_logging.ReportToLogger import ReportToLogger
 
 from .utils.acceptance_strategy import AcceptanceStrategy
 from .utils.opponent_model import OpponentModel
+from .utils.bidding_strategy import BiddingStrategy
 
 
 class Group62Agent(DefaultParty):
     """
-    Template of a Python geniusweb agent.
+    Group62 Agent.
     """
 
     def __init__(self):
@@ -51,9 +51,15 @@ class Group62Agent(DefaultParty):
 
         self.last_received_bid: Bid = None
         self.opponent_model: OpponentModel = None
+        self.bidding_strat: BiddingStrategy = None
+        self.acceptance_strat = None
         self.logger.log(logging.INFO, "party is initialized")
         # List of all received bids
         self.received_bids: list[Bid] = []
+        # Keep track of the bids the agent sends
+        self.sent_bids: list[Bid] = []
+        # Boulware value equals the reservation value at the start
+        self.boulware = BiddingStrategy.RESERVATION_VALUE
 
     def notifyChange(self, data: Inform):
         """MUST BE IMPLEMENTED
@@ -84,25 +90,30 @@ class Group62Agent(DefaultParty):
             self.domain = self.profile.getDomain()
             profile_connection.close()
 
-        # ActionDone informs you of an action (an offer or an accept)
-        # that is performed by one of the agents (including yourself).
+            # TODO: Initialize the agent's components
+            # self.opponent_model =
+            self.bidding_strat = BiddingStrategy(self.profile, self.opponent_model, self.domain)
+            # self.acceptance_strat =
+
+        # ActionDone informs you of an action (an Offer or an Accept) that is performed by one of the agents (including yourself)
         elif isinstance(data, ActionDone):
             action = cast(ActionDone, data).getAction()
             actor = action.getActor()
 
-            # ignore action if it is our action
+            # If the action came from the opponent
             if actor != self.me:
-                # obtain the name of the opponent, cutting of the position ID.
+                # Obtain the name of the opponent, cutting of the position ID
                 self.other = str(actor).rsplit("_", 1)[0]
 
-                # process action done by opponent
+                # Process the action done by opponent
                 self.opponent_action(action)
+
         # YourTurn notifies you that it is your turn to act
         elif isinstance(data, YourTurn):
             # execute a turn
             self.my_turn()
 
-        # Finished will be send if the negotiation has ended (through agreement or deadline)
+        # Finished will be sent if the negotiation has ended (through agreement or deadline)
         elif isinstance(data, Finished):
             self.save_data()
             # terminate the agent MUST BE CALLED
@@ -111,9 +122,9 @@ class Group62Agent(DefaultParty):
         else:
             self.logger.log(logging.WARNING, "Ignoring unknown info " + str(data))
 
+    # Tell geniusweb what settings this agent can handle
     def getCapabilities(self) -> Capabilities:
-        """MUST BE IMPLEMENTED
-        Method to indicate to the protocol what the capabilities of this agent are.
+        """Method to indicate to the protocol what the capabilities of this agent are.
         Leave it as is for the ANL 2022 competition
 
         Returns:
@@ -132,15 +143,16 @@ class Group62Agent(DefaultParty):
         """
         self.getConnection().send(action)
 
-    # give a description of your agent
+    # Return a description of the agent
     def getDescription(self) -> str:
-        """MUST BE IMPLEMENTED
-        Returns a description of your agent. 1 or 2 sentences.
+        """Returns a description of your agent. 1 or 2 sentences.
 
         Returns:
             str: Agent description
         """
-        return "Template agent for the ANL 2022 competition"
+        # TODO: finalize the description
+        return "Group 62 agent, implementing a hybrid Trade-off and T4T bidding strategy with boulware time dependency" \
+               "and ac_combi_max_w and ac_combi_avg_w as acceptance strategies"
 
     def opponent_action(self, action):
         """Process an action that was received from the opponent.
@@ -152,31 +164,44 @@ class Group62Agent(DefaultParty):
         if isinstance(action, Offer):
             # create opponent model if it was not yet initialised
             if self.opponent_model is None:
+                # TODO: fix this line when connecting the opponent_model
                 self.opponent_model = OpponentModel(self.domain)
 
             bid = cast(Offer, action).getBid()
 
-            # update opponent model with bid
-            self.opponent_model.update(bid)
-            # set bid as last received
+            # TODO: The opponent_model was not implemented at the time of writing this, so I can't say if we need to update opponent model with the bid or not
+            # self.opponent_model.update(bid)
+            # Set the last received bid from the opponent
             self.last_received_bid = bid
             self.received_bids.append(self.last_received_bid)
+            # TODO: Same, no opponent_model yet, but might be needed if the opponent is frequency based
+            # self.opponent_model.update_frequencies(self._last_received_bid)
 
     def my_turn(self):
         """This method is called when it is our turn. It should decide upon an action
         to perform and send this action to the opponent.
         """
-        # check if the last received offer is good enough
-        bid = self.find_bid()
+        # Decrease the boulware value as time passes
+        self.decrease_boulware()
+
+        # Generate a bid for the opponent using the bidding strategy
+        bid = self.bidding_strat.find_bid(self.last_received_bid, self.received_bids,
+                                          self.sent_bids, self.boulware)
+
+        # Check if the bid received from the opponent is better than ours
         if self.accept_condition(self.last_received_bid, bid):
-            # if so, accept the offer
+            # If so, accept the offer
             action = Accept(self.me, self.last_received_bid)
         else:
-            # if not, find a bid to propose as counter offer
-            # bid = self.find_bid()
+            # If not, propose our bid as counter offer
             action = Offer(self.me, bid)
+            self.sent_bids.append(bid)
 
-        # send the action
+        # Advance the progress as more rounds pass
+        if isinstance(self.progress, ProgressRounds):
+            self.progress = self.progress.advance()
+
+        # Send the action (either an Offer or an Accept)
         self.send_action(action)
 
     def save_data(self):
@@ -188,11 +213,7 @@ class Group62Agent(DefaultParty):
         with open(f"{self.storage_dir}/data.md", "w") as f:
             f.write(data)
 
-    ###########################################################################################
-    ################################## Example methods below ##################################
-    ###########################################################################################
-
-    def accept_condition(self, received_bid:Bid, bid: Bid) -> bool:
+    def accept_condition(self, received_bid: Bid, bid: Bid) -> bool:
         if bid is None:
             return False
         if len(self.received_bids) == 0:
@@ -203,15 +224,22 @@ class Group62Agent(DefaultParty):
 
         # very basic approach that accepts if the offer is valued above 0.7 and
         # 95% of the time towards the deadline has passed
-        #conditions = [
+        # conditions = [
         #    self.profile.getUtility(bid) > 0.8,
         #    progress > 0.95,
-        #]
+        # ]
         # return all(conditions)
 
         ac = AcceptanceStrategy(progress, self.profile, self.received_bids, received_bid, bid)
         return ac.ac_combi_max_w()
 
+    # Decrease the boulware value in time based on the conceding speed
+    def decrease_boulware(self):
+        self.boulware = self.boulware - (BiddingStrategy.CONCEDING_SPEED * self.progress.get(time() * 1000))
+
+    # TODO: Delete the old template code and clean-up once we're sure our agent works
+    """
+    # Original find_bid method from the template
     def find_bid(self) -> Bid:
         # compose a list of all possible bids
         domain = self.profile.getDomain()
@@ -228,9 +256,11 @@ class Group62Agent(DefaultParty):
                 best_bid_score, best_bid = bid_score, bid
 
         return best_bid
+    """
 
+    """
     def score_bid(self, bid: Bid, alpha: float = 0.95, eps: float = 0.1) -> float:
-        """Calculate heuristic score for a bid
+        Calculate heuristic score for a bid
 
         Args:
             bid (Bid): Bid to score
@@ -241,7 +271,7 @@ class Group62Agent(DefaultParty):
 
         Returns:
             float: score
-        """
+  
         progress = self.progress.get(time() * 1000)
 
         our_utility = float(self.profile.getUtility(bid))
@@ -255,3 +285,4 @@ class Group62Agent(DefaultParty):
             score += opponent_score
 
         return score
+    """
