@@ -27,6 +27,7 @@ from geniusweb.progress.ProgressTime import ProgressTime
 from geniusweb.references.Parameters import Parameters
 from tudelft_utilities_logging.ReportToLogger import ReportToLogger
 
+from .utils.acceptance_strategy import AcceptanceStrategy
 from .utils.opponent_model import OpponentModel
 
 
@@ -51,6 +52,8 @@ class Group62Agent(DefaultParty):
         self.last_received_bid: Bid = None
         self.opponent_model: OpponentModel = None
         self.logger.log(logging.INFO, "party is initialized")
+        # List of all received bids
+        self.received_bids: list[Bid] = []
 
     def notifyChange(self, data: Inform):
         """MUST BE IMPLEMENTED
@@ -157,18 +160,20 @@ class Group62Agent(DefaultParty):
             self.opponent_model.update(bid)
             # set bid as last received
             self.last_received_bid = bid
+            self.received_bids.append(self.last_received_bid)
 
     def my_turn(self):
         """This method is called when it is our turn. It should decide upon an action
         to perform and send this action to the opponent.
         """
         # check if the last received offer is good enough
-        if self.accept_condition(self.last_received_bid):
+        bid = self.find_bid()
+        if self.accept_condition(self.last_received_bid, bid):
             # if so, accept the offer
             action = Accept(self.me, self.last_received_bid)
         else:
             # if not, find a bid to propose as counter offer
-            bid = self.find_bid()
+            # bid = self.find_bid()
             action = Offer(self.me, bid)
 
         # send the action
@@ -187,8 +192,10 @@ class Group62Agent(DefaultParty):
     ################################## Example methods below ##################################
     ###########################################################################################
 
-    def accept_condition(self, bid: Bid) -> bool:
+    def accept_condition(self, received_bid:Bid, bid: Bid) -> bool:
         if bid is None:
+            return False
+        if len(self.received_bids) == 0:
             return False
 
         # progress of the negotiation session between 0 and 1 (1 is deadline)
@@ -196,11 +203,14 @@ class Group62Agent(DefaultParty):
 
         # very basic approach that accepts if the offer is valued above 0.7 and
         # 95% of the time towards the deadline has passed
-        conditions = [
-            self.profile.getUtility(bid) > 0.8,
-            progress > 0.95,
-        ]
-        return all(conditions)
+        #conditions = [
+        #    self.profile.getUtility(bid) > 0.8,
+        #    progress > 0.95,
+        #]
+        # return all(conditions)
+
+        ac = AcceptanceStrategy(progress, self.profile, self.received_bids, received_bid, bid)
+        return ac.ac_combi_max_w()
 
     def find_bid(self) -> Bid:
         # compose a list of all possible bids
