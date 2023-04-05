@@ -164,13 +164,12 @@ class Group62Agent(DefaultParty):
         if isinstance(action, Offer):
             # create opponent model if it was not yet initialised
             if self.opponent_model is None:
-                # TODO: fix this line when connecting the opponent_model
                 self.opponent_model = OpponentModel(self.domain)
 
             bid = cast(Offer, action).getBid()
 
             # TODO: The opponent_model was not implemented at the time of writing this, so I can't say if we need to update opponent model with the bid or not
-            # self.opponent_model.update(bid)
+            self.opponent_model.update(bid)
             # Set the last received bid from the opponent
             self.last_received_bid = bid
             self.received_bids.append(self.last_received_bid)
