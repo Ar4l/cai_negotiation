@@ -27,6 +27,14 @@ settings = {
             "class": "agents.linear_agent.linear_agent.LinearAgent",
             "parameters": {"storage_dir": "agent_storage/LinearAgent"},
 
+            # NOTE: Alternative 2: Random agent
+            #"class": "agents.random_agent.random_agent.RandomAgent",
+            #"parameters": {"storage_dir": "agent_storage/RandomAgent"},
+
+            # NOTE: Alternative 3: Boulware agent
+            #"class": "agents.boulware_agent.boulware_agent.BoulwareAgent",
+            #"parameters": {"storage_dir": "agent_storage/BoulwareAgent"},
+
         },
         {
             # NOTE: Our agent. I left the template agent class file untouched as

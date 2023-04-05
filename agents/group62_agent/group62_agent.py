@@ -93,7 +93,7 @@ class Group62Agent(DefaultParty):
             # TODO: Initialize the agent's components
             self.opponent_model = OpponentModel(self.domain)
             self.bidding_strat = BiddingStrategy(self.profile, self.opponent_model, self.domain)
-            self.acceptance_strat = AcceptanceStrategy(self.progress, self.profile)
+            # self.acceptance_strat = AcceptanceStrategy(self.progress, self.profile)
 
         # ActionDone informs you of an action (an Offer or an Accept) that is performed by one of the agents (including yourself)
         elif isinstance(data, ActionDone):
@@ -228,7 +228,7 @@ class Group62Agent(DefaultParty):
         # ]
         # return all(conditions)
 
-        ac = AcceptanceStrategy(progress, self.profile, self.received_bids, received_bid, bid)
+        ac = AcceptanceStrategy(progress, self.profile, self.opponent_model, self.received_bids, received_bid, bid)
         return ac.ac_combi_max_w()
 
     # Decrease the boulware value in time based on the conceding speed
