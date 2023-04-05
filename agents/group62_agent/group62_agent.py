@@ -91,9 +91,9 @@ class Group62Agent(DefaultParty):
             profile_connection.close()
 
             # TODO: Initialize the agent's components
-            # self.opponent_model =
+            self.opponent_model = OpponentModel(self.domain)
             self.bidding_strat = BiddingStrategy(self.profile, self.opponent_model, self.domain)
-            # self.acceptance_strat =
+            self.acceptance_strat = AcceptanceStrategy(self.progress, self.profile)
 
         # ActionDone informs you of an action (an Offer or an Accept) that is performed by one of the agents (including yourself)
         elif isinstance(data, ActionDone):

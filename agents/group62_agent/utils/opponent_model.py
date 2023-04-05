@@ -25,8 +25,7 @@ class OpponentModel:
             val = bid.getValue(i)
             if val not in self._freqs[i]:
                 self._freqs[i][val] = 0
-            self.freqs[i][val] += 1
-
+            self._freqs[i][val] += 1
 
     def predict_utility(self, bid: Bid):
         max_frequencies = {}
@@ -38,7 +37,11 @@ class OpponentModel:
                 if max_frequencies[i] < self._freqs[i][val]:
                     max_frequencies[i] = self._freqs[i][val]
 
-        highest_freq = max(max_frequencies)
+        highest_freq = -np.inf
+        for i in self._domain.getIssues():
+            if max_frequencies[i] > highest_freq:
+                highest_freq = max_frequencies[i]
+
         util_weights = {}
         # normalize weights
         for i in self._domain.getIssues():
