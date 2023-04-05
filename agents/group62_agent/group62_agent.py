@@ -168,12 +168,11 @@ class Group62Agent(DefaultParty):
 
             bid = cast(Offer, action).getBid()
 
-            # TODO: The opponent_model was not implemented at the time of writing this, so I can't say if we need to update opponent model with the bid or not
             self.opponent_model.update(bid)
             # Set the last received bid from the opponent
             self.last_received_bid = bid
             self.received_bids.append(self.last_received_bid)
-            # TODO: Same, no opponent_model yet, but might be needed if the opponent is frequency based
+
             # self.opponent_model.update_frequencies(self._last_received_bid)
 
     def my_turn(self):
