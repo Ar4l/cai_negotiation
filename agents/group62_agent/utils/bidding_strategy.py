@@ -8,8 +8,8 @@ class BiddingStrategy:
     ISO_TOLERANCE = 0.05
     # Starting reservation value
     RESERVATION_VALUE = 0.95
-    # The boulware speed at which the agent concedes
-    CONCEDING_SPEED = 0.004
+    # The boulware speed at which the agent concedes -> 0.000045 results in a hardliner agent
+    CONCEDING_SPEED = 0.000045
 
     def __init__(self, profile, opponent_model, domain):
         self._profile = profile
