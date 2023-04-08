@@ -144,6 +144,60 @@ def run_tournament(tournament_settings: dict) -> Tuple[list, list]:
 
     return tournament_steps, tournament_results, tournament_results_summary
 
+def run_selfish_tournament(tournament_settings: dict, play_with_itself = True) -> Tuple[list, list]:
+    '''
+    Runs a tournament where the first agent in the settings 
+    plays against all other agents, but doesn't run other agents
+    against each other
+    '''
+    # create agent permutations, ensures that every agent plays against every other agent on both sides of a profile set.
+    agents = tournament_settings["agents"]
+    profile_sets = tournament_settings["profile_sets"]
+    deadline_time_ms = tournament_settings["deadline_time_ms"]
+
+    oc_character = agents[0]
+    antagonists = agents if play_with_itself else agents[1:]
+
+    num_sessions = len(antagonists)
+
+    if num_sessions > 100:
+        message = (
+            f"WARNING: this would run {num_sessions} negotiation sessions. Proceed?"
+        )
+        if not ask_proceed(message):
+            print("Exiting script")
+            exit()
+
+    tournament_results = []
+    tournament_steps = []
+
+    for profiles in profile_sets:
+
+        import logging; 
+        logger = logging.getLogger('geniusweb')
+        logger.log(logging.CRITICAL, f"Running tournament with profiles {profiles}")
+
+        # quick an dirty check
+        assert isinstance(profiles, list) and len(profiles) == 2
+
+        for antagonist in antagonists:
+            # create session settings dict
+            settings = {
+                "agents": [oc_character, antagonist],
+                "profiles": profiles,
+                "deadline_time_ms": deadline_time_ms,
+            }
+
+            # run a single negotiation session
+            _, session_results_summary = run_session(settings)
+
+            # assemble results
+            tournament_steps.append(settings)
+            tournament_results.append(session_results_summary)
+
+    tournament_results_summary = process_tournament_results(tournament_results)
+
+    return tournament_steps, tournament_results, tournament_results_summary
 
 def process_results(results_class: SAOPState, results_dict: dict):
     # dict to translate geniusweb agent reference to Python class name
