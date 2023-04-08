@@ -1,3 +1,14 @@
+## Running on M1 Mac
+- `lightgbm` requires openmp: `brew install libomp`.
+- `pip` does not install the right version of `lightgbm`: for me it wouldn't look for openmp in homebrew's opt libraries. You need to download it from `conda-forge` with `conda install -c conda-forge lightgbm`. 
+- I believe that's all, but I'm not sure. I changed `from numpy import long` to `from numpy.compat import long` to get rid of some warnings in the ANL agents. 
+
+## Further troubleshooting
+- Make sure to specify the correct `storage_dir` parameter when running the agents!
+
+
+---
+
 # Automated Negotiation League 2023
 Join our [Discord server](https://discord.gg/qvXK3DJTuz)!
 Read the [Call for Participants](docs/Automated_Negotiation_League_2023.pdf)!

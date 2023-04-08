@@ -35,6 +35,10 @@ tournament_settings = {
         {
             "class": "agents.conceder_agent.conceder_agent.ConcederAgent",
         },
+        {
+            "class": "agents.template_agent.template_agent.TemplateAgent",
+            "parameters": {"storage_dir": "agent_storage/TemplateAgent"},
+        },
         # {
         #     "class": "agents.hardliner_agent.hardliner_agent.HardlinerAgent",
         # },
@@ -53,12 +57,14 @@ tournament_settings = {
         # {
         #     "class": "agents.ANL2022.Pinar_Agent.Pinar_Agent.PinarAgent",
         # },
-        # {
-        #     "class": "agents.ANL2022.dreamteam109_agent.dreamteam109_agent.DreamTeam109Agent",
-        # },
-        # {
-        #     "class": "agents.ANL2022.smart_agent.smart_agent.SmartAgent",
-        # },
+        {
+            "class": "agents.ANL2022.dreamteam109_agent.dreamteam109_agent.DreamTeam109Agent",
+            "parameters": {"storage_dir": "agent_storage/DreamTeam109Agent"},
+        },
+        {
+            "class": "agents.ANL2022.smart_agent.smart_agent.SmartAgent",
+            "parameters": {"storage_dir": "agent_storage/SmartAgent"},
+        },
         # {
         #     "class": "agents.CSE3210.agent3.agent3.Agent3",
         # },
@@ -139,7 +145,10 @@ tournament_settings = {
     "deadline_time_ms": 10000,
 }
 
-# run a session and obtain results in dictionaries
+# Fucking hell of a workaround
+logging.getLogger('geniusweb').disabled = True # disable all messages from geniusweb
+
+# NOTE: Select a type of tournament. Selfish only runs first profile against every other profile.
 tournament_steps, tournament_results, tournament_results_summary = run_tournament(tournament_settings)
 # tournament_steps, tournament_results, tournament_results_summary = run_selfish_tournament(tournament_settings)
 
@@ -151,3 +160,4 @@ with open(RESULTS_DIR.joinpath("tournament_results.json"), "w", encoding="utf-8"
     f.write(json.dumps(tournament_results, indent=2))
 # save the tournament results summary
 tournament_results_summary.to_csv(RESULTS_DIR.joinpath("tournament_results_summary.csv"))
+

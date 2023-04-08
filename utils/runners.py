@@ -1,9 +1,10 @@
+import logging
 import shutil
 from collections import defaultdict
 from itertools import permutations
 from math import factorial, prod
 from pathlib import Path
-from typing import Tuple
+from typing import Optional, Tuple
 
 import pandas as pd
 from geniusweb.profile.utilityspace.LinearAdditiveUtilitySpace import (
@@ -12,6 +13,7 @@ from geniusweb.profile.utilityspace.LinearAdditiveUtilitySpace import (
 from geniusweb.profileconnection.ProfileConnectionFactory import (
     ProfileConnectionFactory,
 )
+from tudelft_utilities_logging.Reporter import Reporter
 from geniusweb.protocol.NegoSettings import NegoSettings
 from geniusweb.protocol.session.saop.SAOPState import SAOPState
 from geniusweb.simplerunner.ClassPathConnectionFactory import ClassPathConnectionFactory
@@ -88,7 +90,25 @@ def run_session(settings) -> Tuple[dict, dict]:
     settings_obj = ObjectMapper().parse(settings_full, NegoSettings)
 
     # create the negotiation session runner object
-    runner = Runner(settings_obj, ClassPathConnectionFactory(), StdOutReporter(), 0)
+    # runner = Runner(settings_obj, ClassPathConnectionFactory(), StdOutReporter(), 0)
+
+    # NOTE: Needed to extend TU Delft's logging utilities to actually have
+    # logging functionality. Boy do they love their OOP
+    
+    class StopSpammingTheConsole (Reporter):
+        '''
+        Simply uses the built-in logger to report the state of the protocol,
+        but actually allows us to filter the level of messages we want to see.
+        '''
+
+        def __init__(self):
+            self.logger = logging.getLogger('geniusweb')
+            self.logger.setLevel(logging.INFO)
+
+        def log(self, level, msg, exc:Optional[BaseException] = None):
+            self.logger.log(level, msg, exc_info=exc)
+
+    runner = Runner(settings_obj, ClassPathConnectionFactory(), StopSpammingTheConsole(), 0)
 
     # run the negotiation session
     runner.run()
@@ -150,7 +170,6 @@ def run_selfish_tournament(tournament_settings: dict, play_with_itself = True) -
     plays against all other agents, but doesn't run other agents
     against each other
     '''
-    # create agent permutations, ensures that every agent plays against every other agent on both sides of a profile set.
     agents = tournament_settings["agents"]
     profile_sets = tournament_settings["profile_sets"]
     deadline_time_ms = tournament_settings["deadline_time_ms"]
@@ -171,11 +190,10 @@ def run_selfish_tournament(tournament_settings: dict, play_with_itself = True) -
     tournament_results = []
     tournament_steps = []
 
-    for profiles in profile_sets:
+    logger = logging.getLogger('selfish tournament')
+    logger.log(logging.CRITICAL,f"Running selfish tournament with profiles {profile_sets} and {num_sessions} sessions")
 
-        import logging; 
-        logger = logging.getLogger('geniusweb')
-        logger.log(logging.CRITICAL, f"Running tournament with profiles {profiles}")
+    for profiles in profile_sets:
 
         # quick an dirty check
         assert isinstance(profiles, list) and len(profiles) == 2
@@ -189,6 +207,7 @@ def run_selfish_tournament(tournament_settings: dict, play_with_itself = True) -
             }
 
             # run a single negotiation session
+            logger.log(logging.CRITICAL,f"{oc_character['class'].split('.')[-1]} is playing against {antagonist['class'].split('.')[-1]}")
             _, session_results_summary = run_session(settings)
 
             # assemble results
