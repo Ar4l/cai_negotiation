@@ -142,6 +142,12 @@ def run_tournament(tournament_settings: dict) -> Tuple[list, list]:
 
     tournament_results = []
     tournament_steps = []
+
+    logger = logging.getLogger("tournament")
+    logger.setLevel(logging.WARNING)
+    count = 0
+    logger.log(logging.WARNING, 'Running normal tournament with {} sessions'.format(num_sessions))
+
     for profiles in profile_sets:
         # quick an dirty check
         assert isinstance(profiles, list) and len(profiles) == 2
@@ -153,6 +159,8 @@ def run_tournament(tournament_settings: dict) -> Tuple[list, list]:
                 "deadline_time_ms": deadline_time_ms,
             }
 
+            count += 1
+            logger.warning('[{}/{}] {} is playing against {}'.format(count, num_sessions, agent_duo[0]['class'].split('.')[-1], agent_duo[1]['class'].split('.')[-1]))
             # run a single negotiation session
             _, session_results_summary = run_session(settings)
 
@@ -192,6 +200,7 @@ def run_selfish_tournament(tournament_settings: dict, play_with_itself = True) -
 
     logger = logging.getLogger('selfish tournament')
     logger.log(logging.CRITICAL,f"Running selfish tournament with profiles {profile_sets} and {num_sessions} sessions")
+    count = 0
 
     for profiles in profile_sets:
 
@@ -206,8 +215,9 @@ def run_selfish_tournament(tournament_settings: dict, play_with_itself = True) -
                 "deadline_time_ms": deadline_time_ms,
             }
 
+            count += 1
+            logger.warning(f"[{count}/{num_sessions}] {oc_character['class'].split('.')[-1]} is playing against {antagonist['class'].split('.')[-1]}")
             # run a single negotiation session
-            logger.log(logging.CRITICAL,f"{oc_character['class'].split('.')[-1]} is playing against {antagonist['class'].split('.')[-1]}")
             _, session_results_summary = run_session(settings)
 
             # assemble results
