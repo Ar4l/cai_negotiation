@@ -59,7 +59,6 @@ class Group62Agent(DefaultParty):
         # Keep track of the bids the agent sends
         self.sent_bids: list[Bid] = []
         # Boulware value equals the reservation value at the start
-        self.boulware = BiddingStrategy.RESERVATION_VALUE
 
     def notifyChange(self, data: Inform):
         """MUST BE IMPLEMENTED
@@ -92,7 +91,8 @@ class Group62Agent(DefaultParty):
 
             # TODO: Initialize the agent's components
             self.opponent_model = OpponentModel(self.domain)
-            self.bidding_strat = BiddingStrategy(self.profile, self.opponent_model, self.domain)
+            self.bidding_strat = BiddingStrategy(self.profile, self.opponent_model, self.domain, self.parameters.get("bidding_strategy"))
+            self.boulware = self.bidding_strat.reservation_value
             # self.acceptance_strat = AcceptanceStrategy(self.progress, self.profile)
 
         # ActionDone informs you of an action (an Offer or an Accept) that is performed by one of the agents (including yourself)
@@ -228,12 +228,12 @@ class Group62Agent(DefaultParty):
         # ]
         # return all(conditions)
 
-        ac = AcceptanceStrategy(progress, self.profile, self.opponent_model, self.received_bids, received_bid, bid)
+        ac = AcceptanceStrategy(progress, self.profile, self.opponent_model, self.received_bids, received_bid, bid, self.parameters.get("acceptance_strategy"))
         return ac.ac_combi_max_w()
 
     # Decrease the boulware value in time based on the conceding speed
     def decrease_boulware(self):
-        self.boulware = self.boulware - (BiddingStrategy.CONCEDING_SPEED * self.progress.get(time() * 1000))
+        self.boulware = self.boulware - (self.bidding_strat.conceding_speed * self.progress.get(time() * 1000))
 
     # TODO: Delete the old template code and clean-up once we're sure our agent works
     """

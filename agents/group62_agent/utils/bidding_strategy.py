@@ -2,22 +2,25 @@ from geniusweb.bidspace.AllBidsList import AllBidsList
 from geniusweb.issuevalue import Bid
 from random import randint
 
+# Makes concession of 0.05 if stuck
+ISO_TOLERANCE = 0.05
+# Starting reservation value
+RESERVATION_VALUE = 0.95
+# The boulware speed at which the agent concedes -> 0.000045 results in a hardliner agent
+CONCEDING_SPEED = 0.000045
 
 class BiddingStrategy:
-    # Makes concession of 0.05 if stuck
-    ISO_TOLERANCE = 0.05
-    # Starting reservation value
-    RESERVATION_VALUE = 0.95
-    # The boulware speed at which the agent concedes -> 0.000045 results in a hardliner agent
-    CONCEDING_SPEED = 0.000045
 
-    def __init__(self, profile, opponent_model, domain):
+    def __init__(self, profile, opponent_model, domain, params=None):
+                #  conceding_speed=CONCEDING_SPEED, reservation_value=RESERVATION_VALUE, iso_tolerance=ISO_TOLERANCE):
         self._profile = profile
         self._opponent_model = opponent_model
         self._domain = domain
 
-        self._iso_tolerance = self.ISO_TOLERANCE
-        self._offer_acceptance = self.RESERVATION_VALUE
+        # Get respective keys from params if they exist, otherwise put default values
+        self._iso_tolerance = params.get('iso_tolerance', ISO_TOLERANCE)
+        self.reservation_value = params.get('reservation_value', RESERVATION_VALUE)
+        self.conceding_speed = params.get('conceding_speed', CONCEDING_SPEED)
 
         self._sorted_bids = self._sort_bids(AllBidsList(self._domain))
         self._issues = domain.getIssues()
@@ -33,7 +36,7 @@ class BiddingStrategy:
         bids = []
         i = 0
         for bid in self._sorted_bids:
-            if self._offer_acceptance + self._iso_tolerance > bid['utility'] > self._offer_acceptance - self._iso_tolerance:
+            if self.reservation_value + self._iso_tolerance > bid['utility'] > self.reservation_value - self._iso_tolerance:
                 bids.append(bid['bid'])
                 i += 1
             if i == n:
@@ -63,7 +66,7 @@ class BiddingStrategy:
             # If the agent's utility hasn't changed throughout the bidding window and the opponent's utility is
             # decreasing, decrease agent's utility based on the boulware tolerance
             if agentLastUtil == agentFirstWindowUtil and opponentLastUtil <= opponentPenlastUtil:
-                self._offer_acceptance = boulware
+                self.reservation_value = boulware
 
     # Find a bid using Trade-off strategy
     def find_bid(self, last_opponent_bid, opponent_bids, agent_bids, boulware) -> Bid:

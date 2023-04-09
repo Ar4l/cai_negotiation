@@ -1,10 +1,11 @@
 import decimal
 import numpy as np
 
+THRESHOLD = 0.98
 
 class AcceptanceStrategy:
 
-    def __init__(self, progress, profile, opponent_model, received_bids, received_bid, next_bid):
+    def __init__(self, progress, profile, opponent_model, received_bids, received_bid, next_bid, params=None):
         """
         Constructor for an acceptance strategy object.
         @param progress: the current negotiation progress from 0 to 1.
@@ -19,17 +20,19 @@ class AcceptanceStrategy:
         self.next_bid = next_bid
         self.received_bid = received_bid  # = received_bids[-1]
 
-    def ac_combi_max_w(self, scale=1.0, utility_gap=0.0, threshold=0.98):
+        self.threshold = params.get('threshold', THRESHOLD)
+
+    def ac_combi_max_w(self, scale=1.0, utility_gap=0.0):
         """
         Combined strategy: Accepts when the bid is better than all offers seen in the previous time window
         """
         window = self._get_window()
         max_w = np.max(window) if len(window) != 0 else 0
 
-        ac_time_and_constant = self._ac_time(threshold) and self.profile.getUtility(self.received_bid) >= max_w
+        ac_time_and_constant = self._ac_time(self.threshold) and self.profile.getUtility(self.received_bid) >= max_w
         return self._ac_next(scale, utility_gap) or ac_time_and_constant
 
-    def ac_combi_avg_w(self, scale=1.0, utility_gap=0.0, threshold=0.98):
+    def ac_combi_avg_w(self, scale=1.0, utility_gap=0.0):
         """
         Combined strategy:
         Accepts when the bid is better than the average utility of offers during the previous time window
@@ -37,7 +40,7 @@ class AcceptanceStrategy:
         window = self._get_window()
         avg_w = np.mean(window) if len(window) != 0 else 0
 
-        ac_time_and_constant = self._ac_time(threshold) and self.profile.getUtility(self.received_bid) >= avg_w
+        ac_time_and_constant = self._ac_time(self.threshold) and self.profile.getUtility(self.received_bid) >= avg_w
         return self._ac_next(scale, utility_gap) or ac_time_and_constant
 
     def _ac_next(self, scale_factor, utility_gap):
