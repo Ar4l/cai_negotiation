@@ -31,13 +31,78 @@ agents_default = [
             {
                 "class": "agents.time_dependent_agent.time_dependent_agent.TimeDependentAgent",
             }]
-agents_ANL2022 = [{
-                "class": "agents.ANL2022.Pinar_Agent.Pinar_Agent.PinarAgent",
-                "parameters": {"storage_dir": "agent_storage/PinarAgent"},
+agents_ANL2022 = [
+            # {
+            #     "class": "agents.ANL2022.Pinar_Agent.Pinar_Agent.PinarAgent",
+            #     "parameters": {"storage_dir": "agent_storage/PinarAgent"},
+            # },
+            {
+                "class": "agents.ANL2022.agent007.agent007.Agent007",
+                "parameters": {"storage_dir": "agent_storage/Agent007"},
+            },
+            {
+                "class": "agents.ANL2022.agent4410.agent_4410.Agent4410",
+                "parameters": {"storage_dir": "agent_storage/Agent4410"},
+            },
+            {
+                "class": "agents.ANL2022.agentfish.agentfish.AgentFish",
+                "parameters": {"storage_dir": "agent_storage/AgentFish"},
+            },
+            {
+                "class": "agents.ANL2022.AgentFO2.AgentFO2.AgentFO2",
+                "parameters": {"storage_dir": "agent_storage/AgentFO2"},
+            },
+            {
+                "class": "agents.ANL2022.BIU_agent.BIU_agent.BIU_agent",
+                "parameters": {"storage_dir": "agent_storage/BIU_agent"},
+            },
+            {
+                "class": "agents.ANL2022.charging_boul.charging_boul.ChargingBoul",
+                "parameters": {"storage_dir": "agent_storage/ChargingBoul"},
+            },
+            {
+                "class": "agents.ANL2022.compromising_agent.compromising_agent.CompromisingAgent",
+                "parameters": {"storage_dir": "agent_storage/CompromisingAgent"},
             },
             {
                 "class": "agents.ANL2022.dreamteam109_agent.dreamteam109_agent.DreamTeam109Agent",
                 "parameters": {"storage_dir": "agent_storage/DreamTeam109Agent"},
+            },
+            {
+                "class": "agents.ANL2022.gea_agent.gea_agent.GEAAgent",
+                "parameters": {"storage_dir": "agent_storage/GEAAgent"},
+            },
+            {
+                "class": "agents.ANL2022.learning_agent.learning_agent.LearningAgent",
+                "parameters": {"storage_dir": "agent_storage/LearningAgent"},
+            },
+            {
+                "class": "agents.ANL2022.LuckyAgent2022.LuckyAgent2022.LuckyAgent2022",
+                "parameters": {"storage_dir": "agent_storage/LuckyAgent2022"},
+            },
+            {
+                "class": "agents.ANL2022.micro_agent.micro_agent.micro_agent.MiCROAgent",
+                "parameters": {"storage_dir": "agent_storage/MicroAgent"},
+            },
+            {
+                "class": "agents.ANL2022.procrastin_agent.procrastin_agent.ProcrastinAgent",
+                "parameters": {"storage_dir": "agent_storage/ProcrastinAgent"},
+            },
+            {
+                "class": "agents.ANL2022.rg_agent.rg_agent.RGAgent",
+                "parameters": {"storage_dir": "agent_storage/RgAgent"},
+            },
+            {
+                "class": "agents.ANL2022.super_agent.super_agent.SuperAgent",
+                "parameters": {"storage_dir": "agent_storage/SuperAgent"},  
+            },
+            {
+                "class": "agents.ANL2022.thirdagent.third_agent.ThirdAgent",
+                "parameters": {"storage_dir": "agent_storage/ThirdAgent"},
+            },
+            {
+                "class": "agents.ANL2022.tjaronchery10_agent.tjaronchery10_agent.Tjaronchery10Agent",
+                "parameters": {"storage_dir": "agent_storage/Tjaronchery10Agent"},
             },
             {
                 "class": "agents.ANL2022.smart_agent.smart_agent.SmartAgent",
@@ -120,18 +185,25 @@ agents_CSE3210 = [
                 "class": "agents.CSE3210.agent68.agent68.Agent68",
             }]
 
+profile_sets = [
+            ["domains/domain00/profileA.json", "domains/domain00/profileB.json"],
+            ["domains/domain01/profileA.json", "domains/domain01/profileB.json"],
+            ["domains/domain02/profileA.json", "domains/domain02/profileB.json"],
+            ["domains/domain03/profileA.json", "domains/domain03/profileB.json"],
+            ["domains/domain04/profileA.json", "domains/domain04/profileB.json"],
+        ]
 
-def run(params, path='results', key='', agents=agents_default):
+def run(params, path='results', key='', agents=agents_default, profile_sets=None):
     '''Runs a tournament with specified parameters'''
 
-    conceding_speed = params.get('conceding_speed', 0.000045)
-    reservation_value = params.get('reservation_value', 0.95)
-    iso_tolerance = params.get('iso_tolerance', 0.05)
-    threshold = params.get('threshold', 0.98)
-    decay_exp = params.get('decay_exp', 0.4)
+    conceding_speed = params.get('conceding_speed', 0.000045) if params else 0.000045
+    reservation_value = params.get('reservation_value', 0.95) if params else 0.95
+    iso_tolerance = params.get('iso_tolerance', 0.05) if params else 0.05
+    threshold = params.get('threshold', 0.98) if params else 0.98
+    decay_exp = params.get('decay_exp', 0.4) if params else 0.4
 
-    print(f"Running tournament: {key} = {params.get(key):.5f}")
-    RESULTS_DIR = Path(path, f'{key}: {params.get(key):.5f}')
+    print(f"Running tournament: {key} = {path}")
+    RESULTS_DIR = Path(path, f'{key}')
 
     # create results directory if it does not exist
     if not RESULTS_DIR.exists():
@@ -162,13 +234,7 @@ def run(params, path='results', key='', agents=agents_default):
 
     tournament_settings = {
         "agents": agent_list,
-        "profile_sets": [
-            ["domains/domain00/profileA.json", "domains/domain00/profileB.json"],
-            ["domains/domain01/profileA.json", "domains/domain01/profileB.json"],
-            ["domains/domain02/profileA.json", "domains/domain02/profileB.json"],
-            ["domains/domain03/profileA.json", "domains/domain03/profileB.json"],
-            ["domains/domain04/profileA.json", "domains/domain04/profileB.json"],
-        ],
+        "profile_sets": profile_sets,
         "deadline_time_ms": 10000,
     }
 
@@ -187,18 +253,30 @@ def run(params, path='results', key='', agents=agents_default):
     tournament_results_summary.to_csv(RESULTS_DIR.joinpath("tournament_results_summary.csv"))
 
 
-# run(info='default')
 
-# Possible ranges for values:
-# conceding_speed: 0.000001 - 0.0005
-# threshold: 0.950 - 0.999
-# decay_exp: 0.1 - 1 
-
-# Fucking hell of a workaround
 import logging 
 logging.getLogger('geniusweb').disabled = True # disable all messages from geniusweb
-
 import numpy as np
+
+
+#### NOTE: AGENT COMPARISON
+
+
+# import threading
+# for i, profile_set in enumerate(profile_sets):
+
+#     # use threading for CSE agents
+#     print(f'Running tournament for profile set {i}: {profile_set}')
+#     t = threading.Thread(target=run, args=(None, f'eval/comparison_cse_{i}', '', agents_CSE3210, [profile_set]))
+#     t.start()
+#     pass
+
+
+i = 4
+profile_set = profile_sets[i]
+print(f'Running tournament for profile set {i}: {profile_set}')
+# don't use threading for ANL agents
+run(None, f'eval/comparison_ANL2022_{i}', '', agents_ANL2022, [profile_set])
 
 # #### NOTE: PARAMETER OPTIMISATION
 # # Generate linspaces for each parameter
