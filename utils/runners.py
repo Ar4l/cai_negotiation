@@ -123,7 +123,7 @@ def run_session(settings) -> Tuple[dict, dict]:
     return results_trace, results_summary
 
 
-def run_tournament(tournament_settings: dict) -> Tuple[list, list]:
+def run_tournament(tournament_settings: dict, ask=True) -> Tuple[list, list]:
     # create agent permutations, ensures that every agent plays against every other agent on both sides of a profile set.
     agents = tournament_settings["agents"]
     profile_sets = tournament_settings["profile_sets"]
@@ -132,7 +132,7 @@ def run_tournament(tournament_settings: dict) -> Tuple[list, list]:
     num_sessions = (factorial(len(agents)) // factorial(len(agents) - 2)) * len(
         profile_sets
     )
-    if num_sessions > 100:
+    if num_sessions > 100 and ask:
         message = (
             f"WARNING: this would run {num_sessions} negotiation sessions. Proceed?"
         )
@@ -172,7 +172,7 @@ def run_tournament(tournament_settings: dict) -> Tuple[list, list]:
 
     return tournament_steps, tournament_results, tournament_results_summary
 
-def run_selfish_tournament(tournament_settings: dict, play_with_itself = True) -> Tuple[list, list]:
+def run_selfish_tournament(tournament_settings: dict, play_with_itself = True, ask=True) -> Tuple[list, list]:
     '''
     Runs a tournament where the first agent in the settings 
     plays against all other agents, but doesn't run other agents
@@ -185,9 +185,9 @@ def run_selfish_tournament(tournament_settings: dict, play_with_itself = True) -
     oc_character = agents[0]
     antagonists = agents if play_with_itself else agents[1:]
 
-    num_sessions = len(antagonists)
+    num_sessions = len(antagonists) * len(profile_sets)
 
-    if num_sessions > 100:
+    if num_sessions > 100 and ask:
         message = (
             f"WARNING: this would run {num_sessions} negotiation sessions. Proceed?"
         )
