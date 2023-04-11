@@ -168,7 +168,7 @@ class Group62Agent(DefaultParty):
 
             bid = cast(Offer, action).getBid()
 
-            self.opponent_model.update(bid)
+            self.opponent_model.update(bid, self.progress)
             # Set the last received bid from the opponent
             self.last_received_bid = bid
             self.received_bids.append(self.last_received_bid)
