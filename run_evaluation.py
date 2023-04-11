@@ -121,11 +121,17 @@ agents_CSE3210 = [
             }]
 
 
-def run(conceding_speed=0.000045, reservation_value=0.95, iso_tolerance=0.05, threshold=0.98, decay_exp=0.4, info='', agents=agents_default):
+def run(params, path='results', key='', agents=agents_default):
     '''Runs a tournament with specified parameters'''
 
-    print(f"Running tournament: {info}")
-    RESULTS_DIR = Path("results", time.strftime(f'c{conceding_speed}-r{reservation_value}-i{iso_tolerance}-t{threshold}-d{decay_exp}-{info}'))
+    conceding_speed = params.get('conceding_speed', 0.000045)
+    reservation_value = params.get('reservation_value', 0.95)
+    iso_tolerance = params.get('iso_tolerance', 0.05)
+    threshold = params.get('threshold', 0.98)
+    decay_exp = params.get('decay_exp', 0.4)
+
+    print(f"Running tournament: {key} = {params.get(key):.5f}")
+    RESULTS_DIR = Path(path, f'{key}: {params.get(key):.5f}')
 
     # create results directory if it does not exist
     if not RESULTS_DIR.exists():
@@ -159,13 +165,16 @@ def run(conceding_speed=0.000045, reservation_value=0.95, iso_tolerance=0.05, th
         "profile_sets": [
             ["domains/domain00/profileA.json", "domains/domain00/profileB.json"],
             ["domains/domain01/profileA.json", "domains/domain01/profileB.json"],
+            ["domains/domain02/profileA.json", "domains/domain02/profileB.json"],
+            ["domains/domain03/profileA.json", "domains/domain03/profileB.json"],
+            ["domains/domain04/profileA.json", "domains/domain04/profileB.json"],
         ],
         "deadline_time_ms": 10000,
     }
 
     # NOTE: Select a type of tournament. Selfish only runs first profile against every other profile.
     # tournament_steps, tournament_results, tournament_results_summary = run_tournament(tournament_settings, ask=False)
-    tournament_steps, tournament_results, tournament_results_summary = run_selfish_tournament(tournament_settings, ask=False)
+    tournament_steps, tournament_results, tournament_results_summary = run_selfish_tournament(tournament_settings, ask=False, play_with_itself=False)
 
     # save the tournament settings for reference
     with open(RESULTS_DIR.joinpath("tournament_steps.json"), "w", encoding="utf-8") as f:
@@ -191,21 +200,25 @@ logging.getLogger('geniusweb').disabled = True # disable all messages from geniu
 
 import numpy as np
 # Generate linspaces for each parameter
-conceding_speeds = np.linspace(0.000001, 0.0005, 10).tolist()
-thresholds = np.linspace(0.950, 0.999, 10).tolist()
-decay_exps = np.linspace(0.1, 1, 10).tolist()
+conceding_speeds = np.logspace(-6, -2, 20).tolist()
+thresholds = np.linspace(0.50, 0.999, 20).tolist()
+decay_exps = np.linspace(0.1, 1, 20).tolist()
 
 
 # Ideally, we generate a grid of all possible combinations of parameters, but that's 100 evaluations
 # which I don't think we have time for. Instead, just run each parameter individually.
 
+agents = agents_default
+
+# print(f'Running tournament for conceding speeds: {conceding_speeds}')
 # for conceding_speed in conceding_speeds:
-#     run(conceding_speed=conceding_speed, info='conceding_speed')
+#     run({'conceding_speed': conceding_speed}, path="eval3/default", key='conceding_speed', agents=agents)
 
+# print(f'Running tournament for thresholds: {thresholds}')
 # for threshold in thresholds:
-#     run(threshold=threshold, info='threshold')
+#     run({'threshold': threshold}, path="eval3/default", key='threshold', agents=agents)
 
+print(f'Running tournament for decay exps: {decay_exps}')
 for decay_exp in decay_exps:
-    run(decay_exp=decay_exp, info='decay_exp')
-
+    run({'decay_exp': decay_exp}, path="eval3/default", key='decay_exp', agents=agents)
 
