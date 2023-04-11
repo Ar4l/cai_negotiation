@@ -1,7 +1,7 @@
 import decimal
 import numpy as np
 
-THRESHOLD = 0.98
+THRESHOLD = 0.985
 
 class AcceptanceStrategy:
 

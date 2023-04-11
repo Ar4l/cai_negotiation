@@ -6,6 +6,12 @@ import matplotlib.pyplot as plt
 keys = ['conceding_speed', 'decay_exp', 'threshold']
 folders = ['default', 'cse', 'anl', 'group62']
 
+optimal = {
+    'conceding_speed': 0.00001,
+    'decay_exp': 0.3,
+    'threshold': 0.985
+}
+
 def plot_results(key, folder):
     '''
     Plots the results for a given key (parameter) name and directory
@@ -22,19 +28,7 @@ def plot_results(key, folder):
 
     # Create a plot with keys on the x axis, and dataframe entries on y axes 
     df = pd.concat(dfs, axis=1).T
-    # df.plot(y=['avg_utility', 'avg_nash_product', 'avg_social_welfare'], sharey=False, xlabel=key, ylim=(0.3, 1.5), title=f'{key} ({folder} agents)')
-    # plt.show(False)
 
-    # also plot avg_num_offers on the same plot, but using a separate y axis
-    # ax2 = df.plot(y='avg_num_offers', secondary_y=True, sharex=True, ylim=(0, 3000), title=f'{key} ({folder} agents)')
-
-    # plt.plot(df.index, df['avg_utility'], label='avg_utility')
-    # plt.plot(df.index, df['avg_nash_product'], label='avg_nash_product')
-    # plt.plot(df.index, df['avg_social_welfare'], label='avg_social_welfare')
-    # plt.plot(df.index, df['avg_num_offers'], label='avg_num_offers')
-
-    # Plot [avg_utility, avg_nash_product, avg_social_welfare] sharing the same axis, on the same
-    # plot as avg_num_offers, but using a separate y axis
     fig, ax1 = plt.subplots()
     ax1.plot(df.index, df['avg_utility'], label='avg_utility')
     ax1.plot(df.index, df['avg_nash_product'], label='avg_nash_product')
@@ -43,12 +37,13 @@ def plot_results(key, folder):
     ax1.set_ylabel('Utility')
     ax1.set_ylim(0.3, 1.5)
     ax1.set_title(f'{key} ({folder} agents)')
-    # ax1.legend()
     
-
     # if key == 'concending_speed' then set x axis to logarithmic scale
     if key == 'conceding_speed':
         ax1.set_xscale('log')
+
+    # For the respective key, plot a vertical line at the optimal value
+    ax1.axvline(optimal[key], color='black', linestyle='--')
 
     ax2 = ax1.twinx()
     ax2.plot(df.index, df['avg_num_offers'], label='avg_num_offers', color='red')

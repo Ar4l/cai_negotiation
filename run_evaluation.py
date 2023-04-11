@@ -3,6 +3,10 @@ import os
 from pathlib import Path
 import time
 
+from agents.group62_agent.utils.opponent_model import DECAY_EXP
+from agents.group62_agent.utils.acceptance_strategy import THRESHOLD
+from agents.group62_agent.utils.bidding_strategy import CONCEDING_SPEED, RESERVATION_VALUE, ISO_TOLERANCE
+
 from utils.runners import run_tournament, run_selfish_tournament
 
 agents_default = [
@@ -193,7 +197,7 @@ profile_sets = [
             ["domains/domain04/profileA.json", "domains/domain04/profileB.json"],
         ]
 
-def run(params, path='results', key='', agents=agents_default, profile_sets=None):
+def run_optimisation(params, path='results', key='', agents=agents_default, profile_sets=None):
     '''Runs a tournament with specified parameters'''
 
     conceding_speed = params.get('conceding_speed', 0.000045) if params else 0.000045
@@ -202,7 +206,7 @@ def run(params, path='results', key='', agents=agents_default, profile_sets=None
     threshold = params.get('threshold', 0.98) if params else 0.98
     decay_exp = params.get('decay_exp', 0.4) if params else 0.4
 
-    print(f"Running tournament: {key} = {path}")
+    print(f"Running tournament: {path}{key}")
     RESULTS_DIR = Path(path, f'{key}')
 
     # create results directory if it does not exist
@@ -239,8 +243,67 @@ def run(params, path='results', key='', agents=agents_default, profile_sets=None
     }
 
     # NOTE: Select a type of tournament. Selfish only runs first profile against every other profile.
-    tournament_steps, tournament_results, tournament_results_summary = run_tournament(tournament_settings, ask=False)
-    # tournament_steps, tournament_results, tournament_results_summary = run_selfish_tournament(tournament_settings, ask=False, play_with_itself=False)
+    # tournament_steps, tournament_results, tournament_results_summary = run_tournament(tournament_settings, ask=False)
+    tournament_steps, tournament_results, tournament_results_summary = run_selfish_tournament(tournament_settings, ask=False, play_with_itself=False)
+
+    # save the tournament settings for reference
+    with open(RESULTS_DIR.joinpath("tournament_steps.json"), "w", encoding="utf-8") as f:
+        f.write(json.dumps(tournament_steps, indent=2))
+    # save the tournament results
+    with open(RESULTS_DIR.joinpath("tournament_results.json"), "w", encoding="utf-8") as f:
+        f.write(json.dumps(tournament_results, indent=2))
+    # save the tournament results summary
+    # convert all numbers in the CSV to :.2f
+    tournament_results_summary.to_csv(RESULTS_DIR.joinpath("tournament_results_summary.csv"))
+
+def run_comparison(params, path='results', key='', agents=agents_default, profile_sets=None):
+    '''Runs a tournament with specified parameters'''
+
+    conceding_speed = CONCEDING_SPEED
+    reservation_value = RESERVATION_VALUE
+    iso_tolerance = ISO_TOLERANCE
+    threshold = THRESHOLD
+    decay_exp = DECAY_EXP
+
+    print(f"Running tournament: {path}{key}")
+    RESULTS_DIR = Path(path, f'{key}')
+
+    # create results directory if it does not exist
+    if not RESULTS_DIR.exists():
+        RESULTS_DIR.mkdir(parents=True)
+    else:
+        # add a number to end of directory name if it already exists
+        RESULTS_DIR = Path(str(RESULTS_DIR) + str(len(list(RESULTS_DIR.parent.glob(f'{RESULTS_DIR.name}*')))))
+        RESULTS_DIR.mkdir(parents=True)
+
+    agent_list = [{
+                "class": "agents.group62_agent.group62_agent.Group62Agent",
+                "parameters": {"storage_dir": "agent_storage/Group62Agent",
+                            "bidding_strategy": {
+                                    "conceding_speed": conceding_speed,
+                                    "reservation_value": reservation_value,
+                                    "iso_tolerance": iso_tolerance,
+                            },
+                            "acceptance_strategy": {
+                                    "threshold": threshold,
+                            },
+                            "opponent_model": {
+                                    "decay": (decay_exp >= 0), # true if exp provided
+                                    "decay_exp": decay_exp,
+                            },
+                        }
+            }]
+    agent_list.extend(agents)
+
+    tournament_settings = {
+        "agents": agent_list,
+        "profile_sets": profile_sets,
+        "deadline_time_ms": 10000,
+    }
+
+    # NOTE: Select a type of tournament. Selfish only runs first profile against every other profile.
+    # tournament_steps, tournament_results, tournament_results_summary = run_tournament(tournament_settings, ask=False)
+    tournament_steps, tournament_results, tournament_results_summary = run_selfish_tournament(tournament_settings, ask=False, play_with_itself=False)
 
     # save the tournament settings for reference
     with open(RESULTS_DIR.joinpath("tournament_steps.json"), "w", encoding="utf-8") as f:
@@ -272,16 +335,16 @@ import numpy as np
 #     pass
 
 
-i = 4
-profile_set = profile_sets[i]
-print(f'Running tournament for profile set {i}: {profile_set}')
-# don't use threading for ANL agents
-run(None, f'eval/comparison_ANL2022_{i}', '', agents_ANL2022, [profile_set])
+# i = 4
+# profile_set = profile_sets[i]
+# print(f'Running tournament for profile set {i}: {profile_set}')
+# # don't use threading for ANL agents
+# run(None, f'eval/comparison_ANL2022_{i}', '', agents_ANL2022, [profile_set])
 
 # #### NOTE: PARAMETER OPTIMISATION
 # # Generate linspaces for each parameter
 # conceding_speeds = np.logspace(-6, -2, 20).tolist()
-# thresholds = np.linspace(0.50, 0.999, 20).tolist()
+thresholds = np.linspace(0.80, 0.999, 20).tolist()
 # decay_exps = np.linspace(0.1, 1, 20).tolist()
 
 
@@ -294,9 +357,9 @@ run(None, f'eval/comparison_ANL2022_{i}', '', agents_ANL2022, [profile_set])
 # # for conceding_speed in conceding_speeds:
 # #     run({'conceding_speed': conceding_speed}, path="eval3/default", key='conceding_speed', agents=agents)
 
-# # print(f'Running tournament for thresholds: {thresholds}')
-# # for threshold in thresholds:
-# #     run({'threshold': threshold}, path="eval3/default", key='threshold', agents=agents)
+# print(f'Running tournament for thresholds: {thresholds}')
+# for threshold in thresholds:
+#     run_optimisation({'threshold': threshold}, path="eval/cse/", key='threshold', agents=agents_CSE3210, profile_sets=profile_sets)
 
 # print(f'Running tournament for decay exps: {decay_exps}')
 # for decay_exp in decay_exps:

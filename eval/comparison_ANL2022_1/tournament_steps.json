@@ -1,0 +1,7616 @@
+[
+  {
+    "agents": [
+      {
+        "class": "agents.group62_agent.group62_agent.Group62Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/Group62Agent",
+          "bidding_strategy": {
+            "conceding_speed": 4.5e-05,
+            "reservation_value": 0.95,
+            "iso_tolerance": 0.05
+          },
+          "acceptance_strategy": {
+            "threshold": 0.98
+          },
+          "opponent_model": {
+            "decay": true,
+            "decay_exp": 0.4
+          }
+        }
+      },
+      {
+        "class": "agents.ANL2022.agent007.agent007.Agent007",
+        "parameters": {
+          "storage_dir": "agent_storage/Agent007"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.group62_agent.group62_agent.Group62Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/Group62Agent",
+          "bidding_strategy": {
+            "conceding_speed": 4.5e-05,
+            "reservation_value": 0.95,
+            "iso_tolerance": 0.05
+          },
+          "acceptance_strategy": {
+            "threshold": 0.98
+          },
+          "opponent_model": {
+            "decay": true,
+            "decay_exp": 0.4
+          }
+        }
+      },
+      {
+        "class": "agents.ANL2022.agent4410.agent_4410.Agent4410",
+        "parameters": {
+          "storage_dir": "agent_storage/Agent4410"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.group62_agent.group62_agent.Group62Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/Group62Agent",
+          "bidding_strategy": {
+            "conceding_speed": 4.5e-05,
+            "reservation_value": 0.95,
+            "iso_tolerance": 0.05
+          },
+          "acceptance_strategy": {
+            "threshold": 0.98
+          },
+          "opponent_model": {
+            "decay": true,
+            "decay_exp": 0.4
+          }
+        }
+      },
+      {
+        "class": "agents.ANL2022.agentfish.agentfish.AgentFish",
+        "parameters": {
+          "storage_dir": "agent_storage/AgentFish"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.group62_agent.group62_agent.Group62Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/Group62Agent",
+          "bidding_strategy": {
+            "conceding_speed": 4.5e-05,
+            "reservation_value": 0.95,
+            "iso_tolerance": 0.05
+          },
+          "acceptance_strategy": {
+            "threshold": 0.98
+          },
+          "opponent_model": {
+            "decay": true,
+            "decay_exp": 0.4
+          }
+        }
+      },
+      {
+        "class": "agents.ANL2022.AgentFO2.AgentFO2.AgentFO2",
+        "parameters": {
+          "storage_dir": "agent_storage/AgentFO2"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.group62_agent.group62_agent.Group62Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/Group62Agent",
+          "bidding_strategy": {
+            "conceding_speed": 4.5e-05,
+            "reservation_value": 0.95,
+            "iso_tolerance": 0.05
+          },
+          "acceptance_strategy": {
+            "threshold": 0.98
+          },
+          "opponent_model": {
+            "decay": true,
+            "decay_exp": 0.4
+          }
+        }
+      },
+      {
+        "class": "agents.ANL2022.BIU_agent.BIU_agent.BIU_agent",
+        "parameters": {
+          "storage_dir": "agent_storage/BIU_agent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.group62_agent.group62_agent.Group62Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/Group62Agent",
+          "bidding_strategy": {
+            "conceding_speed": 4.5e-05,
+            "reservation_value": 0.95,
+            "iso_tolerance": 0.05
+          },
+          "acceptance_strategy": {
+            "threshold": 0.98
+          },
+          "opponent_model": {
+            "decay": true,
+            "decay_exp": 0.4
+          }
+        }
+      },
+      {
+        "class": "agents.ANL2022.charging_boul.charging_boul.ChargingBoul",
+        "parameters": {
+          "storage_dir": "agent_storage/ChargingBoul"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.group62_agent.group62_agent.Group62Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/Group62Agent",
+          "bidding_strategy": {
+            "conceding_speed": 4.5e-05,
+            "reservation_value": 0.95,
+            "iso_tolerance": 0.05
+          },
+          "acceptance_strategy": {
+            "threshold": 0.98
+          },
+          "opponent_model": {
+            "decay": true,
+            "decay_exp": 0.4
+          }
+        }
+      },
+      {
+        "class": "agents.ANL2022.compromising_agent.compromising_agent.CompromisingAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/CompromisingAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.group62_agent.group62_agent.Group62Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/Group62Agent",
+          "bidding_strategy": {
+            "conceding_speed": 4.5e-05,
+            "reservation_value": 0.95,
+            "iso_tolerance": 0.05
+          },
+          "acceptance_strategy": {
+            "threshold": 0.98
+          },
+          "opponent_model": {
+            "decay": true,
+            "decay_exp": 0.4
+          }
+        }
+      },
+      {
+        "class": "agents.ANL2022.dreamteam109_agent.dreamteam109_agent.DreamTeam109Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/DreamTeam109Agent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.group62_agent.group62_agent.Group62Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/Group62Agent",
+          "bidding_strategy": {
+            "conceding_speed": 4.5e-05,
+            "reservation_value": 0.95,
+            "iso_tolerance": 0.05
+          },
+          "acceptance_strategy": {
+            "threshold": 0.98
+          },
+          "opponent_model": {
+            "decay": true,
+            "decay_exp": 0.4
+          }
+        }
+      },
+      {
+        "class": "agents.ANL2022.gea_agent.gea_agent.GEAAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/GEAAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.group62_agent.group62_agent.Group62Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/Group62Agent",
+          "bidding_strategy": {
+            "conceding_speed": 4.5e-05,
+            "reservation_value": 0.95,
+            "iso_tolerance": 0.05
+          },
+          "acceptance_strategy": {
+            "threshold": 0.98
+          },
+          "opponent_model": {
+            "decay": true,
+            "decay_exp": 0.4
+          }
+        }
+      },
+      {
+        "class": "agents.ANL2022.learning_agent.learning_agent.LearningAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/LearningAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.group62_agent.group62_agent.Group62Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/Group62Agent",
+          "bidding_strategy": {
+            "conceding_speed": 4.5e-05,
+            "reservation_value": 0.95,
+            "iso_tolerance": 0.05
+          },
+          "acceptance_strategy": {
+            "threshold": 0.98
+          },
+          "opponent_model": {
+            "decay": true,
+            "decay_exp": 0.4
+          }
+        }
+      },
+      {
+        "class": "agents.ANL2022.LuckyAgent2022.LuckyAgent2022.LuckyAgent2022",
+        "parameters": {
+          "storage_dir": "agent_storage/LuckyAgent2022"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.group62_agent.group62_agent.Group62Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/Group62Agent",
+          "bidding_strategy": {
+            "conceding_speed": 4.5e-05,
+            "reservation_value": 0.95,
+            "iso_tolerance": 0.05
+          },
+          "acceptance_strategy": {
+            "threshold": 0.98
+          },
+          "opponent_model": {
+            "decay": true,
+            "decay_exp": 0.4
+          }
+        }
+      },
+      {
+        "class": "agents.ANL2022.micro_agent.micro_agent.micro_agent.MiCROAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/MicroAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.group62_agent.group62_agent.Group62Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/Group62Agent",
+          "bidding_strategy": {
+            "conceding_speed": 4.5e-05,
+            "reservation_value": 0.95,
+            "iso_tolerance": 0.05
+          },
+          "acceptance_strategy": {
+            "threshold": 0.98
+          },
+          "opponent_model": {
+            "decay": true,
+            "decay_exp": 0.4
+          }
+        }
+      },
+      {
+        "class": "agents.ANL2022.procrastin_agent.procrastin_agent.ProcrastinAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/ProcrastinAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.group62_agent.group62_agent.Group62Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/Group62Agent",
+          "bidding_strategy": {
+            "conceding_speed": 4.5e-05,
+            "reservation_value": 0.95,
+            "iso_tolerance": 0.05
+          },
+          "acceptance_strategy": {
+            "threshold": 0.98
+          },
+          "opponent_model": {
+            "decay": true,
+            "decay_exp": 0.4
+          }
+        }
+      },
+      {
+        "class": "agents.ANL2022.rg_agent.rg_agent.RGAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/RgAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.group62_agent.group62_agent.Group62Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/Group62Agent",
+          "bidding_strategy": {
+            "conceding_speed": 4.5e-05,
+            "reservation_value": 0.95,
+            "iso_tolerance": 0.05
+          },
+          "acceptance_strategy": {
+            "threshold": 0.98
+          },
+          "opponent_model": {
+            "decay": true,
+            "decay_exp": 0.4
+          }
+        }
+      },
+      {
+        "class": "agents.ANL2022.super_agent.super_agent.SuperAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/SuperAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.group62_agent.group62_agent.Group62Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/Group62Agent",
+          "bidding_strategy": {
+            "conceding_speed": 4.5e-05,
+            "reservation_value": 0.95,
+            "iso_tolerance": 0.05
+          },
+          "acceptance_strategy": {
+            "threshold": 0.98
+          },
+          "opponent_model": {
+            "decay": true,
+            "decay_exp": 0.4
+          }
+        }
+      },
+      {
+        "class": "agents.ANL2022.thirdagent.third_agent.ThirdAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/ThirdAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.group62_agent.group62_agent.Group62Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/Group62Agent",
+          "bidding_strategy": {
+            "conceding_speed": 4.5e-05,
+            "reservation_value": 0.95,
+            "iso_tolerance": 0.05
+          },
+          "acceptance_strategy": {
+            "threshold": 0.98
+          },
+          "opponent_model": {
+            "decay": true,
+            "decay_exp": 0.4
+          }
+        }
+      },
+      {
+        "class": "agents.ANL2022.tjaronchery10_agent.tjaronchery10_agent.Tjaronchery10Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/Tjaronchery10Agent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.group62_agent.group62_agent.Group62Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/Group62Agent",
+          "bidding_strategy": {
+            "conceding_speed": 4.5e-05,
+            "reservation_value": 0.95,
+            "iso_tolerance": 0.05
+          },
+          "acceptance_strategy": {
+            "threshold": 0.98
+          },
+          "opponent_model": {
+            "decay": true,
+            "decay_exp": 0.4
+          }
+        }
+      },
+      {
+        "class": "agents.ANL2022.smart_agent.smart_agent.SmartAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/SmartAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.agent007.agent007.Agent007",
+        "parameters": {
+          "storage_dir": "agent_storage/Agent007"
+        }
+      },
+      {
+        "class": "agents.group62_agent.group62_agent.Group62Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/Group62Agent",
+          "bidding_strategy": {
+            "conceding_speed": 4.5e-05,
+            "reservation_value": 0.95,
+            "iso_tolerance": 0.05
+          },
+          "acceptance_strategy": {
+            "threshold": 0.98
+          },
+          "opponent_model": {
+            "decay": true,
+            "decay_exp": 0.4
+          }
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.agent007.agent007.Agent007",
+        "parameters": {
+          "storage_dir": "agent_storage/Agent007"
+        }
+      },
+      {
+        "class": "agents.ANL2022.agent4410.agent_4410.Agent4410",
+        "parameters": {
+          "storage_dir": "agent_storage/Agent4410"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.agent007.agent007.Agent007",
+        "parameters": {
+          "storage_dir": "agent_storage/Agent007"
+        }
+      },
+      {
+        "class": "agents.ANL2022.agentfish.agentfish.AgentFish",
+        "parameters": {
+          "storage_dir": "agent_storage/AgentFish"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.agent007.agent007.Agent007",
+        "parameters": {
+          "storage_dir": "agent_storage/Agent007"
+        }
+      },
+      {
+        "class": "agents.ANL2022.AgentFO2.AgentFO2.AgentFO2",
+        "parameters": {
+          "storage_dir": "agent_storage/AgentFO2"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.agent007.agent007.Agent007",
+        "parameters": {
+          "storage_dir": "agent_storage/Agent007"
+        }
+      },
+      {
+        "class": "agents.ANL2022.BIU_agent.BIU_agent.BIU_agent",
+        "parameters": {
+          "storage_dir": "agent_storage/BIU_agent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.agent007.agent007.Agent007",
+        "parameters": {
+          "storage_dir": "agent_storage/Agent007"
+        }
+      },
+      {
+        "class": "agents.ANL2022.charging_boul.charging_boul.ChargingBoul",
+        "parameters": {
+          "storage_dir": "agent_storage/ChargingBoul"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.agent007.agent007.Agent007",
+        "parameters": {
+          "storage_dir": "agent_storage/Agent007"
+        }
+      },
+      {
+        "class": "agents.ANL2022.compromising_agent.compromising_agent.CompromisingAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/CompromisingAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.agent007.agent007.Agent007",
+        "parameters": {
+          "storage_dir": "agent_storage/Agent007"
+        }
+      },
+      {
+        "class": "agents.ANL2022.dreamteam109_agent.dreamteam109_agent.DreamTeam109Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/DreamTeam109Agent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.agent007.agent007.Agent007",
+        "parameters": {
+          "storage_dir": "agent_storage/Agent007"
+        }
+      },
+      {
+        "class": "agents.ANL2022.gea_agent.gea_agent.GEAAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/GEAAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.agent007.agent007.Agent007",
+        "parameters": {
+          "storage_dir": "agent_storage/Agent007"
+        }
+      },
+      {
+        "class": "agents.ANL2022.learning_agent.learning_agent.LearningAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/LearningAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.agent007.agent007.Agent007",
+        "parameters": {
+          "storage_dir": "agent_storage/Agent007"
+        }
+      },
+      {
+        "class": "agents.ANL2022.LuckyAgent2022.LuckyAgent2022.LuckyAgent2022",
+        "parameters": {
+          "storage_dir": "agent_storage/LuckyAgent2022"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.agent007.agent007.Agent007",
+        "parameters": {
+          "storage_dir": "agent_storage/Agent007"
+        }
+      },
+      {
+        "class": "agents.ANL2022.micro_agent.micro_agent.micro_agent.MiCROAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/MicroAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.agent007.agent007.Agent007",
+        "parameters": {
+          "storage_dir": "agent_storage/Agent007"
+        }
+      },
+      {
+        "class": "agents.ANL2022.procrastin_agent.procrastin_agent.ProcrastinAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/ProcrastinAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.agent007.agent007.Agent007",
+        "parameters": {
+          "storage_dir": "agent_storage/Agent007"
+        }
+      },
+      {
+        "class": "agents.ANL2022.rg_agent.rg_agent.RGAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/RgAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.agent007.agent007.Agent007",
+        "parameters": {
+          "storage_dir": "agent_storage/Agent007"
+        }
+      },
+      {
+        "class": "agents.ANL2022.super_agent.super_agent.SuperAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/SuperAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.agent007.agent007.Agent007",
+        "parameters": {
+          "storage_dir": "agent_storage/Agent007"
+        }
+      },
+      {
+        "class": "agents.ANL2022.thirdagent.third_agent.ThirdAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/ThirdAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.agent007.agent007.Agent007",
+        "parameters": {
+          "storage_dir": "agent_storage/Agent007"
+        }
+      },
+      {
+        "class": "agents.ANL2022.tjaronchery10_agent.tjaronchery10_agent.Tjaronchery10Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/Tjaronchery10Agent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.agent007.agent007.Agent007",
+        "parameters": {
+          "storage_dir": "agent_storage/Agent007"
+        }
+      },
+      {
+        "class": "agents.ANL2022.smart_agent.smart_agent.SmartAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/SmartAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.agent4410.agent_4410.Agent4410",
+        "parameters": {
+          "storage_dir": "agent_storage/Agent4410"
+        }
+      },
+      {
+        "class": "agents.group62_agent.group62_agent.Group62Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/Group62Agent",
+          "bidding_strategy": {
+            "conceding_speed": 4.5e-05,
+            "reservation_value": 0.95,
+            "iso_tolerance": 0.05
+          },
+          "acceptance_strategy": {
+            "threshold": 0.98
+          },
+          "opponent_model": {
+            "decay": true,
+            "decay_exp": 0.4
+          }
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.agent4410.agent_4410.Agent4410",
+        "parameters": {
+          "storage_dir": "agent_storage/Agent4410"
+        }
+      },
+      {
+        "class": "agents.ANL2022.agent007.agent007.Agent007",
+        "parameters": {
+          "storage_dir": "agent_storage/Agent007"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.agent4410.agent_4410.Agent4410",
+        "parameters": {
+          "storage_dir": "agent_storage/Agent4410"
+        }
+      },
+      {
+        "class": "agents.ANL2022.agentfish.agentfish.AgentFish",
+        "parameters": {
+          "storage_dir": "agent_storage/AgentFish"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.agent4410.agent_4410.Agent4410",
+        "parameters": {
+          "storage_dir": "agent_storage/Agent4410"
+        }
+      },
+      {
+        "class": "agents.ANL2022.AgentFO2.AgentFO2.AgentFO2",
+        "parameters": {
+          "storage_dir": "agent_storage/AgentFO2"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.agent4410.agent_4410.Agent4410",
+        "parameters": {
+          "storage_dir": "agent_storage/Agent4410"
+        }
+      },
+      {
+        "class": "agents.ANL2022.BIU_agent.BIU_agent.BIU_agent",
+        "parameters": {
+          "storage_dir": "agent_storage/BIU_agent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.agent4410.agent_4410.Agent4410",
+        "parameters": {
+          "storage_dir": "agent_storage/Agent4410"
+        }
+      },
+      {
+        "class": "agents.ANL2022.charging_boul.charging_boul.ChargingBoul",
+        "parameters": {
+          "storage_dir": "agent_storage/ChargingBoul"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.agent4410.agent_4410.Agent4410",
+        "parameters": {
+          "storage_dir": "agent_storage/Agent4410"
+        }
+      },
+      {
+        "class": "agents.ANL2022.compromising_agent.compromising_agent.CompromisingAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/CompromisingAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.agent4410.agent_4410.Agent4410",
+        "parameters": {
+          "storage_dir": "agent_storage/Agent4410"
+        }
+      },
+      {
+        "class": "agents.ANL2022.dreamteam109_agent.dreamteam109_agent.DreamTeam109Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/DreamTeam109Agent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.agent4410.agent_4410.Agent4410",
+        "parameters": {
+          "storage_dir": "agent_storage/Agent4410"
+        }
+      },
+      {
+        "class": "agents.ANL2022.gea_agent.gea_agent.GEAAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/GEAAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.agent4410.agent_4410.Agent4410",
+        "parameters": {
+          "storage_dir": "agent_storage/Agent4410"
+        }
+      },
+      {
+        "class": "agents.ANL2022.learning_agent.learning_agent.LearningAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/LearningAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.agent4410.agent_4410.Agent4410",
+        "parameters": {
+          "storage_dir": "agent_storage/Agent4410"
+        }
+      },
+      {
+        "class": "agents.ANL2022.LuckyAgent2022.LuckyAgent2022.LuckyAgent2022",
+        "parameters": {
+          "storage_dir": "agent_storage/LuckyAgent2022"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.agent4410.agent_4410.Agent4410",
+        "parameters": {
+          "storage_dir": "agent_storage/Agent4410"
+        }
+      },
+      {
+        "class": "agents.ANL2022.micro_agent.micro_agent.micro_agent.MiCROAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/MicroAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.agent4410.agent_4410.Agent4410",
+        "parameters": {
+          "storage_dir": "agent_storage/Agent4410"
+        }
+      },
+      {
+        "class": "agents.ANL2022.procrastin_agent.procrastin_agent.ProcrastinAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/ProcrastinAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.agent4410.agent_4410.Agent4410",
+        "parameters": {
+          "storage_dir": "agent_storage/Agent4410"
+        }
+      },
+      {
+        "class": "agents.ANL2022.rg_agent.rg_agent.RGAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/RgAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.agent4410.agent_4410.Agent4410",
+        "parameters": {
+          "storage_dir": "agent_storage/Agent4410"
+        }
+      },
+      {
+        "class": "agents.ANL2022.super_agent.super_agent.SuperAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/SuperAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.agent4410.agent_4410.Agent4410",
+        "parameters": {
+          "storage_dir": "agent_storage/Agent4410"
+        }
+      },
+      {
+        "class": "agents.ANL2022.thirdagent.third_agent.ThirdAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/ThirdAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.agent4410.agent_4410.Agent4410",
+        "parameters": {
+          "storage_dir": "agent_storage/Agent4410"
+        }
+      },
+      {
+        "class": "agents.ANL2022.tjaronchery10_agent.tjaronchery10_agent.Tjaronchery10Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/Tjaronchery10Agent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.agent4410.agent_4410.Agent4410",
+        "parameters": {
+          "storage_dir": "agent_storage/Agent4410"
+        }
+      },
+      {
+        "class": "agents.ANL2022.smart_agent.smart_agent.SmartAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/SmartAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.agentfish.agentfish.AgentFish",
+        "parameters": {
+          "storage_dir": "agent_storage/AgentFish"
+        }
+      },
+      {
+        "class": "agents.group62_agent.group62_agent.Group62Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/Group62Agent",
+          "bidding_strategy": {
+            "conceding_speed": 4.5e-05,
+            "reservation_value": 0.95,
+            "iso_tolerance": 0.05
+          },
+          "acceptance_strategy": {
+            "threshold": 0.98
+          },
+          "opponent_model": {
+            "decay": true,
+            "decay_exp": 0.4
+          }
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.agentfish.agentfish.AgentFish",
+        "parameters": {
+          "storage_dir": "agent_storage/AgentFish"
+        }
+      },
+      {
+        "class": "agents.ANL2022.agent007.agent007.Agent007",
+        "parameters": {
+          "storage_dir": "agent_storage/Agent007"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.agentfish.agentfish.AgentFish",
+        "parameters": {
+          "storage_dir": "agent_storage/AgentFish"
+        }
+      },
+      {
+        "class": "agents.ANL2022.agent4410.agent_4410.Agent4410",
+        "parameters": {
+          "storage_dir": "agent_storage/Agent4410"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.agentfish.agentfish.AgentFish",
+        "parameters": {
+          "storage_dir": "agent_storage/AgentFish"
+        }
+      },
+      {
+        "class": "agents.ANL2022.AgentFO2.AgentFO2.AgentFO2",
+        "parameters": {
+          "storage_dir": "agent_storage/AgentFO2"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.agentfish.agentfish.AgentFish",
+        "parameters": {
+          "storage_dir": "agent_storage/AgentFish"
+        }
+      },
+      {
+        "class": "agents.ANL2022.BIU_agent.BIU_agent.BIU_agent",
+        "parameters": {
+          "storage_dir": "agent_storage/BIU_agent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.agentfish.agentfish.AgentFish",
+        "parameters": {
+          "storage_dir": "agent_storage/AgentFish"
+        }
+      },
+      {
+        "class": "agents.ANL2022.charging_boul.charging_boul.ChargingBoul",
+        "parameters": {
+          "storage_dir": "agent_storage/ChargingBoul"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.agentfish.agentfish.AgentFish",
+        "parameters": {
+          "storage_dir": "agent_storage/AgentFish"
+        }
+      },
+      {
+        "class": "agents.ANL2022.compromising_agent.compromising_agent.CompromisingAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/CompromisingAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.agentfish.agentfish.AgentFish",
+        "parameters": {
+          "storage_dir": "agent_storage/AgentFish"
+        }
+      },
+      {
+        "class": "agents.ANL2022.dreamteam109_agent.dreamteam109_agent.DreamTeam109Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/DreamTeam109Agent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.agentfish.agentfish.AgentFish",
+        "parameters": {
+          "storage_dir": "agent_storage/AgentFish"
+        }
+      },
+      {
+        "class": "agents.ANL2022.gea_agent.gea_agent.GEAAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/GEAAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.agentfish.agentfish.AgentFish",
+        "parameters": {
+          "storage_dir": "agent_storage/AgentFish"
+        }
+      },
+      {
+        "class": "agents.ANL2022.learning_agent.learning_agent.LearningAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/LearningAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.agentfish.agentfish.AgentFish",
+        "parameters": {
+          "storage_dir": "agent_storage/AgentFish"
+        }
+      },
+      {
+        "class": "agents.ANL2022.LuckyAgent2022.LuckyAgent2022.LuckyAgent2022",
+        "parameters": {
+          "storage_dir": "agent_storage/LuckyAgent2022"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.agentfish.agentfish.AgentFish",
+        "parameters": {
+          "storage_dir": "agent_storage/AgentFish"
+        }
+      },
+      {
+        "class": "agents.ANL2022.micro_agent.micro_agent.micro_agent.MiCROAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/MicroAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.agentfish.agentfish.AgentFish",
+        "parameters": {
+          "storage_dir": "agent_storage/AgentFish"
+        }
+      },
+      {
+        "class": "agents.ANL2022.procrastin_agent.procrastin_agent.ProcrastinAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/ProcrastinAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.agentfish.agentfish.AgentFish",
+        "parameters": {
+          "storage_dir": "agent_storage/AgentFish"
+        }
+      },
+      {
+        "class": "agents.ANL2022.rg_agent.rg_agent.RGAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/RgAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.agentfish.agentfish.AgentFish",
+        "parameters": {
+          "storage_dir": "agent_storage/AgentFish"
+        }
+      },
+      {
+        "class": "agents.ANL2022.super_agent.super_agent.SuperAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/SuperAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.agentfish.agentfish.AgentFish",
+        "parameters": {
+          "storage_dir": "agent_storage/AgentFish"
+        }
+      },
+      {
+        "class": "agents.ANL2022.thirdagent.third_agent.ThirdAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/ThirdAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.agentfish.agentfish.AgentFish",
+        "parameters": {
+          "storage_dir": "agent_storage/AgentFish"
+        }
+      },
+      {
+        "class": "agents.ANL2022.tjaronchery10_agent.tjaronchery10_agent.Tjaronchery10Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/Tjaronchery10Agent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.agentfish.agentfish.AgentFish",
+        "parameters": {
+          "storage_dir": "agent_storage/AgentFish"
+        }
+      },
+      {
+        "class": "agents.ANL2022.smart_agent.smart_agent.SmartAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/SmartAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.AgentFO2.AgentFO2.AgentFO2",
+        "parameters": {
+          "storage_dir": "agent_storage/AgentFO2"
+        }
+      },
+      {
+        "class": "agents.group62_agent.group62_agent.Group62Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/Group62Agent",
+          "bidding_strategy": {
+            "conceding_speed": 4.5e-05,
+            "reservation_value": 0.95,
+            "iso_tolerance": 0.05
+          },
+          "acceptance_strategy": {
+            "threshold": 0.98
+          },
+          "opponent_model": {
+            "decay": true,
+            "decay_exp": 0.4
+          }
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.AgentFO2.AgentFO2.AgentFO2",
+        "parameters": {
+          "storage_dir": "agent_storage/AgentFO2"
+        }
+      },
+      {
+        "class": "agents.ANL2022.agent007.agent007.Agent007",
+        "parameters": {
+          "storage_dir": "agent_storage/Agent007"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.AgentFO2.AgentFO2.AgentFO2",
+        "parameters": {
+          "storage_dir": "agent_storage/AgentFO2"
+        }
+      },
+      {
+        "class": "agents.ANL2022.agent4410.agent_4410.Agent4410",
+        "parameters": {
+          "storage_dir": "agent_storage/Agent4410"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.AgentFO2.AgentFO2.AgentFO2",
+        "parameters": {
+          "storage_dir": "agent_storage/AgentFO2"
+        }
+      },
+      {
+        "class": "agents.ANL2022.agentfish.agentfish.AgentFish",
+        "parameters": {
+          "storage_dir": "agent_storage/AgentFish"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.AgentFO2.AgentFO2.AgentFO2",
+        "parameters": {
+          "storage_dir": "agent_storage/AgentFO2"
+        }
+      },
+      {
+        "class": "agents.ANL2022.BIU_agent.BIU_agent.BIU_agent",
+        "parameters": {
+          "storage_dir": "agent_storage/BIU_agent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.AgentFO2.AgentFO2.AgentFO2",
+        "parameters": {
+          "storage_dir": "agent_storage/AgentFO2"
+        }
+      },
+      {
+        "class": "agents.ANL2022.charging_boul.charging_boul.ChargingBoul",
+        "parameters": {
+          "storage_dir": "agent_storage/ChargingBoul"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.AgentFO2.AgentFO2.AgentFO2",
+        "parameters": {
+          "storage_dir": "agent_storage/AgentFO2"
+        }
+      },
+      {
+        "class": "agents.ANL2022.compromising_agent.compromising_agent.CompromisingAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/CompromisingAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.AgentFO2.AgentFO2.AgentFO2",
+        "parameters": {
+          "storage_dir": "agent_storage/AgentFO2"
+        }
+      },
+      {
+        "class": "agents.ANL2022.dreamteam109_agent.dreamteam109_agent.DreamTeam109Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/DreamTeam109Agent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.AgentFO2.AgentFO2.AgentFO2",
+        "parameters": {
+          "storage_dir": "agent_storage/AgentFO2"
+        }
+      },
+      {
+        "class": "agents.ANL2022.gea_agent.gea_agent.GEAAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/GEAAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.AgentFO2.AgentFO2.AgentFO2",
+        "parameters": {
+          "storage_dir": "agent_storage/AgentFO2"
+        }
+      },
+      {
+        "class": "agents.ANL2022.learning_agent.learning_agent.LearningAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/LearningAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.AgentFO2.AgentFO2.AgentFO2",
+        "parameters": {
+          "storage_dir": "agent_storage/AgentFO2"
+        }
+      },
+      {
+        "class": "agents.ANL2022.LuckyAgent2022.LuckyAgent2022.LuckyAgent2022",
+        "parameters": {
+          "storage_dir": "agent_storage/LuckyAgent2022"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.AgentFO2.AgentFO2.AgentFO2",
+        "parameters": {
+          "storage_dir": "agent_storage/AgentFO2"
+        }
+      },
+      {
+        "class": "agents.ANL2022.micro_agent.micro_agent.micro_agent.MiCROAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/MicroAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.AgentFO2.AgentFO2.AgentFO2",
+        "parameters": {
+          "storage_dir": "agent_storage/AgentFO2"
+        }
+      },
+      {
+        "class": "agents.ANL2022.procrastin_agent.procrastin_agent.ProcrastinAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/ProcrastinAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.AgentFO2.AgentFO2.AgentFO2",
+        "parameters": {
+          "storage_dir": "agent_storage/AgentFO2"
+        }
+      },
+      {
+        "class": "agents.ANL2022.rg_agent.rg_agent.RGAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/RgAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.AgentFO2.AgentFO2.AgentFO2",
+        "parameters": {
+          "storage_dir": "agent_storage/AgentFO2"
+        }
+      },
+      {
+        "class": "agents.ANL2022.super_agent.super_agent.SuperAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/SuperAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.AgentFO2.AgentFO2.AgentFO2",
+        "parameters": {
+          "storage_dir": "agent_storage/AgentFO2"
+        }
+      },
+      {
+        "class": "agents.ANL2022.thirdagent.third_agent.ThirdAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/ThirdAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.AgentFO2.AgentFO2.AgentFO2",
+        "parameters": {
+          "storage_dir": "agent_storage/AgentFO2"
+        }
+      },
+      {
+        "class": "agents.ANL2022.tjaronchery10_agent.tjaronchery10_agent.Tjaronchery10Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/Tjaronchery10Agent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.AgentFO2.AgentFO2.AgentFO2",
+        "parameters": {
+          "storage_dir": "agent_storage/AgentFO2"
+        }
+      },
+      {
+        "class": "agents.ANL2022.smart_agent.smart_agent.SmartAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/SmartAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.BIU_agent.BIU_agent.BIU_agent",
+        "parameters": {
+          "storage_dir": "agent_storage/BIU_agent"
+        }
+      },
+      {
+        "class": "agents.group62_agent.group62_agent.Group62Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/Group62Agent",
+          "bidding_strategy": {
+            "conceding_speed": 4.5e-05,
+            "reservation_value": 0.95,
+            "iso_tolerance": 0.05
+          },
+          "acceptance_strategy": {
+            "threshold": 0.98
+          },
+          "opponent_model": {
+            "decay": true,
+            "decay_exp": 0.4
+          }
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.BIU_agent.BIU_agent.BIU_agent",
+        "parameters": {
+          "storage_dir": "agent_storage/BIU_agent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.agent007.agent007.Agent007",
+        "parameters": {
+          "storage_dir": "agent_storage/Agent007"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.BIU_agent.BIU_agent.BIU_agent",
+        "parameters": {
+          "storage_dir": "agent_storage/BIU_agent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.agent4410.agent_4410.Agent4410",
+        "parameters": {
+          "storage_dir": "agent_storage/Agent4410"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.BIU_agent.BIU_agent.BIU_agent",
+        "parameters": {
+          "storage_dir": "agent_storage/BIU_agent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.agentfish.agentfish.AgentFish",
+        "parameters": {
+          "storage_dir": "agent_storage/AgentFish"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.BIU_agent.BIU_agent.BIU_agent",
+        "parameters": {
+          "storage_dir": "agent_storage/BIU_agent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.AgentFO2.AgentFO2.AgentFO2",
+        "parameters": {
+          "storage_dir": "agent_storage/AgentFO2"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.BIU_agent.BIU_agent.BIU_agent",
+        "parameters": {
+          "storage_dir": "agent_storage/BIU_agent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.charging_boul.charging_boul.ChargingBoul",
+        "parameters": {
+          "storage_dir": "agent_storage/ChargingBoul"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.BIU_agent.BIU_agent.BIU_agent",
+        "parameters": {
+          "storage_dir": "agent_storage/BIU_agent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.compromising_agent.compromising_agent.CompromisingAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/CompromisingAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.BIU_agent.BIU_agent.BIU_agent",
+        "parameters": {
+          "storage_dir": "agent_storage/BIU_agent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.dreamteam109_agent.dreamteam109_agent.DreamTeam109Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/DreamTeam109Agent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.BIU_agent.BIU_agent.BIU_agent",
+        "parameters": {
+          "storage_dir": "agent_storage/BIU_agent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.gea_agent.gea_agent.GEAAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/GEAAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.BIU_agent.BIU_agent.BIU_agent",
+        "parameters": {
+          "storage_dir": "agent_storage/BIU_agent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.learning_agent.learning_agent.LearningAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/LearningAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.BIU_agent.BIU_agent.BIU_agent",
+        "parameters": {
+          "storage_dir": "agent_storage/BIU_agent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.LuckyAgent2022.LuckyAgent2022.LuckyAgent2022",
+        "parameters": {
+          "storage_dir": "agent_storage/LuckyAgent2022"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.BIU_agent.BIU_agent.BIU_agent",
+        "parameters": {
+          "storage_dir": "agent_storage/BIU_agent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.micro_agent.micro_agent.micro_agent.MiCROAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/MicroAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.BIU_agent.BIU_agent.BIU_agent",
+        "parameters": {
+          "storage_dir": "agent_storage/BIU_agent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.procrastin_agent.procrastin_agent.ProcrastinAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/ProcrastinAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.BIU_agent.BIU_agent.BIU_agent",
+        "parameters": {
+          "storage_dir": "agent_storage/BIU_agent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.rg_agent.rg_agent.RGAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/RgAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.BIU_agent.BIU_agent.BIU_agent",
+        "parameters": {
+          "storage_dir": "agent_storage/BIU_agent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.super_agent.super_agent.SuperAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/SuperAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.BIU_agent.BIU_agent.BIU_agent",
+        "parameters": {
+          "storage_dir": "agent_storage/BIU_agent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.thirdagent.third_agent.ThirdAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/ThirdAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.BIU_agent.BIU_agent.BIU_agent",
+        "parameters": {
+          "storage_dir": "agent_storage/BIU_agent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.tjaronchery10_agent.tjaronchery10_agent.Tjaronchery10Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/Tjaronchery10Agent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.BIU_agent.BIU_agent.BIU_agent",
+        "parameters": {
+          "storage_dir": "agent_storage/BIU_agent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.smart_agent.smart_agent.SmartAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/SmartAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.charging_boul.charging_boul.ChargingBoul",
+        "parameters": {
+          "storage_dir": "agent_storage/ChargingBoul"
+        }
+      },
+      {
+        "class": "agents.group62_agent.group62_agent.Group62Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/Group62Agent",
+          "bidding_strategy": {
+            "conceding_speed": 4.5e-05,
+            "reservation_value": 0.95,
+            "iso_tolerance": 0.05
+          },
+          "acceptance_strategy": {
+            "threshold": 0.98
+          },
+          "opponent_model": {
+            "decay": true,
+            "decay_exp": 0.4
+          }
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.charging_boul.charging_boul.ChargingBoul",
+        "parameters": {
+          "storage_dir": "agent_storage/ChargingBoul"
+        }
+      },
+      {
+        "class": "agents.ANL2022.agent007.agent007.Agent007",
+        "parameters": {
+          "storage_dir": "agent_storage/Agent007"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.charging_boul.charging_boul.ChargingBoul",
+        "parameters": {
+          "storage_dir": "agent_storage/ChargingBoul"
+        }
+      },
+      {
+        "class": "agents.ANL2022.agent4410.agent_4410.Agent4410",
+        "parameters": {
+          "storage_dir": "agent_storage/Agent4410"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.charging_boul.charging_boul.ChargingBoul",
+        "parameters": {
+          "storage_dir": "agent_storage/ChargingBoul"
+        }
+      },
+      {
+        "class": "agents.ANL2022.agentfish.agentfish.AgentFish",
+        "parameters": {
+          "storage_dir": "agent_storage/AgentFish"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.charging_boul.charging_boul.ChargingBoul",
+        "parameters": {
+          "storage_dir": "agent_storage/ChargingBoul"
+        }
+      },
+      {
+        "class": "agents.ANL2022.AgentFO2.AgentFO2.AgentFO2",
+        "parameters": {
+          "storage_dir": "agent_storage/AgentFO2"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.charging_boul.charging_boul.ChargingBoul",
+        "parameters": {
+          "storage_dir": "agent_storage/ChargingBoul"
+        }
+      },
+      {
+        "class": "agents.ANL2022.BIU_agent.BIU_agent.BIU_agent",
+        "parameters": {
+          "storage_dir": "agent_storage/BIU_agent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.charging_boul.charging_boul.ChargingBoul",
+        "parameters": {
+          "storage_dir": "agent_storage/ChargingBoul"
+        }
+      },
+      {
+        "class": "agents.ANL2022.compromising_agent.compromising_agent.CompromisingAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/CompromisingAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.charging_boul.charging_boul.ChargingBoul",
+        "parameters": {
+          "storage_dir": "agent_storage/ChargingBoul"
+        }
+      },
+      {
+        "class": "agents.ANL2022.dreamteam109_agent.dreamteam109_agent.DreamTeam109Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/DreamTeam109Agent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.charging_boul.charging_boul.ChargingBoul",
+        "parameters": {
+          "storage_dir": "agent_storage/ChargingBoul"
+        }
+      },
+      {
+        "class": "agents.ANL2022.gea_agent.gea_agent.GEAAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/GEAAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.charging_boul.charging_boul.ChargingBoul",
+        "parameters": {
+          "storage_dir": "agent_storage/ChargingBoul"
+        }
+      },
+      {
+        "class": "agents.ANL2022.learning_agent.learning_agent.LearningAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/LearningAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.charging_boul.charging_boul.ChargingBoul",
+        "parameters": {
+          "storage_dir": "agent_storage/ChargingBoul"
+        }
+      },
+      {
+        "class": "agents.ANL2022.LuckyAgent2022.LuckyAgent2022.LuckyAgent2022",
+        "parameters": {
+          "storage_dir": "agent_storage/LuckyAgent2022"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.charging_boul.charging_boul.ChargingBoul",
+        "parameters": {
+          "storage_dir": "agent_storage/ChargingBoul"
+        }
+      },
+      {
+        "class": "agents.ANL2022.micro_agent.micro_agent.micro_agent.MiCROAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/MicroAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.charging_boul.charging_boul.ChargingBoul",
+        "parameters": {
+          "storage_dir": "agent_storage/ChargingBoul"
+        }
+      },
+      {
+        "class": "agents.ANL2022.procrastin_agent.procrastin_agent.ProcrastinAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/ProcrastinAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.charging_boul.charging_boul.ChargingBoul",
+        "parameters": {
+          "storage_dir": "agent_storage/ChargingBoul"
+        }
+      },
+      {
+        "class": "agents.ANL2022.rg_agent.rg_agent.RGAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/RgAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.charging_boul.charging_boul.ChargingBoul",
+        "parameters": {
+          "storage_dir": "agent_storage/ChargingBoul"
+        }
+      },
+      {
+        "class": "agents.ANL2022.super_agent.super_agent.SuperAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/SuperAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.charging_boul.charging_boul.ChargingBoul",
+        "parameters": {
+          "storage_dir": "agent_storage/ChargingBoul"
+        }
+      },
+      {
+        "class": "agents.ANL2022.thirdagent.third_agent.ThirdAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/ThirdAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.charging_boul.charging_boul.ChargingBoul",
+        "parameters": {
+          "storage_dir": "agent_storage/ChargingBoul"
+        }
+      },
+      {
+        "class": "agents.ANL2022.tjaronchery10_agent.tjaronchery10_agent.Tjaronchery10Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/Tjaronchery10Agent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.charging_boul.charging_boul.ChargingBoul",
+        "parameters": {
+          "storage_dir": "agent_storage/ChargingBoul"
+        }
+      },
+      {
+        "class": "agents.ANL2022.smart_agent.smart_agent.SmartAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/SmartAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.compromising_agent.compromising_agent.CompromisingAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/CompromisingAgent"
+        }
+      },
+      {
+        "class": "agents.group62_agent.group62_agent.Group62Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/Group62Agent",
+          "bidding_strategy": {
+            "conceding_speed": 4.5e-05,
+            "reservation_value": 0.95,
+            "iso_tolerance": 0.05
+          },
+          "acceptance_strategy": {
+            "threshold": 0.98
+          },
+          "opponent_model": {
+            "decay": true,
+            "decay_exp": 0.4
+          }
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.compromising_agent.compromising_agent.CompromisingAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/CompromisingAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.agent007.agent007.Agent007",
+        "parameters": {
+          "storage_dir": "agent_storage/Agent007"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.compromising_agent.compromising_agent.CompromisingAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/CompromisingAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.agent4410.agent_4410.Agent4410",
+        "parameters": {
+          "storage_dir": "agent_storage/Agent4410"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.compromising_agent.compromising_agent.CompromisingAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/CompromisingAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.agentfish.agentfish.AgentFish",
+        "parameters": {
+          "storage_dir": "agent_storage/AgentFish"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.compromising_agent.compromising_agent.CompromisingAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/CompromisingAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.AgentFO2.AgentFO2.AgentFO2",
+        "parameters": {
+          "storage_dir": "agent_storage/AgentFO2"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.compromising_agent.compromising_agent.CompromisingAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/CompromisingAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.BIU_agent.BIU_agent.BIU_agent",
+        "parameters": {
+          "storage_dir": "agent_storage/BIU_agent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.compromising_agent.compromising_agent.CompromisingAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/CompromisingAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.charging_boul.charging_boul.ChargingBoul",
+        "parameters": {
+          "storage_dir": "agent_storage/ChargingBoul"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.compromising_agent.compromising_agent.CompromisingAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/CompromisingAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.dreamteam109_agent.dreamteam109_agent.DreamTeam109Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/DreamTeam109Agent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.compromising_agent.compromising_agent.CompromisingAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/CompromisingAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.gea_agent.gea_agent.GEAAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/GEAAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.compromising_agent.compromising_agent.CompromisingAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/CompromisingAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.learning_agent.learning_agent.LearningAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/LearningAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.compromising_agent.compromising_agent.CompromisingAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/CompromisingAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.LuckyAgent2022.LuckyAgent2022.LuckyAgent2022",
+        "parameters": {
+          "storage_dir": "agent_storage/LuckyAgent2022"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.compromising_agent.compromising_agent.CompromisingAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/CompromisingAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.micro_agent.micro_agent.micro_agent.MiCROAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/MicroAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.compromising_agent.compromising_agent.CompromisingAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/CompromisingAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.procrastin_agent.procrastin_agent.ProcrastinAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/ProcrastinAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.compromising_agent.compromising_agent.CompromisingAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/CompromisingAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.rg_agent.rg_agent.RGAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/RgAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.compromising_agent.compromising_agent.CompromisingAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/CompromisingAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.super_agent.super_agent.SuperAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/SuperAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.compromising_agent.compromising_agent.CompromisingAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/CompromisingAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.thirdagent.third_agent.ThirdAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/ThirdAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.compromising_agent.compromising_agent.CompromisingAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/CompromisingAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.tjaronchery10_agent.tjaronchery10_agent.Tjaronchery10Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/Tjaronchery10Agent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.compromising_agent.compromising_agent.CompromisingAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/CompromisingAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.smart_agent.smart_agent.SmartAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/SmartAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.dreamteam109_agent.dreamteam109_agent.DreamTeam109Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/DreamTeam109Agent"
+        }
+      },
+      {
+        "class": "agents.group62_agent.group62_agent.Group62Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/Group62Agent",
+          "bidding_strategy": {
+            "conceding_speed": 4.5e-05,
+            "reservation_value": 0.95,
+            "iso_tolerance": 0.05
+          },
+          "acceptance_strategy": {
+            "threshold": 0.98
+          },
+          "opponent_model": {
+            "decay": true,
+            "decay_exp": 0.4
+          }
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.dreamteam109_agent.dreamteam109_agent.DreamTeam109Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/DreamTeam109Agent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.agent007.agent007.Agent007",
+        "parameters": {
+          "storage_dir": "agent_storage/Agent007"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.dreamteam109_agent.dreamteam109_agent.DreamTeam109Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/DreamTeam109Agent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.agent4410.agent_4410.Agent4410",
+        "parameters": {
+          "storage_dir": "agent_storage/Agent4410"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.dreamteam109_agent.dreamteam109_agent.DreamTeam109Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/DreamTeam109Agent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.agentfish.agentfish.AgentFish",
+        "parameters": {
+          "storage_dir": "agent_storage/AgentFish"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.dreamteam109_agent.dreamteam109_agent.DreamTeam109Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/DreamTeam109Agent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.AgentFO2.AgentFO2.AgentFO2",
+        "parameters": {
+          "storage_dir": "agent_storage/AgentFO2"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.dreamteam109_agent.dreamteam109_agent.DreamTeam109Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/DreamTeam109Agent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.BIU_agent.BIU_agent.BIU_agent",
+        "parameters": {
+          "storage_dir": "agent_storage/BIU_agent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.dreamteam109_agent.dreamteam109_agent.DreamTeam109Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/DreamTeam109Agent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.charging_boul.charging_boul.ChargingBoul",
+        "parameters": {
+          "storage_dir": "agent_storage/ChargingBoul"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.dreamteam109_agent.dreamteam109_agent.DreamTeam109Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/DreamTeam109Agent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.compromising_agent.compromising_agent.CompromisingAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/CompromisingAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.dreamteam109_agent.dreamteam109_agent.DreamTeam109Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/DreamTeam109Agent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.gea_agent.gea_agent.GEAAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/GEAAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.dreamteam109_agent.dreamteam109_agent.DreamTeam109Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/DreamTeam109Agent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.learning_agent.learning_agent.LearningAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/LearningAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.dreamteam109_agent.dreamteam109_agent.DreamTeam109Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/DreamTeam109Agent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.LuckyAgent2022.LuckyAgent2022.LuckyAgent2022",
+        "parameters": {
+          "storage_dir": "agent_storage/LuckyAgent2022"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.dreamteam109_agent.dreamteam109_agent.DreamTeam109Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/DreamTeam109Agent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.micro_agent.micro_agent.micro_agent.MiCROAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/MicroAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.dreamteam109_agent.dreamteam109_agent.DreamTeam109Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/DreamTeam109Agent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.procrastin_agent.procrastin_agent.ProcrastinAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/ProcrastinAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.dreamteam109_agent.dreamteam109_agent.DreamTeam109Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/DreamTeam109Agent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.rg_agent.rg_agent.RGAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/RgAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.dreamteam109_agent.dreamteam109_agent.DreamTeam109Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/DreamTeam109Agent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.super_agent.super_agent.SuperAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/SuperAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.dreamteam109_agent.dreamteam109_agent.DreamTeam109Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/DreamTeam109Agent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.thirdagent.third_agent.ThirdAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/ThirdAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.dreamteam109_agent.dreamteam109_agent.DreamTeam109Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/DreamTeam109Agent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.tjaronchery10_agent.tjaronchery10_agent.Tjaronchery10Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/Tjaronchery10Agent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.dreamteam109_agent.dreamteam109_agent.DreamTeam109Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/DreamTeam109Agent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.smart_agent.smart_agent.SmartAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/SmartAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.gea_agent.gea_agent.GEAAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/GEAAgent"
+        }
+      },
+      {
+        "class": "agents.group62_agent.group62_agent.Group62Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/Group62Agent",
+          "bidding_strategy": {
+            "conceding_speed": 4.5e-05,
+            "reservation_value": 0.95,
+            "iso_tolerance": 0.05
+          },
+          "acceptance_strategy": {
+            "threshold": 0.98
+          },
+          "opponent_model": {
+            "decay": true,
+            "decay_exp": 0.4
+          }
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.gea_agent.gea_agent.GEAAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/GEAAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.agent007.agent007.Agent007",
+        "parameters": {
+          "storage_dir": "agent_storage/Agent007"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.gea_agent.gea_agent.GEAAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/GEAAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.agent4410.agent_4410.Agent4410",
+        "parameters": {
+          "storage_dir": "agent_storage/Agent4410"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.gea_agent.gea_agent.GEAAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/GEAAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.agentfish.agentfish.AgentFish",
+        "parameters": {
+          "storage_dir": "agent_storage/AgentFish"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.gea_agent.gea_agent.GEAAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/GEAAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.AgentFO2.AgentFO2.AgentFO2",
+        "parameters": {
+          "storage_dir": "agent_storage/AgentFO2"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.gea_agent.gea_agent.GEAAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/GEAAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.BIU_agent.BIU_agent.BIU_agent",
+        "parameters": {
+          "storage_dir": "agent_storage/BIU_agent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.gea_agent.gea_agent.GEAAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/GEAAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.charging_boul.charging_boul.ChargingBoul",
+        "parameters": {
+          "storage_dir": "agent_storage/ChargingBoul"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.gea_agent.gea_agent.GEAAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/GEAAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.compromising_agent.compromising_agent.CompromisingAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/CompromisingAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.gea_agent.gea_agent.GEAAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/GEAAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.dreamteam109_agent.dreamteam109_agent.DreamTeam109Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/DreamTeam109Agent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.gea_agent.gea_agent.GEAAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/GEAAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.learning_agent.learning_agent.LearningAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/LearningAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.gea_agent.gea_agent.GEAAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/GEAAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.LuckyAgent2022.LuckyAgent2022.LuckyAgent2022",
+        "parameters": {
+          "storage_dir": "agent_storage/LuckyAgent2022"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.gea_agent.gea_agent.GEAAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/GEAAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.micro_agent.micro_agent.micro_agent.MiCROAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/MicroAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.gea_agent.gea_agent.GEAAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/GEAAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.procrastin_agent.procrastin_agent.ProcrastinAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/ProcrastinAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.gea_agent.gea_agent.GEAAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/GEAAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.rg_agent.rg_agent.RGAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/RgAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.gea_agent.gea_agent.GEAAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/GEAAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.super_agent.super_agent.SuperAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/SuperAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.gea_agent.gea_agent.GEAAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/GEAAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.thirdagent.third_agent.ThirdAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/ThirdAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.gea_agent.gea_agent.GEAAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/GEAAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.tjaronchery10_agent.tjaronchery10_agent.Tjaronchery10Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/Tjaronchery10Agent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.gea_agent.gea_agent.GEAAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/GEAAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.smart_agent.smart_agent.SmartAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/SmartAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.learning_agent.learning_agent.LearningAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/LearningAgent"
+        }
+      },
+      {
+        "class": "agents.group62_agent.group62_agent.Group62Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/Group62Agent",
+          "bidding_strategy": {
+            "conceding_speed": 4.5e-05,
+            "reservation_value": 0.95,
+            "iso_tolerance": 0.05
+          },
+          "acceptance_strategy": {
+            "threshold": 0.98
+          },
+          "opponent_model": {
+            "decay": true,
+            "decay_exp": 0.4
+          }
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.learning_agent.learning_agent.LearningAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/LearningAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.agent007.agent007.Agent007",
+        "parameters": {
+          "storage_dir": "agent_storage/Agent007"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.learning_agent.learning_agent.LearningAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/LearningAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.agent4410.agent_4410.Agent4410",
+        "parameters": {
+          "storage_dir": "agent_storage/Agent4410"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.learning_agent.learning_agent.LearningAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/LearningAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.agentfish.agentfish.AgentFish",
+        "parameters": {
+          "storage_dir": "agent_storage/AgentFish"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.learning_agent.learning_agent.LearningAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/LearningAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.AgentFO2.AgentFO2.AgentFO2",
+        "parameters": {
+          "storage_dir": "agent_storage/AgentFO2"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.learning_agent.learning_agent.LearningAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/LearningAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.BIU_agent.BIU_agent.BIU_agent",
+        "parameters": {
+          "storage_dir": "agent_storage/BIU_agent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.learning_agent.learning_agent.LearningAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/LearningAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.charging_boul.charging_boul.ChargingBoul",
+        "parameters": {
+          "storage_dir": "agent_storage/ChargingBoul"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.learning_agent.learning_agent.LearningAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/LearningAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.compromising_agent.compromising_agent.CompromisingAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/CompromisingAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.learning_agent.learning_agent.LearningAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/LearningAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.dreamteam109_agent.dreamteam109_agent.DreamTeam109Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/DreamTeam109Agent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.learning_agent.learning_agent.LearningAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/LearningAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.gea_agent.gea_agent.GEAAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/GEAAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.learning_agent.learning_agent.LearningAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/LearningAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.LuckyAgent2022.LuckyAgent2022.LuckyAgent2022",
+        "parameters": {
+          "storage_dir": "agent_storage/LuckyAgent2022"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.learning_agent.learning_agent.LearningAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/LearningAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.micro_agent.micro_agent.micro_agent.MiCROAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/MicroAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.learning_agent.learning_agent.LearningAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/LearningAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.procrastin_agent.procrastin_agent.ProcrastinAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/ProcrastinAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.learning_agent.learning_agent.LearningAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/LearningAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.rg_agent.rg_agent.RGAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/RgAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.learning_agent.learning_agent.LearningAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/LearningAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.super_agent.super_agent.SuperAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/SuperAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.learning_agent.learning_agent.LearningAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/LearningAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.thirdagent.third_agent.ThirdAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/ThirdAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.learning_agent.learning_agent.LearningAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/LearningAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.tjaronchery10_agent.tjaronchery10_agent.Tjaronchery10Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/Tjaronchery10Agent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.learning_agent.learning_agent.LearningAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/LearningAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.smart_agent.smart_agent.SmartAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/SmartAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.LuckyAgent2022.LuckyAgent2022.LuckyAgent2022",
+        "parameters": {
+          "storage_dir": "agent_storage/LuckyAgent2022"
+        }
+      },
+      {
+        "class": "agents.group62_agent.group62_agent.Group62Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/Group62Agent",
+          "bidding_strategy": {
+            "conceding_speed": 4.5e-05,
+            "reservation_value": 0.95,
+            "iso_tolerance": 0.05
+          },
+          "acceptance_strategy": {
+            "threshold": 0.98
+          },
+          "opponent_model": {
+            "decay": true,
+            "decay_exp": 0.4
+          }
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.LuckyAgent2022.LuckyAgent2022.LuckyAgent2022",
+        "parameters": {
+          "storage_dir": "agent_storage/LuckyAgent2022"
+        }
+      },
+      {
+        "class": "agents.ANL2022.agent007.agent007.Agent007",
+        "parameters": {
+          "storage_dir": "agent_storage/Agent007"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.LuckyAgent2022.LuckyAgent2022.LuckyAgent2022",
+        "parameters": {
+          "storage_dir": "agent_storage/LuckyAgent2022"
+        }
+      },
+      {
+        "class": "agents.ANL2022.agent4410.agent_4410.Agent4410",
+        "parameters": {
+          "storage_dir": "agent_storage/Agent4410"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.LuckyAgent2022.LuckyAgent2022.LuckyAgent2022",
+        "parameters": {
+          "storage_dir": "agent_storage/LuckyAgent2022"
+        }
+      },
+      {
+        "class": "agents.ANL2022.agentfish.agentfish.AgentFish",
+        "parameters": {
+          "storage_dir": "agent_storage/AgentFish"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.LuckyAgent2022.LuckyAgent2022.LuckyAgent2022",
+        "parameters": {
+          "storage_dir": "agent_storage/LuckyAgent2022"
+        }
+      },
+      {
+        "class": "agents.ANL2022.AgentFO2.AgentFO2.AgentFO2",
+        "parameters": {
+          "storage_dir": "agent_storage/AgentFO2"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.LuckyAgent2022.LuckyAgent2022.LuckyAgent2022",
+        "parameters": {
+          "storage_dir": "agent_storage/LuckyAgent2022"
+        }
+      },
+      {
+        "class": "agents.ANL2022.BIU_agent.BIU_agent.BIU_agent",
+        "parameters": {
+          "storage_dir": "agent_storage/BIU_agent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.LuckyAgent2022.LuckyAgent2022.LuckyAgent2022",
+        "parameters": {
+          "storage_dir": "agent_storage/LuckyAgent2022"
+        }
+      },
+      {
+        "class": "agents.ANL2022.charging_boul.charging_boul.ChargingBoul",
+        "parameters": {
+          "storage_dir": "agent_storage/ChargingBoul"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.LuckyAgent2022.LuckyAgent2022.LuckyAgent2022",
+        "parameters": {
+          "storage_dir": "agent_storage/LuckyAgent2022"
+        }
+      },
+      {
+        "class": "agents.ANL2022.compromising_agent.compromising_agent.CompromisingAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/CompromisingAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.LuckyAgent2022.LuckyAgent2022.LuckyAgent2022",
+        "parameters": {
+          "storage_dir": "agent_storage/LuckyAgent2022"
+        }
+      },
+      {
+        "class": "agents.ANL2022.dreamteam109_agent.dreamteam109_agent.DreamTeam109Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/DreamTeam109Agent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.LuckyAgent2022.LuckyAgent2022.LuckyAgent2022",
+        "parameters": {
+          "storage_dir": "agent_storage/LuckyAgent2022"
+        }
+      },
+      {
+        "class": "agents.ANL2022.gea_agent.gea_agent.GEAAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/GEAAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.LuckyAgent2022.LuckyAgent2022.LuckyAgent2022",
+        "parameters": {
+          "storage_dir": "agent_storage/LuckyAgent2022"
+        }
+      },
+      {
+        "class": "agents.ANL2022.learning_agent.learning_agent.LearningAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/LearningAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.LuckyAgent2022.LuckyAgent2022.LuckyAgent2022",
+        "parameters": {
+          "storage_dir": "agent_storage/LuckyAgent2022"
+        }
+      },
+      {
+        "class": "agents.ANL2022.micro_agent.micro_agent.micro_agent.MiCROAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/MicroAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.LuckyAgent2022.LuckyAgent2022.LuckyAgent2022",
+        "parameters": {
+          "storage_dir": "agent_storage/LuckyAgent2022"
+        }
+      },
+      {
+        "class": "agents.ANL2022.procrastin_agent.procrastin_agent.ProcrastinAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/ProcrastinAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.LuckyAgent2022.LuckyAgent2022.LuckyAgent2022",
+        "parameters": {
+          "storage_dir": "agent_storage/LuckyAgent2022"
+        }
+      },
+      {
+        "class": "agents.ANL2022.rg_agent.rg_agent.RGAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/RgAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.LuckyAgent2022.LuckyAgent2022.LuckyAgent2022",
+        "parameters": {
+          "storage_dir": "agent_storage/LuckyAgent2022"
+        }
+      },
+      {
+        "class": "agents.ANL2022.super_agent.super_agent.SuperAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/SuperAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.LuckyAgent2022.LuckyAgent2022.LuckyAgent2022",
+        "parameters": {
+          "storage_dir": "agent_storage/LuckyAgent2022"
+        }
+      },
+      {
+        "class": "agents.ANL2022.thirdagent.third_agent.ThirdAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/ThirdAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.LuckyAgent2022.LuckyAgent2022.LuckyAgent2022",
+        "parameters": {
+          "storage_dir": "agent_storage/LuckyAgent2022"
+        }
+      },
+      {
+        "class": "agents.ANL2022.tjaronchery10_agent.tjaronchery10_agent.Tjaronchery10Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/Tjaronchery10Agent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.LuckyAgent2022.LuckyAgent2022.LuckyAgent2022",
+        "parameters": {
+          "storage_dir": "agent_storage/LuckyAgent2022"
+        }
+      },
+      {
+        "class": "agents.ANL2022.smart_agent.smart_agent.SmartAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/SmartAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.micro_agent.micro_agent.micro_agent.MiCROAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/MicroAgent"
+        }
+      },
+      {
+        "class": "agents.group62_agent.group62_agent.Group62Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/Group62Agent",
+          "bidding_strategy": {
+            "conceding_speed": 4.5e-05,
+            "reservation_value": 0.95,
+            "iso_tolerance": 0.05
+          },
+          "acceptance_strategy": {
+            "threshold": 0.98
+          },
+          "opponent_model": {
+            "decay": true,
+            "decay_exp": 0.4
+          }
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.micro_agent.micro_agent.micro_agent.MiCROAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/MicroAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.agent007.agent007.Agent007",
+        "parameters": {
+          "storage_dir": "agent_storage/Agent007"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.micro_agent.micro_agent.micro_agent.MiCROAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/MicroAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.agent4410.agent_4410.Agent4410",
+        "parameters": {
+          "storage_dir": "agent_storage/Agent4410"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.micro_agent.micro_agent.micro_agent.MiCROAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/MicroAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.agentfish.agentfish.AgentFish",
+        "parameters": {
+          "storage_dir": "agent_storage/AgentFish"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.micro_agent.micro_agent.micro_agent.MiCROAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/MicroAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.AgentFO2.AgentFO2.AgentFO2",
+        "parameters": {
+          "storage_dir": "agent_storage/AgentFO2"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.micro_agent.micro_agent.micro_agent.MiCROAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/MicroAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.BIU_agent.BIU_agent.BIU_agent",
+        "parameters": {
+          "storage_dir": "agent_storage/BIU_agent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.micro_agent.micro_agent.micro_agent.MiCROAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/MicroAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.charging_boul.charging_boul.ChargingBoul",
+        "parameters": {
+          "storage_dir": "agent_storage/ChargingBoul"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.micro_agent.micro_agent.micro_agent.MiCROAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/MicroAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.compromising_agent.compromising_agent.CompromisingAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/CompromisingAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.micro_agent.micro_agent.micro_agent.MiCROAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/MicroAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.dreamteam109_agent.dreamteam109_agent.DreamTeam109Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/DreamTeam109Agent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.micro_agent.micro_agent.micro_agent.MiCROAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/MicroAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.gea_agent.gea_agent.GEAAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/GEAAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.micro_agent.micro_agent.micro_agent.MiCROAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/MicroAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.learning_agent.learning_agent.LearningAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/LearningAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.micro_agent.micro_agent.micro_agent.MiCROAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/MicroAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.LuckyAgent2022.LuckyAgent2022.LuckyAgent2022",
+        "parameters": {
+          "storage_dir": "agent_storage/LuckyAgent2022"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.micro_agent.micro_agent.micro_agent.MiCROAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/MicroAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.procrastin_agent.procrastin_agent.ProcrastinAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/ProcrastinAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.micro_agent.micro_agent.micro_agent.MiCROAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/MicroAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.rg_agent.rg_agent.RGAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/RgAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.micro_agent.micro_agent.micro_agent.MiCROAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/MicroAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.super_agent.super_agent.SuperAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/SuperAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.micro_agent.micro_agent.micro_agent.MiCROAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/MicroAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.thirdagent.third_agent.ThirdAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/ThirdAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.micro_agent.micro_agent.micro_agent.MiCROAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/MicroAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.tjaronchery10_agent.tjaronchery10_agent.Tjaronchery10Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/Tjaronchery10Agent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.micro_agent.micro_agent.micro_agent.MiCROAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/MicroAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.smart_agent.smart_agent.SmartAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/SmartAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.procrastin_agent.procrastin_agent.ProcrastinAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/ProcrastinAgent"
+        }
+      },
+      {
+        "class": "agents.group62_agent.group62_agent.Group62Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/Group62Agent",
+          "bidding_strategy": {
+            "conceding_speed": 4.5e-05,
+            "reservation_value": 0.95,
+            "iso_tolerance": 0.05
+          },
+          "acceptance_strategy": {
+            "threshold": 0.98
+          },
+          "opponent_model": {
+            "decay": true,
+            "decay_exp": 0.4
+          }
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.procrastin_agent.procrastin_agent.ProcrastinAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/ProcrastinAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.agent007.agent007.Agent007",
+        "parameters": {
+          "storage_dir": "agent_storage/Agent007"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.procrastin_agent.procrastin_agent.ProcrastinAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/ProcrastinAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.agent4410.agent_4410.Agent4410",
+        "parameters": {
+          "storage_dir": "agent_storage/Agent4410"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.procrastin_agent.procrastin_agent.ProcrastinAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/ProcrastinAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.agentfish.agentfish.AgentFish",
+        "parameters": {
+          "storage_dir": "agent_storage/AgentFish"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.procrastin_agent.procrastin_agent.ProcrastinAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/ProcrastinAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.AgentFO2.AgentFO2.AgentFO2",
+        "parameters": {
+          "storage_dir": "agent_storage/AgentFO2"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.procrastin_agent.procrastin_agent.ProcrastinAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/ProcrastinAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.BIU_agent.BIU_agent.BIU_agent",
+        "parameters": {
+          "storage_dir": "agent_storage/BIU_agent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.procrastin_agent.procrastin_agent.ProcrastinAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/ProcrastinAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.charging_boul.charging_boul.ChargingBoul",
+        "parameters": {
+          "storage_dir": "agent_storage/ChargingBoul"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.procrastin_agent.procrastin_agent.ProcrastinAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/ProcrastinAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.compromising_agent.compromising_agent.CompromisingAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/CompromisingAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.procrastin_agent.procrastin_agent.ProcrastinAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/ProcrastinAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.dreamteam109_agent.dreamteam109_agent.DreamTeam109Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/DreamTeam109Agent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.procrastin_agent.procrastin_agent.ProcrastinAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/ProcrastinAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.gea_agent.gea_agent.GEAAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/GEAAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.procrastin_agent.procrastin_agent.ProcrastinAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/ProcrastinAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.learning_agent.learning_agent.LearningAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/LearningAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.procrastin_agent.procrastin_agent.ProcrastinAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/ProcrastinAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.LuckyAgent2022.LuckyAgent2022.LuckyAgent2022",
+        "parameters": {
+          "storage_dir": "agent_storage/LuckyAgent2022"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.procrastin_agent.procrastin_agent.ProcrastinAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/ProcrastinAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.micro_agent.micro_agent.micro_agent.MiCROAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/MicroAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.procrastin_agent.procrastin_agent.ProcrastinAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/ProcrastinAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.rg_agent.rg_agent.RGAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/RgAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.procrastin_agent.procrastin_agent.ProcrastinAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/ProcrastinAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.super_agent.super_agent.SuperAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/SuperAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.procrastin_agent.procrastin_agent.ProcrastinAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/ProcrastinAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.thirdagent.third_agent.ThirdAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/ThirdAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.procrastin_agent.procrastin_agent.ProcrastinAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/ProcrastinAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.tjaronchery10_agent.tjaronchery10_agent.Tjaronchery10Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/Tjaronchery10Agent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.procrastin_agent.procrastin_agent.ProcrastinAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/ProcrastinAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.smart_agent.smart_agent.SmartAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/SmartAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.rg_agent.rg_agent.RGAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/RgAgent"
+        }
+      },
+      {
+        "class": "agents.group62_agent.group62_agent.Group62Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/Group62Agent",
+          "bidding_strategy": {
+            "conceding_speed": 4.5e-05,
+            "reservation_value": 0.95,
+            "iso_tolerance": 0.05
+          },
+          "acceptance_strategy": {
+            "threshold": 0.98
+          },
+          "opponent_model": {
+            "decay": true,
+            "decay_exp": 0.4
+          }
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.rg_agent.rg_agent.RGAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/RgAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.agent007.agent007.Agent007",
+        "parameters": {
+          "storage_dir": "agent_storage/Agent007"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.rg_agent.rg_agent.RGAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/RgAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.agent4410.agent_4410.Agent4410",
+        "parameters": {
+          "storage_dir": "agent_storage/Agent4410"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.rg_agent.rg_agent.RGAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/RgAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.agentfish.agentfish.AgentFish",
+        "parameters": {
+          "storage_dir": "agent_storage/AgentFish"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.rg_agent.rg_agent.RGAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/RgAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.AgentFO2.AgentFO2.AgentFO2",
+        "parameters": {
+          "storage_dir": "agent_storage/AgentFO2"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.rg_agent.rg_agent.RGAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/RgAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.BIU_agent.BIU_agent.BIU_agent",
+        "parameters": {
+          "storage_dir": "agent_storage/BIU_agent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.rg_agent.rg_agent.RGAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/RgAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.charging_boul.charging_boul.ChargingBoul",
+        "parameters": {
+          "storage_dir": "agent_storage/ChargingBoul"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.rg_agent.rg_agent.RGAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/RgAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.compromising_agent.compromising_agent.CompromisingAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/CompromisingAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.rg_agent.rg_agent.RGAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/RgAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.dreamteam109_agent.dreamteam109_agent.DreamTeam109Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/DreamTeam109Agent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.rg_agent.rg_agent.RGAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/RgAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.gea_agent.gea_agent.GEAAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/GEAAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.rg_agent.rg_agent.RGAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/RgAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.learning_agent.learning_agent.LearningAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/LearningAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.rg_agent.rg_agent.RGAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/RgAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.LuckyAgent2022.LuckyAgent2022.LuckyAgent2022",
+        "parameters": {
+          "storage_dir": "agent_storage/LuckyAgent2022"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.rg_agent.rg_agent.RGAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/RgAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.micro_agent.micro_agent.micro_agent.MiCROAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/MicroAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.rg_agent.rg_agent.RGAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/RgAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.procrastin_agent.procrastin_agent.ProcrastinAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/ProcrastinAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.rg_agent.rg_agent.RGAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/RgAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.super_agent.super_agent.SuperAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/SuperAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.rg_agent.rg_agent.RGAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/RgAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.thirdagent.third_agent.ThirdAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/ThirdAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.rg_agent.rg_agent.RGAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/RgAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.tjaronchery10_agent.tjaronchery10_agent.Tjaronchery10Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/Tjaronchery10Agent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.rg_agent.rg_agent.RGAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/RgAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.smart_agent.smart_agent.SmartAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/SmartAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.super_agent.super_agent.SuperAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/SuperAgent"
+        }
+      },
+      {
+        "class": "agents.group62_agent.group62_agent.Group62Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/Group62Agent",
+          "bidding_strategy": {
+            "conceding_speed": 4.5e-05,
+            "reservation_value": 0.95,
+            "iso_tolerance": 0.05
+          },
+          "acceptance_strategy": {
+            "threshold": 0.98
+          },
+          "opponent_model": {
+            "decay": true,
+            "decay_exp": 0.4
+          }
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.super_agent.super_agent.SuperAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/SuperAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.agent007.agent007.Agent007",
+        "parameters": {
+          "storage_dir": "agent_storage/Agent007"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.super_agent.super_agent.SuperAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/SuperAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.agent4410.agent_4410.Agent4410",
+        "parameters": {
+          "storage_dir": "agent_storage/Agent4410"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.super_agent.super_agent.SuperAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/SuperAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.agentfish.agentfish.AgentFish",
+        "parameters": {
+          "storage_dir": "agent_storage/AgentFish"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.super_agent.super_agent.SuperAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/SuperAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.AgentFO2.AgentFO2.AgentFO2",
+        "parameters": {
+          "storage_dir": "agent_storage/AgentFO2"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.super_agent.super_agent.SuperAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/SuperAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.BIU_agent.BIU_agent.BIU_agent",
+        "parameters": {
+          "storage_dir": "agent_storage/BIU_agent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.super_agent.super_agent.SuperAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/SuperAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.charging_boul.charging_boul.ChargingBoul",
+        "parameters": {
+          "storage_dir": "agent_storage/ChargingBoul"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.super_agent.super_agent.SuperAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/SuperAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.compromising_agent.compromising_agent.CompromisingAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/CompromisingAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.super_agent.super_agent.SuperAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/SuperAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.dreamteam109_agent.dreamteam109_agent.DreamTeam109Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/DreamTeam109Agent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.super_agent.super_agent.SuperAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/SuperAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.gea_agent.gea_agent.GEAAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/GEAAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.super_agent.super_agent.SuperAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/SuperAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.learning_agent.learning_agent.LearningAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/LearningAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.super_agent.super_agent.SuperAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/SuperAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.LuckyAgent2022.LuckyAgent2022.LuckyAgent2022",
+        "parameters": {
+          "storage_dir": "agent_storage/LuckyAgent2022"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.super_agent.super_agent.SuperAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/SuperAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.micro_agent.micro_agent.micro_agent.MiCROAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/MicroAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.super_agent.super_agent.SuperAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/SuperAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.procrastin_agent.procrastin_agent.ProcrastinAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/ProcrastinAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.super_agent.super_agent.SuperAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/SuperAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.rg_agent.rg_agent.RGAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/RgAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.super_agent.super_agent.SuperAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/SuperAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.thirdagent.third_agent.ThirdAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/ThirdAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.super_agent.super_agent.SuperAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/SuperAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.tjaronchery10_agent.tjaronchery10_agent.Tjaronchery10Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/Tjaronchery10Agent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.super_agent.super_agent.SuperAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/SuperAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.smart_agent.smart_agent.SmartAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/SmartAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.thirdagent.third_agent.ThirdAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/ThirdAgent"
+        }
+      },
+      {
+        "class": "agents.group62_agent.group62_agent.Group62Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/Group62Agent",
+          "bidding_strategy": {
+            "conceding_speed": 4.5e-05,
+            "reservation_value": 0.95,
+            "iso_tolerance": 0.05
+          },
+          "acceptance_strategy": {
+            "threshold": 0.98
+          },
+          "opponent_model": {
+            "decay": true,
+            "decay_exp": 0.4
+          }
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.thirdagent.third_agent.ThirdAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/ThirdAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.agent007.agent007.Agent007",
+        "parameters": {
+          "storage_dir": "agent_storage/Agent007"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.thirdagent.third_agent.ThirdAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/ThirdAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.agent4410.agent_4410.Agent4410",
+        "parameters": {
+          "storage_dir": "agent_storage/Agent4410"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.thirdagent.third_agent.ThirdAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/ThirdAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.agentfish.agentfish.AgentFish",
+        "parameters": {
+          "storage_dir": "agent_storage/AgentFish"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.thirdagent.third_agent.ThirdAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/ThirdAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.AgentFO2.AgentFO2.AgentFO2",
+        "parameters": {
+          "storage_dir": "agent_storage/AgentFO2"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.thirdagent.third_agent.ThirdAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/ThirdAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.BIU_agent.BIU_agent.BIU_agent",
+        "parameters": {
+          "storage_dir": "agent_storage/BIU_agent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.thirdagent.third_agent.ThirdAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/ThirdAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.charging_boul.charging_boul.ChargingBoul",
+        "parameters": {
+          "storage_dir": "agent_storage/ChargingBoul"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.thirdagent.third_agent.ThirdAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/ThirdAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.compromising_agent.compromising_agent.CompromisingAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/CompromisingAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.thirdagent.third_agent.ThirdAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/ThirdAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.dreamteam109_agent.dreamteam109_agent.DreamTeam109Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/DreamTeam109Agent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.thirdagent.third_agent.ThirdAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/ThirdAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.gea_agent.gea_agent.GEAAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/GEAAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.thirdagent.third_agent.ThirdAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/ThirdAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.learning_agent.learning_agent.LearningAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/LearningAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.thirdagent.third_agent.ThirdAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/ThirdAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.LuckyAgent2022.LuckyAgent2022.LuckyAgent2022",
+        "parameters": {
+          "storage_dir": "agent_storage/LuckyAgent2022"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.thirdagent.third_agent.ThirdAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/ThirdAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.micro_agent.micro_agent.micro_agent.MiCROAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/MicroAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.thirdagent.third_agent.ThirdAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/ThirdAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.procrastin_agent.procrastin_agent.ProcrastinAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/ProcrastinAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.thirdagent.third_agent.ThirdAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/ThirdAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.rg_agent.rg_agent.RGAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/RgAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.thirdagent.third_agent.ThirdAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/ThirdAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.super_agent.super_agent.SuperAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/SuperAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.thirdagent.third_agent.ThirdAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/ThirdAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.tjaronchery10_agent.tjaronchery10_agent.Tjaronchery10Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/Tjaronchery10Agent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.thirdagent.third_agent.ThirdAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/ThirdAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.smart_agent.smart_agent.SmartAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/SmartAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.tjaronchery10_agent.tjaronchery10_agent.Tjaronchery10Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/Tjaronchery10Agent"
+        }
+      },
+      {
+        "class": "agents.group62_agent.group62_agent.Group62Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/Group62Agent",
+          "bidding_strategy": {
+            "conceding_speed": 4.5e-05,
+            "reservation_value": 0.95,
+            "iso_tolerance": 0.05
+          },
+          "acceptance_strategy": {
+            "threshold": 0.98
+          },
+          "opponent_model": {
+            "decay": true,
+            "decay_exp": 0.4
+          }
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.tjaronchery10_agent.tjaronchery10_agent.Tjaronchery10Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/Tjaronchery10Agent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.agent007.agent007.Agent007",
+        "parameters": {
+          "storage_dir": "agent_storage/Agent007"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.tjaronchery10_agent.tjaronchery10_agent.Tjaronchery10Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/Tjaronchery10Agent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.agent4410.agent_4410.Agent4410",
+        "parameters": {
+          "storage_dir": "agent_storage/Agent4410"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.tjaronchery10_agent.tjaronchery10_agent.Tjaronchery10Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/Tjaronchery10Agent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.agentfish.agentfish.AgentFish",
+        "parameters": {
+          "storage_dir": "agent_storage/AgentFish"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.tjaronchery10_agent.tjaronchery10_agent.Tjaronchery10Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/Tjaronchery10Agent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.AgentFO2.AgentFO2.AgentFO2",
+        "parameters": {
+          "storage_dir": "agent_storage/AgentFO2"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.tjaronchery10_agent.tjaronchery10_agent.Tjaronchery10Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/Tjaronchery10Agent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.BIU_agent.BIU_agent.BIU_agent",
+        "parameters": {
+          "storage_dir": "agent_storage/BIU_agent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.tjaronchery10_agent.tjaronchery10_agent.Tjaronchery10Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/Tjaronchery10Agent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.charging_boul.charging_boul.ChargingBoul",
+        "parameters": {
+          "storage_dir": "agent_storage/ChargingBoul"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.tjaronchery10_agent.tjaronchery10_agent.Tjaronchery10Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/Tjaronchery10Agent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.compromising_agent.compromising_agent.CompromisingAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/CompromisingAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.tjaronchery10_agent.tjaronchery10_agent.Tjaronchery10Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/Tjaronchery10Agent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.dreamteam109_agent.dreamteam109_agent.DreamTeam109Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/DreamTeam109Agent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.tjaronchery10_agent.tjaronchery10_agent.Tjaronchery10Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/Tjaronchery10Agent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.gea_agent.gea_agent.GEAAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/GEAAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.tjaronchery10_agent.tjaronchery10_agent.Tjaronchery10Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/Tjaronchery10Agent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.learning_agent.learning_agent.LearningAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/LearningAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.tjaronchery10_agent.tjaronchery10_agent.Tjaronchery10Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/Tjaronchery10Agent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.LuckyAgent2022.LuckyAgent2022.LuckyAgent2022",
+        "parameters": {
+          "storage_dir": "agent_storage/LuckyAgent2022"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.tjaronchery10_agent.tjaronchery10_agent.Tjaronchery10Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/Tjaronchery10Agent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.micro_agent.micro_agent.micro_agent.MiCROAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/MicroAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.tjaronchery10_agent.tjaronchery10_agent.Tjaronchery10Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/Tjaronchery10Agent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.procrastin_agent.procrastin_agent.ProcrastinAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/ProcrastinAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.tjaronchery10_agent.tjaronchery10_agent.Tjaronchery10Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/Tjaronchery10Agent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.rg_agent.rg_agent.RGAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/RgAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.tjaronchery10_agent.tjaronchery10_agent.Tjaronchery10Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/Tjaronchery10Agent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.super_agent.super_agent.SuperAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/SuperAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.tjaronchery10_agent.tjaronchery10_agent.Tjaronchery10Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/Tjaronchery10Agent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.thirdagent.third_agent.ThirdAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/ThirdAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.tjaronchery10_agent.tjaronchery10_agent.Tjaronchery10Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/Tjaronchery10Agent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.smart_agent.smart_agent.SmartAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/SmartAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.smart_agent.smart_agent.SmartAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/SmartAgent"
+        }
+      },
+      {
+        "class": "agents.group62_agent.group62_agent.Group62Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/Group62Agent",
+          "bidding_strategy": {
+            "conceding_speed": 4.5e-05,
+            "reservation_value": 0.95,
+            "iso_tolerance": 0.05
+          },
+          "acceptance_strategy": {
+            "threshold": 0.98
+          },
+          "opponent_model": {
+            "decay": true,
+            "decay_exp": 0.4
+          }
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.smart_agent.smart_agent.SmartAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/SmartAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.agent007.agent007.Agent007",
+        "parameters": {
+          "storage_dir": "agent_storage/Agent007"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.smart_agent.smart_agent.SmartAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/SmartAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.agent4410.agent_4410.Agent4410",
+        "parameters": {
+          "storage_dir": "agent_storage/Agent4410"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.smart_agent.smart_agent.SmartAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/SmartAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.agentfish.agentfish.AgentFish",
+        "parameters": {
+          "storage_dir": "agent_storage/AgentFish"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.smart_agent.smart_agent.SmartAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/SmartAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.AgentFO2.AgentFO2.AgentFO2",
+        "parameters": {
+          "storage_dir": "agent_storage/AgentFO2"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.smart_agent.smart_agent.SmartAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/SmartAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.BIU_agent.BIU_agent.BIU_agent",
+        "parameters": {
+          "storage_dir": "agent_storage/BIU_agent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.smart_agent.smart_agent.SmartAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/SmartAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.charging_boul.charging_boul.ChargingBoul",
+        "parameters": {
+          "storage_dir": "agent_storage/ChargingBoul"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.smart_agent.smart_agent.SmartAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/SmartAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.compromising_agent.compromising_agent.CompromisingAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/CompromisingAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.smart_agent.smart_agent.SmartAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/SmartAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.dreamteam109_agent.dreamteam109_agent.DreamTeam109Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/DreamTeam109Agent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.smart_agent.smart_agent.SmartAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/SmartAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.gea_agent.gea_agent.GEAAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/GEAAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.smart_agent.smart_agent.SmartAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/SmartAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.learning_agent.learning_agent.LearningAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/LearningAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.smart_agent.smart_agent.SmartAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/SmartAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.LuckyAgent2022.LuckyAgent2022.LuckyAgent2022",
+        "parameters": {
+          "storage_dir": "agent_storage/LuckyAgent2022"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.smart_agent.smart_agent.SmartAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/SmartAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.micro_agent.micro_agent.micro_agent.MiCROAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/MicroAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.smart_agent.smart_agent.SmartAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/SmartAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.procrastin_agent.procrastin_agent.ProcrastinAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/ProcrastinAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.smart_agent.smart_agent.SmartAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/SmartAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.rg_agent.rg_agent.RGAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/RgAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.smart_agent.smart_agent.SmartAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/SmartAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.super_agent.super_agent.SuperAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/SuperAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.smart_agent.smart_agent.SmartAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/SmartAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.thirdagent.third_agent.ThirdAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/ThirdAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.ANL2022.smart_agent.smart_agent.SmartAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/SmartAgent"
+        }
+      },
+      {
+        "class": "agents.ANL2022.tjaronchery10_agent.tjaronchery10_agent.Tjaronchery10Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/Tjaronchery10Agent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  }
+]
