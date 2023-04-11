@@ -5,11 +5,6 @@ import time
 
 from utils.runners import run_tournament, run_selfish_tournament
 
-
-# NOTE: To stop the console from being fucking raped
-import logging;
-logging.getLogger().setLevel(logging.ERROR)
-
 RESULTS_DIR = Path("results", time.strftime('%Y%m%d-%H%M%S'))
 
 # create results directory if it does not exist
@@ -24,16 +19,7 @@ tournament_settings = {
     "agents": [
         {
             "class": "agents.group62_agent.group62_agent.Group62Agent",
-            "parameters": {"storage_dir": "agent_storage/Group62Agent",
-                           "bidding_strategy": {
-                                "conceding_speed": 0.68,
-                                "reservation_value": 0.69,
-                                "iso_tolerance": 0.69
-                           },
-                           "acceptance_strategy": {
-                                "threshold": 0.69
-                           }
-                    }
+            "parameters": {"storage_dir": "agent_storage/Group62Agent"}
         },
         # {
             # "class": "agents.template_agent.template_agent.TemplateAgent",
@@ -156,12 +142,8 @@ tournament_settings = {
     "deadline_time_ms": 10000,
 }
 
-# Fucking hell of a workaround
-# logging.getLogger('geniusweb').disabled = True # disable all messages from geniusweb
-
 # NOTE: Select a type of tournament. Selfish only runs first profile against every other profile.
-# tournament_steps, tournament_results, tournament_results_summary = run_tournament(tournament_settings)
-tournament_steps, tournament_results, tournament_results_summary = run_selfish_tournament(tournament_settings)
+tournament_steps, tournament_results, tournament_results_summary = run_tournament(tournament_settings)
 
 # save the tournament settings for reference
 with open(RESULTS_DIR.joinpath("tournament_steps.json"), "w", encoding="utf-8") as f:

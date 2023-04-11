@@ -90,7 +90,7 @@ class Group62Agent(DefaultParty):
             profile_connection.close()
 
             # TODO: Initialize the agent's components
-            self.opponent_model = OpponentModel(self.domain)
+            self.opponent_model = OpponentModel(self.domain, self.parameters.get("opponent_model"))
             self.bidding_strat = BiddingStrategy(self.profile, self.opponent_model, self.domain, self.parameters.get("bidding_strategy"))
             self.boulware = self.bidding_strat.reservation_value
             # self.acceptance_strat = AcceptanceStrategy(self.progress, self.profile)

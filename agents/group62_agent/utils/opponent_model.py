@@ -7,21 +7,20 @@ from geniusweb.progress.ProgressRounds import ProgressRounds
 
 # agent creates an opponent model using frequency modeling
 class OpponentModel:
-    def __init__(self, domain: Domain):
+    def __init__(self, domain: Domain, params=None):
         # we do not use the offers, we just need the frequencies
         #self.offers = []
         self._domain = domain
         # stores frequencies of offers made by the opponent
         self._freqs = {}
         # controls effect of time in decay over time - can be modified to improve performance
-        self._exp = 0.4
+        self._exp = params.get('decay_exp', 0.4) if params else 0.4
         # controls if updates have decay over time or not
-        self._decay = True
+        self._decay = params.get('decay', True) if params else True
         # template code
         #self.issue_estimators = {
         #    i: IssueEstimator(v) for i, v in domain.getIssuesValues().items()
         #}
-
         for i in self._domain.getIssues():
             self._freqs[i] = {}
 

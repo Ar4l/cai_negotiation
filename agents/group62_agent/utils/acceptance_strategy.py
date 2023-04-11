@@ -20,7 +20,7 @@ class AcceptanceStrategy:
         self.next_bid = next_bid
         self.received_bid = received_bid  # = received_bids[-1]
 
-        self.threshold = params.get('threshold', THRESHOLD)
+        self.threshold = params.get('threshold', THRESHOLD) if params else THRESHOLD
 
     def ac_combi_max_w(self, scale=1.0, utility_gap=0.0):
         """

@@ -18,9 +18,9 @@ class BiddingStrategy:
         self._domain = domain
 
         # Get respective keys from params if they exist, otherwise put default values
-        self._iso_tolerance = params.get('iso_tolerance', ISO_TOLERANCE)
-        self.reservation_value = params.get('reservation_value', RESERVATION_VALUE)
-        self.conceding_speed = params.get('conceding_speed', CONCEDING_SPEED)
+        self._iso_tolerance = params.get('iso_tolerance', ISO_TOLERANCE) if params else ISO_TOLERANCE
+        self.reservation_value = params.get('reservation_value', RESERVATION_VALUE) if params else RESERVATION_VALUE
+        self.conceding_speed = params.get('conceding_speed', CONCEDING_SPEED) if params else CONCEDING_SPEED
 
         self._sorted_bids = self._sort_bids(AllBidsList(self._domain))
         self._issues = domain.getIssues()
