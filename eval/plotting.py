@@ -43,13 +43,19 @@ def plot_results(key, folder):
     ax1.set_ylabel('Utility')
     ax1.set_ylim(0.3, 1.5)
     ax1.set_title(f'{key} ({folder} agents)')
-    ax1.legend()
+    # ax1.legend()
+    
+
+    # if key == 'concending_speed' then set x axis to logarithmic scale
+    if key == 'conceding_speed':
+        ax1.set_xscale('log')
 
     ax2 = ax1.twinx()
     ax2.plot(df.index, df['avg_num_offers'], label='avg_num_offers', color='red')
     ax2.set_ylabel('Number of offers')
     ax2.set_ylim(0, 3000)
-    ax2.legend()
+    # ax2.legend()
+    fig.legend()
 
     # Save the plot with the same title as the dataframe
     plt.savefig(f'{key} ({folder} agents).png')

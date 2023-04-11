@@ -1,0 +1,1217 @@
+[
+  {
+    "agents": [
+      {
+        "class": "agents.group62_agent.group62_agent.Group62Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/Group62Agent",
+          "bidding_strategy": {
+            "conceding_speed": 4.5e-05,
+            "reservation_value": 0.95,
+            "iso_tolerance": 0.05
+          },
+          "acceptance_strategy": {
+            "threshold": 0.5262631578947369
+          },
+          "opponent_model": {
+            "decay": true,
+            "decay_exp": 0.4
+          }
+        }
+      },
+      {
+        "class": "agents.boulware_agent.boulware_agent.BoulwareAgent"
+      }
+    ],
+    "profiles": [
+      "domains/domain00/profileA.json",
+      "domains/domain00/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.group62_agent.group62_agent.Group62Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/Group62Agent",
+          "bidding_strategy": {
+            "conceding_speed": 4.5e-05,
+            "reservation_value": 0.95,
+            "iso_tolerance": 0.05
+          },
+          "acceptance_strategy": {
+            "threshold": 0.5262631578947369
+          },
+          "opponent_model": {
+            "decay": true,
+            "decay_exp": 0.4
+          }
+        }
+      },
+      {
+        "class": "agents.conceder_agent.conceder_agent.ConcederAgent"
+      }
+    ],
+    "profiles": [
+      "domains/domain00/profileA.json",
+      "domains/domain00/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.group62_agent.group62_agent.Group62Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/Group62Agent",
+          "bidding_strategy": {
+            "conceding_speed": 4.5e-05,
+            "reservation_value": 0.95,
+            "iso_tolerance": 0.05
+          },
+          "acceptance_strategy": {
+            "threshold": 0.5262631578947369
+          },
+          "opponent_model": {
+            "decay": true,
+            "decay_exp": 0.4
+          }
+        }
+      },
+      {
+        "class": "agents.hardliner_agent.hardliner_agent.HardlinerAgent"
+      }
+    ],
+    "profiles": [
+      "domains/domain00/profileA.json",
+      "domains/domain00/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.group62_agent.group62_agent.Group62Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/Group62Agent",
+          "bidding_strategy": {
+            "conceding_speed": 4.5e-05,
+            "reservation_value": 0.95,
+            "iso_tolerance": 0.05
+          },
+          "acceptance_strategy": {
+            "threshold": 0.5262631578947369
+          },
+          "opponent_model": {
+            "decay": true,
+            "decay_exp": 0.4
+          }
+        }
+      },
+      {
+        "class": "agents.linear_agent.linear_agent.LinearAgent"
+      }
+    ],
+    "profiles": [
+      "domains/domain00/profileA.json",
+      "domains/domain00/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.group62_agent.group62_agent.Group62Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/Group62Agent",
+          "bidding_strategy": {
+            "conceding_speed": 4.5e-05,
+            "reservation_value": 0.95,
+            "iso_tolerance": 0.05
+          },
+          "acceptance_strategy": {
+            "threshold": 0.5262631578947369
+          },
+          "opponent_model": {
+            "decay": true,
+            "decay_exp": 0.4
+          }
+        }
+      },
+      {
+        "class": "agents.random_agent.random_agent.RandomAgent"
+      }
+    ],
+    "profiles": [
+      "domains/domain00/profileA.json",
+      "domains/domain00/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.group62_agent.group62_agent.Group62Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/Group62Agent",
+          "bidding_strategy": {
+            "conceding_speed": 4.5e-05,
+            "reservation_value": 0.95,
+            "iso_tolerance": 0.05
+          },
+          "acceptance_strategy": {
+            "threshold": 0.5262631578947369
+          },
+          "opponent_model": {
+            "decay": true,
+            "decay_exp": 0.4
+          }
+        }
+      },
+      {
+        "class": "agents.stupid_agent.stupid_agent.StupidAgent"
+      }
+    ],
+    "profiles": [
+      "domains/domain00/profileA.json",
+      "domains/domain00/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.group62_agent.group62_agent.Group62Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/Group62Agent",
+          "bidding_strategy": {
+            "conceding_speed": 4.5e-05,
+            "reservation_value": 0.95,
+            "iso_tolerance": 0.05
+          },
+          "acceptance_strategy": {
+            "threshold": 0.5262631578947369
+          },
+          "opponent_model": {
+            "decay": true,
+            "decay_exp": 0.4
+          }
+        }
+      },
+      {
+        "class": "agents.template_agent.template_agent.TemplateAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/TemplateAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain00/profileA.json",
+      "domains/domain00/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.group62_agent.group62_agent.Group62Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/Group62Agent",
+          "bidding_strategy": {
+            "conceding_speed": 4.5e-05,
+            "reservation_value": 0.95,
+            "iso_tolerance": 0.05
+          },
+          "acceptance_strategy": {
+            "threshold": 0.5262631578947369
+          },
+          "opponent_model": {
+            "decay": true,
+            "decay_exp": 0.4
+          }
+        }
+      },
+      {
+        "class": "agents.time_dependent_agent.time_dependent_agent.TimeDependentAgent"
+      }
+    ],
+    "profiles": [
+      "domains/domain00/profileA.json",
+      "domains/domain00/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.group62_agent.group62_agent.Group62Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/Group62Agent",
+          "bidding_strategy": {
+            "conceding_speed": 4.5e-05,
+            "reservation_value": 0.95,
+            "iso_tolerance": 0.05
+          },
+          "acceptance_strategy": {
+            "threshold": 0.5262631578947369
+          },
+          "opponent_model": {
+            "decay": true,
+            "decay_exp": 0.4
+          }
+        }
+      },
+      {
+        "class": "agents.boulware_agent.boulware_agent.BoulwareAgent"
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.group62_agent.group62_agent.Group62Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/Group62Agent",
+          "bidding_strategy": {
+            "conceding_speed": 4.5e-05,
+            "reservation_value": 0.95,
+            "iso_tolerance": 0.05
+          },
+          "acceptance_strategy": {
+            "threshold": 0.5262631578947369
+          },
+          "opponent_model": {
+            "decay": true,
+            "decay_exp": 0.4
+          }
+        }
+      },
+      {
+        "class": "agents.conceder_agent.conceder_agent.ConcederAgent"
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.group62_agent.group62_agent.Group62Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/Group62Agent",
+          "bidding_strategy": {
+            "conceding_speed": 4.5e-05,
+            "reservation_value": 0.95,
+            "iso_tolerance": 0.05
+          },
+          "acceptance_strategy": {
+            "threshold": 0.5262631578947369
+          },
+          "opponent_model": {
+            "decay": true,
+            "decay_exp": 0.4
+          }
+        }
+      },
+      {
+        "class": "agents.hardliner_agent.hardliner_agent.HardlinerAgent"
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.group62_agent.group62_agent.Group62Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/Group62Agent",
+          "bidding_strategy": {
+            "conceding_speed": 4.5e-05,
+            "reservation_value": 0.95,
+            "iso_tolerance": 0.05
+          },
+          "acceptance_strategy": {
+            "threshold": 0.5262631578947369
+          },
+          "opponent_model": {
+            "decay": true,
+            "decay_exp": 0.4
+          }
+        }
+      },
+      {
+        "class": "agents.linear_agent.linear_agent.LinearAgent"
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.group62_agent.group62_agent.Group62Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/Group62Agent",
+          "bidding_strategy": {
+            "conceding_speed": 4.5e-05,
+            "reservation_value": 0.95,
+            "iso_tolerance": 0.05
+          },
+          "acceptance_strategy": {
+            "threshold": 0.5262631578947369
+          },
+          "opponent_model": {
+            "decay": true,
+            "decay_exp": 0.4
+          }
+        }
+      },
+      {
+        "class": "agents.random_agent.random_agent.RandomAgent"
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.group62_agent.group62_agent.Group62Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/Group62Agent",
+          "bidding_strategy": {
+            "conceding_speed": 4.5e-05,
+            "reservation_value": 0.95,
+            "iso_tolerance": 0.05
+          },
+          "acceptance_strategy": {
+            "threshold": 0.5262631578947369
+          },
+          "opponent_model": {
+            "decay": true,
+            "decay_exp": 0.4
+          }
+        }
+      },
+      {
+        "class": "agents.stupid_agent.stupid_agent.StupidAgent"
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.group62_agent.group62_agent.Group62Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/Group62Agent",
+          "bidding_strategy": {
+            "conceding_speed": 4.5e-05,
+            "reservation_value": 0.95,
+            "iso_tolerance": 0.05
+          },
+          "acceptance_strategy": {
+            "threshold": 0.5262631578947369
+          },
+          "opponent_model": {
+            "decay": true,
+            "decay_exp": 0.4
+          }
+        }
+      },
+      {
+        "class": "agents.template_agent.template_agent.TemplateAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/TemplateAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.group62_agent.group62_agent.Group62Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/Group62Agent",
+          "bidding_strategy": {
+            "conceding_speed": 4.5e-05,
+            "reservation_value": 0.95,
+            "iso_tolerance": 0.05
+          },
+          "acceptance_strategy": {
+            "threshold": 0.5262631578947369
+          },
+          "opponent_model": {
+            "decay": true,
+            "decay_exp": 0.4
+          }
+        }
+      },
+      {
+        "class": "agents.time_dependent_agent.time_dependent_agent.TimeDependentAgent"
+      }
+    ],
+    "profiles": [
+      "domains/domain01/profileA.json",
+      "domains/domain01/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.group62_agent.group62_agent.Group62Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/Group62Agent",
+          "bidding_strategy": {
+            "conceding_speed": 4.5e-05,
+            "reservation_value": 0.95,
+            "iso_tolerance": 0.05
+          },
+          "acceptance_strategy": {
+            "threshold": 0.5262631578947369
+          },
+          "opponent_model": {
+            "decay": true,
+            "decay_exp": 0.4
+          }
+        }
+      },
+      {
+        "class": "agents.boulware_agent.boulware_agent.BoulwareAgent"
+      }
+    ],
+    "profiles": [
+      "domains/domain02/profileA.json",
+      "domains/domain02/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.group62_agent.group62_agent.Group62Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/Group62Agent",
+          "bidding_strategy": {
+            "conceding_speed": 4.5e-05,
+            "reservation_value": 0.95,
+            "iso_tolerance": 0.05
+          },
+          "acceptance_strategy": {
+            "threshold": 0.5262631578947369
+          },
+          "opponent_model": {
+            "decay": true,
+            "decay_exp": 0.4
+          }
+        }
+      },
+      {
+        "class": "agents.conceder_agent.conceder_agent.ConcederAgent"
+      }
+    ],
+    "profiles": [
+      "domains/domain02/profileA.json",
+      "domains/domain02/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.group62_agent.group62_agent.Group62Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/Group62Agent",
+          "bidding_strategy": {
+            "conceding_speed": 4.5e-05,
+            "reservation_value": 0.95,
+            "iso_tolerance": 0.05
+          },
+          "acceptance_strategy": {
+            "threshold": 0.5262631578947369
+          },
+          "opponent_model": {
+            "decay": true,
+            "decay_exp": 0.4
+          }
+        }
+      },
+      {
+        "class": "agents.hardliner_agent.hardliner_agent.HardlinerAgent"
+      }
+    ],
+    "profiles": [
+      "domains/domain02/profileA.json",
+      "domains/domain02/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.group62_agent.group62_agent.Group62Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/Group62Agent",
+          "bidding_strategy": {
+            "conceding_speed": 4.5e-05,
+            "reservation_value": 0.95,
+            "iso_tolerance": 0.05
+          },
+          "acceptance_strategy": {
+            "threshold": 0.5262631578947369
+          },
+          "opponent_model": {
+            "decay": true,
+            "decay_exp": 0.4
+          }
+        }
+      },
+      {
+        "class": "agents.linear_agent.linear_agent.LinearAgent"
+      }
+    ],
+    "profiles": [
+      "domains/domain02/profileA.json",
+      "domains/domain02/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.group62_agent.group62_agent.Group62Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/Group62Agent",
+          "bidding_strategy": {
+            "conceding_speed": 4.5e-05,
+            "reservation_value": 0.95,
+            "iso_tolerance": 0.05
+          },
+          "acceptance_strategy": {
+            "threshold": 0.5262631578947369
+          },
+          "opponent_model": {
+            "decay": true,
+            "decay_exp": 0.4
+          }
+        }
+      },
+      {
+        "class": "agents.random_agent.random_agent.RandomAgent"
+      }
+    ],
+    "profiles": [
+      "domains/domain02/profileA.json",
+      "domains/domain02/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.group62_agent.group62_agent.Group62Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/Group62Agent",
+          "bidding_strategy": {
+            "conceding_speed": 4.5e-05,
+            "reservation_value": 0.95,
+            "iso_tolerance": 0.05
+          },
+          "acceptance_strategy": {
+            "threshold": 0.5262631578947369
+          },
+          "opponent_model": {
+            "decay": true,
+            "decay_exp": 0.4
+          }
+        }
+      },
+      {
+        "class": "agents.stupid_agent.stupid_agent.StupidAgent"
+      }
+    ],
+    "profiles": [
+      "domains/domain02/profileA.json",
+      "domains/domain02/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.group62_agent.group62_agent.Group62Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/Group62Agent",
+          "bidding_strategy": {
+            "conceding_speed": 4.5e-05,
+            "reservation_value": 0.95,
+            "iso_tolerance": 0.05
+          },
+          "acceptance_strategy": {
+            "threshold": 0.5262631578947369
+          },
+          "opponent_model": {
+            "decay": true,
+            "decay_exp": 0.4
+          }
+        }
+      },
+      {
+        "class": "agents.template_agent.template_agent.TemplateAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/TemplateAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain02/profileA.json",
+      "domains/domain02/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.group62_agent.group62_agent.Group62Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/Group62Agent",
+          "bidding_strategy": {
+            "conceding_speed": 4.5e-05,
+            "reservation_value": 0.95,
+            "iso_tolerance": 0.05
+          },
+          "acceptance_strategy": {
+            "threshold": 0.5262631578947369
+          },
+          "opponent_model": {
+            "decay": true,
+            "decay_exp": 0.4
+          }
+        }
+      },
+      {
+        "class": "agents.time_dependent_agent.time_dependent_agent.TimeDependentAgent"
+      }
+    ],
+    "profiles": [
+      "domains/domain02/profileA.json",
+      "domains/domain02/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.group62_agent.group62_agent.Group62Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/Group62Agent",
+          "bidding_strategy": {
+            "conceding_speed": 4.5e-05,
+            "reservation_value": 0.95,
+            "iso_tolerance": 0.05
+          },
+          "acceptance_strategy": {
+            "threshold": 0.5262631578947369
+          },
+          "opponent_model": {
+            "decay": true,
+            "decay_exp": 0.4
+          }
+        }
+      },
+      {
+        "class": "agents.boulware_agent.boulware_agent.BoulwareAgent"
+      }
+    ],
+    "profiles": [
+      "domains/domain03/profileA.json",
+      "domains/domain03/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.group62_agent.group62_agent.Group62Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/Group62Agent",
+          "bidding_strategy": {
+            "conceding_speed": 4.5e-05,
+            "reservation_value": 0.95,
+            "iso_tolerance": 0.05
+          },
+          "acceptance_strategy": {
+            "threshold": 0.5262631578947369
+          },
+          "opponent_model": {
+            "decay": true,
+            "decay_exp": 0.4
+          }
+        }
+      },
+      {
+        "class": "agents.conceder_agent.conceder_agent.ConcederAgent"
+      }
+    ],
+    "profiles": [
+      "domains/domain03/profileA.json",
+      "domains/domain03/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.group62_agent.group62_agent.Group62Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/Group62Agent",
+          "bidding_strategy": {
+            "conceding_speed": 4.5e-05,
+            "reservation_value": 0.95,
+            "iso_tolerance": 0.05
+          },
+          "acceptance_strategy": {
+            "threshold": 0.5262631578947369
+          },
+          "opponent_model": {
+            "decay": true,
+            "decay_exp": 0.4
+          }
+        }
+      },
+      {
+        "class": "agents.hardliner_agent.hardliner_agent.HardlinerAgent"
+      }
+    ],
+    "profiles": [
+      "domains/domain03/profileA.json",
+      "domains/domain03/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.group62_agent.group62_agent.Group62Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/Group62Agent",
+          "bidding_strategy": {
+            "conceding_speed": 4.5e-05,
+            "reservation_value": 0.95,
+            "iso_tolerance": 0.05
+          },
+          "acceptance_strategy": {
+            "threshold": 0.5262631578947369
+          },
+          "opponent_model": {
+            "decay": true,
+            "decay_exp": 0.4
+          }
+        }
+      },
+      {
+        "class": "agents.linear_agent.linear_agent.LinearAgent"
+      }
+    ],
+    "profiles": [
+      "domains/domain03/profileA.json",
+      "domains/domain03/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.group62_agent.group62_agent.Group62Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/Group62Agent",
+          "bidding_strategy": {
+            "conceding_speed": 4.5e-05,
+            "reservation_value": 0.95,
+            "iso_tolerance": 0.05
+          },
+          "acceptance_strategy": {
+            "threshold": 0.5262631578947369
+          },
+          "opponent_model": {
+            "decay": true,
+            "decay_exp": 0.4
+          }
+        }
+      },
+      {
+        "class": "agents.random_agent.random_agent.RandomAgent"
+      }
+    ],
+    "profiles": [
+      "domains/domain03/profileA.json",
+      "domains/domain03/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.group62_agent.group62_agent.Group62Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/Group62Agent",
+          "bidding_strategy": {
+            "conceding_speed": 4.5e-05,
+            "reservation_value": 0.95,
+            "iso_tolerance": 0.05
+          },
+          "acceptance_strategy": {
+            "threshold": 0.5262631578947369
+          },
+          "opponent_model": {
+            "decay": true,
+            "decay_exp": 0.4
+          }
+        }
+      },
+      {
+        "class": "agents.stupid_agent.stupid_agent.StupidAgent"
+      }
+    ],
+    "profiles": [
+      "domains/domain03/profileA.json",
+      "domains/domain03/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.group62_agent.group62_agent.Group62Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/Group62Agent",
+          "bidding_strategy": {
+            "conceding_speed": 4.5e-05,
+            "reservation_value": 0.95,
+            "iso_tolerance": 0.05
+          },
+          "acceptance_strategy": {
+            "threshold": 0.5262631578947369
+          },
+          "opponent_model": {
+            "decay": true,
+            "decay_exp": 0.4
+          }
+        }
+      },
+      {
+        "class": "agents.template_agent.template_agent.TemplateAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/TemplateAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain03/profileA.json",
+      "domains/domain03/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.group62_agent.group62_agent.Group62Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/Group62Agent",
+          "bidding_strategy": {
+            "conceding_speed": 4.5e-05,
+            "reservation_value": 0.95,
+            "iso_tolerance": 0.05
+          },
+          "acceptance_strategy": {
+            "threshold": 0.5262631578947369
+          },
+          "opponent_model": {
+            "decay": true,
+            "decay_exp": 0.4
+          }
+        }
+      },
+      {
+        "class": "agents.time_dependent_agent.time_dependent_agent.TimeDependentAgent"
+      }
+    ],
+    "profiles": [
+      "domains/domain03/profileA.json",
+      "domains/domain03/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.group62_agent.group62_agent.Group62Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/Group62Agent",
+          "bidding_strategy": {
+            "conceding_speed": 4.5e-05,
+            "reservation_value": 0.95,
+            "iso_tolerance": 0.05
+          },
+          "acceptance_strategy": {
+            "threshold": 0.5262631578947369
+          },
+          "opponent_model": {
+            "decay": true,
+            "decay_exp": 0.4
+          }
+        }
+      },
+      {
+        "class": "agents.boulware_agent.boulware_agent.BoulwareAgent"
+      }
+    ],
+    "profiles": [
+      "domains/domain04/profileA.json",
+      "domains/domain04/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.group62_agent.group62_agent.Group62Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/Group62Agent",
+          "bidding_strategy": {
+            "conceding_speed": 4.5e-05,
+            "reservation_value": 0.95,
+            "iso_tolerance": 0.05
+          },
+          "acceptance_strategy": {
+            "threshold": 0.5262631578947369
+          },
+          "opponent_model": {
+            "decay": true,
+            "decay_exp": 0.4
+          }
+        }
+      },
+      {
+        "class": "agents.conceder_agent.conceder_agent.ConcederAgent"
+      }
+    ],
+    "profiles": [
+      "domains/domain04/profileA.json",
+      "domains/domain04/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.group62_agent.group62_agent.Group62Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/Group62Agent",
+          "bidding_strategy": {
+            "conceding_speed": 4.5e-05,
+            "reservation_value": 0.95,
+            "iso_tolerance": 0.05
+          },
+          "acceptance_strategy": {
+            "threshold": 0.5262631578947369
+          },
+          "opponent_model": {
+            "decay": true,
+            "decay_exp": 0.4
+          }
+        }
+      },
+      {
+        "class": "agents.hardliner_agent.hardliner_agent.HardlinerAgent"
+      }
+    ],
+    "profiles": [
+      "domains/domain04/profileA.json",
+      "domains/domain04/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.group62_agent.group62_agent.Group62Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/Group62Agent",
+          "bidding_strategy": {
+            "conceding_speed": 4.5e-05,
+            "reservation_value": 0.95,
+            "iso_tolerance": 0.05
+          },
+          "acceptance_strategy": {
+            "threshold": 0.5262631578947369
+          },
+          "opponent_model": {
+            "decay": true,
+            "decay_exp": 0.4
+          }
+        }
+      },
+      {
+        "class": "agents.linear_agent.linear_agent.LinearAgent"
+      }
+    ],
+    "profiles": [
+      "domains/domain04/profileA.json",
+      "domains/domain04/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.group62_agent.group62_agent.Group62Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/Group62Agent",
+          "bidding_strategy": {
+            "conceding_speed": 4.5e-05,
+            "reservation_value": 0.95,
+            "iso_tolerance": 0.05
+          },
+          "acceptance_strategy": {
+            "threshold": 0.5262631578947369
+          },
+          "opponent_model": {
+            "decay": true,
+            "decay_exp": 0.4
+          }
+        }
+      },
+      {
+        "class": "agents.random_agent.random_agent.RandomAgent"
+      }
+    ],
+    "profiles": [
+      "domains/domain04/profileA.json",
+      "domains/domain04/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.group62_agent.group62_agent.Group62Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/Group62Agent",
+          "bidding_strategy": {
+            "conceding_speed": 4.5e-05,
+            "reservation_value": 0.95,
+            "iso_tolerance": 0.05
+          },
+          "acceptance_strategy": {
+            "threshold": 0.5262631578947369
+          },
+          "opponent_model": {
+            "decay": true,
+            "decay_exp": 0.4
+          }
+        }
+      },
+      {
+        "class": "agents.stupid_agent.stupid_agent.StupidAgent"
+      }
+    ],
+    "profiles": [
+      "domains/domain04/profileA.json",
+      "domains/domain04/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.group62_agent.group62_agent.Group62Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/Group62Agent",
+          "bidding_strategy": {
+            "conceding_speed": 4.5e-05,
+            "reservation_value": 0.95,
+            "iso_tolerance": 0.05
+          },
+          "acceptance_strategy": {
+            "threshold": 0.5262631578947369
+          },
+          "opponent_model": {
+            "decay": true,
+            "decay_exp": 0.4
+          }
+        }
+      },
+      {
+        "class": "agents.template_agent.template_agent.TemplateAgent",
+        "parameters": {
+          "storage_dir": "agent_storage/TemplateAgent"
+        }
+      }
+    ],
+    "profiles": [
+      "domains/domain04/profileA.json",
+      "domains/domain04/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  },
+  {
+    "agents": [
+      {
+        "class": "agents.group62_agent.group62_agent.Group62Agent",
+        "parameters": {
+          "storage_dir": "agent_storage/Group62Agent",
+          "bidding_strategy": {
+            "conceding_speed": 4.5e-05,
+            "reservation_value": 0.95,
+            "iso_tolerance": 0.05
+          },
+          "acceptance_strategy": {
+            "threshold": 0.5262631578947369
+          },
+          "opponent_model": {
+            "decay": true,
+            "decay_exp": 0.4
+          }
+        }
+      },
+      {
+        "class": "agents.time_dependent_agent.time_dependent_agent.TimeDependentAgent"
+      }
+    ],
+    "profiles": [
+      "domains/domain04/profileA.json",
+      "domains/domain04/profileB.json"
+    ],
+    "deadline_time_ms": 10000
+  }
+]

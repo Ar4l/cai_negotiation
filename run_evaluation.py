@@ -173,8 +173,8 @@ def run(params, path='results', key='', agents=agents_default):
     }
 
     # NOTE: Select a type of tournament. Selfish only runs first profile against every other profile.
-    # tournament_steps, tournament_results, tournament_results_summary = run_tournament(tournament_settings, ask=False)
-    tournament_steps, tournament_results, tournament_results_summary = run_selfish_tournament(tournament_settings, ask=False, play_with_itself=False)
+    tournament_steps, tournament_results, tournament_results_summary = run_tournament(tournament_settings, ask=False)
+    # tournament_steps, tournament_results, tournament_results_summary = run_selfish_tournament(tournament_settings, ask=False, play_with_itself=False)
 
     # save the tournament settings for reference
     with open(RESULTS_DIR.joinpath("tournament_steps.json"), "w", encoding="utf-8") as f:
@@ -199,26 +199,28 @@ import logging
 logging.getLogger('geniusweb').disabled = True # disable all messages from geniusweb
 
 import numpy as np
-# Generate linspaces for each parameter
-conceding_speeds = np.logspace(-6, -2, 20).tolist()
-thresholds = np.linspace(0.50, 0.999, 20).tolist()
-decay_exps = np.linspace(0.1, 1, 20).tolist()
+
+# #### NOTE: PARAMETER OPTIMISATION
+# # Generate linspaces for each parameter
+# conceding_speeds = np.logspace(-6, -2, 20).tolist()
+# thresholds = np.linspace(0.50, 0.999, 20).tolist()
+# decay_exps = np.linspace(0.1, 1, 20).tolist()
 
 
-# Ideally, we generate a grid of all possible combinations of parameters, but that's 100 evaluations
-# which I don't think we have time for. Instead, just run each parameter individually.
+# # Ideally, we generate a grid of all possible combinations of parameters, but that's 100 evaluations
+# # which I don't think we have time for. Instead, just run each parameter individually.
 
-agents = agents_default
+# agents = agents_default
 
-# print(f'Running tournament for conceding speeds: {conceding_speeds}')
-# for conceding_speed in conceding_speeds:
-#     run({'conceding_speed': conceding_speed}, path="eval3/default", key='conceding_speed', agents=agents)
+# # print(f'Running tournament for conceding speeds: {conceding_speeds}')
+# # for conceding_speed in conceding_speeds:
+# #     run({'conceding_speed': conceding_speed}, path="eval3/default", key='conceding_speed', agents=agents)
 
-# print(f'Running tournament for thresholds: {thresholds}')
-# for threshold in thresholds:
-#     run({'threshold': threshold}, path="eval3/default", key='threshold', agents=agents)
+# # print(f'Running tournament for thresholds: {thresholds}')
+# # for threshold in thresholds:
+# #     run({'threshold': threshold}, path="eval3/default", key='threshold', agents=agents)
 
-print(f'Running tournament for decay exps: {decay_exps}')
-for decay_exp in decay_exps:
-    run({'decay_exp': decay_exp}, path="eval3/default", key='decay_exp', agents=agents)
+# print(f'Running tournament for decay exps: {decay_exps}')
+# for decay_exp in decay_exps:
+#     run({'decay_exp': decay_exp}, path="eval3/default", key='decay_exp', agents=agents)
 
