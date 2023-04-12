@@ -1,0 +1,1252 @@
+[
+  {
+    "num_offers": 2618,
+    "agent_3751": "Group62Agent",
+    "utility_3751": 0.978770694,
+    "agent_3752": "Agent2",
+    "utility_3752": 0.2781806367,
+    "nash_product": 0.27227505484022085,
+    "social_welfare": 1.2569513307,
+    "result": "agreement"
+  },
+  {
+    "num_offers": 4846,
+    "agent_3753": "Group62Agent",
+    "utility_3753": 0.9453143368,
+    "agent_3754": "Agent3",
+    "utility_3754": 0.474478944,
+    "nash_product": 0.44853174827292436,
+    "social_welfare": 1.4197932808,
+    "result": "agreement"
+  },
+  {
+    "num_offers": 5045,
+    "agent_3755": "Group62Agent",
+    "utility_3755": 0.802308442,
+    "agent_3756": "Agent7",
+    "utility_3756": 0.3992057704,
+    "nash_product": 0.32028615968703367,
+    "social_welfare": 1.2015142124,
+    "result": "agreement"
+  },
+  {
+    "num_offers": 4888,
+    "agent_3757": "Group62Agent",
+    "utility_3757": 0.9453143368,
+    "agent_3758": "Agent11",
+    "utility_3758": 0.474478944,
+    "nash_product": 0.44853174827292436,
+    "social_welfare": 1.4197932808,
+    "result": "agreement"
+  },
+  {
+    "num_offers": 2617,
+    "agent_3759": "Group62Agent",
+    "utility_3759": 0.978770694,
+    "agent_3760": "Agent14",
+    "utility_3760": 0.2781806367,
+    "nash_product": 0.27227505484022085,
+    "social_welfare": 1.2569513307,
+    "result": "agreement"
+  },
+  {
+    "num_offers": 2050,
+    "agent_3761": "Group62Agent",
+    "utility_3761": 0.9658531236,
+    "agent_3762": "Agent18",
+    "utility_3762": 0.3062340193,
+    "nash_product": 0.2957770840934877,
+    "social_welfare": 1.2720871429,
+    "result": "agreement"
+  },
+  {
+    "num_offers": 225,
+    "agent_3763": "Group62Agent",
+    "utility_3763": 0.3122175916,
+    "agent_3764": "Agent19",
+    "utility_3764": 0.9757534099,
+    "nash_product": 0.30464737963446564,
+    "social_welfare": 1.2879710015,
+    "result": "agreement"
+  },
+  {
+    "num_offers": 616,
+    "agent_3765": "Group62Agent",
+    "utility_3765": 0.978770694,
+    "agent_3766": "Agent22",
+    "utility_3766": 0.2781806367,
+    "nash_product": 0.27227505484022085,
+    "social_welfare": 1.2569513307,
+    "result": "agreement"
+  },
+  {
+    "num_offers": 3169,
+    "agent_3767": "Group62Agent",
+    "utility_3767": 0.3387511396,
+    "agent_3768": "Agent24",
+    "utility_3768": 0.877144443,
+    "nash_product": 0.2971336796600572,
+    "social_welfare": 1.2158955826,
+    "result": "agreement"
+  },
+  {
+    "num_offers": 4531,
+    "agent_3769": "Group62Agent",
+    "utility_3769": 0.3767834864,
+    "agent_3770": "Agent25",
+    "utility_3770": 0.9472565835,
+    "nash_product": 0.3569106380464827,
+    "social_welfare": 1.3240400699,
+    "result": "agreement"
+  },
+  {
+    "num_offers": 3265,
+    "agent_3771": "Group62Agent",
+    "utility_3771": 0.5205307999,
+    "agent_3772": "Agent26",
+    "utility_3772": 0.7254337484,
+    "nash_product": 0.3776106093291073,
+    "social_welfare": 1.2459645483,
+    "result": "agreement"
+  },
+  {
+    "num_offers": 725,
+    "agent_3773": "Group62Agent",
+    "utility_3773": 0.5219443859,
+    "agent_3774": "Agent27",
+    "utility_3774": 0.6913188338,
+    "nash_product": 0.3608299841688452,
+    "social_welfare": 1.2132632197,
+    "result": "agreement"
+  },
+  {
+    "num_offers": 1595,
+    "agent_3775": "Group62Agent",
+    "utility_3775": 0.9658531236,
+    "agent_3776": "Agent29",
+    "utility_3776": 0.3062340193,
+    "nash_product": 0.2957770840934877,
+    "social_welfare": 1.2720871429,
+    "result": "agreement"
+  },
+  {
+    "num_offers": 857,
+    "agent_3777": "Group62Agent",
+    "utility_3777": 0.3206212344,
+    "agent_3778": "Agent32",
+    "utility_3778": 0.9220301776,
+    "nash_product": 0.29562245369616325,
+    "social_welfare": 1.2426514119999998,
+    "result": "agreement"
+  },
+  {
+    "num_offers": 793,
+    "agent_3779": "Group62Agent",
+    "utility_3779": 0,
+    "agent_3780": "Agent33",
+    "utility_3780": 0,
+    "nash_product": 0,
+    "social_welfare": 0,
+    "result": "failed"
+  },
+  {
+    "num_offers": 2376,
+    "agent_3781": "Group62Agent",
+    "utility_3781": 0.9658531236,
+    "agent_3782": "Agent41",
+    "utility_3782": 0.3062340193,
+    "nash_product": 0.2957770840934877,
+    "social_welfare": 1.2720871429,
+    "result": "agreement"
+  },
+  {
+    "num_offers": 2,
+    "agent_3783": "Group62Agent",
+    "utility_3783": 0.9871743368,
+    "agent_3784": "Agent43",
+    "utility_3784": 0.2244574044,
+    "nash_product": 0.2215785893284194,
+    "social_welfare": 1.2116317412,
+    "result": "agreement"
+  },
+  {
+    "num_offers": 1354,
+    "agent_3785": "Group62Agent",
+    "utility_3785": 0.9658531236,
+    "agent_3786": "Agent50",
+    "utility_3786": 0.3062340193,
+    "nash_product": 0.2957770840934877,
+    "social_welfare": 1.2720871429,
+    "result": "agreement"
+  },
+  {
+    "num_offers": 3756,
+    "agent_3787": "Group62Agent",
+    "utility_3787": 0.9612539584,
+    "agent_3788": "Agent52",
+    "utility_3788": 0.2582121763,
+    "nash_product": 0.24820747657545367,
+    "social_welfare": 1.2194661347,
+    "result": "agreement"
+  },
+  {
+    "num_offers": 3516,
+    "agent_3789": "Group62Agent",
+    "utility_3789": 0.95814,
+    "agent_3790": "Agent55",
+    "utility_3790": 0.4561621662,
+    "nash_product": 0.437067217922868,
+    "social_welfare": 1.4143021662,
+    "result": "agreement"
+  },
+  {
+    "num_offers": 1964,
+    "agent_3791": "Group62Agent",
+    "utility_3791": 0.978770694,
+    "agent_3792": "Agent58",
+    "utility_3792": 0.2781806367,
+    "nash_product": 0.27227505484022085,
+    "social_welfare": 1.2569513307,
+    "result": "agreement"
+  },
+  {
+    "num_offers": 2635,
+    "agent_3793": "Group62Agent",
+    "utility_3793": 0.3851871292,
+    "agent_3794": "Agent61",
+    "utility_3794": 0.8935333512,
+    "nash_product": 0.3441775463931834,
+    "social_welfare": 1.2787204804,
+    "result": "agreement"
+  },
+  {
+    "num_offers": 211,
+    "agent_3795": "Group62Agent",
+    "utility_3795": 0.3767834864,
+    "agent_3796": "Agent64",
+    "utility_3796": 0.9472565835,
+    "nash_product": 0.3569106380464827,
+    "social_welfare": 1.3240400699,
+    "result": "agreement"
+  },
+  {
+    "num_offers": 885,
+    "agent_3797": "Group62Agent",
+    "utility_3797": 0.5198402807,
+    "agent_3798": "Agent67",
+    "utility_3798": 0.6292288338,
+    "nash_product": 0.32709849358712567,
+    "social_welfare": 1.1490691145,
+    "result": "agreement"
+  },
+  {
+    "num_offers": 3335,
+    "agent_3799": "Group62Agent",
+    "utility_3799": 0.3851871292,
+    "agent_3800": "Agent68",
+    "utility_3800": 0.8935333512,
+    "nash_product": 0.3441775463931834,
+    "social_welfare": 1.2787204804,
+    "result": "agreement"
+  },
+  {
+    "num_offers": 2437,
+    "agent_3801": "Group62Agent",
+    "utility_3801": 0.7470808415,
+    "agent_3802": "Agent2",
+    "utility_3802": 0.734868301,
+    "nash_product": 0.5490060287027553,
+    "social_welfare": 1.4819491425,
+    "result": "agreement"
+  },
+  {
+    "num_offers": 5010,
+    "agent_3803": "Group62Agent",
+    "utility_3803": 0.9437391852,
+    "agent_3804": "Agent3",
+    "utility_3804": 0.7119328585,
+    "nash_product": 0.6718789357978969,
+    "social_welfare": 1.6556720437,
+    "result": "agreement"
+  },
+  {
+    "num_offers": 2769,
+    "agent_3805": "Group62Agent",
+    "utility_3805": 0.97454208,
+    "agent_3806": "Agent7",
+    "utility_3806": 0.3492647857,
+    "nash_product": 0.3403732307268323,
+    "social_welfare": 1.3238068657,
+    "result": "agreement"
+  },
+  {
+    "num_offers": 3758,
+    "agent_3807": "Group62Agent",
+    "utility_3807": 0.9437391852,
+    "agent_3808": "Agent11",
+    "utility_3808": 0.7119328585,
+    "nash_product": 0.6718789357978969,
+    "social_welfare": 1.6556720437,
+    "result": "agreement"
+  },
+  {
+    "num_offers": 2355,
+    "agent_3809": "Group62Agent",
+    "utility_3809": 0.9691971052,
+    "agent_3810": "Agent14",
+    "utility_3810": 0.6483617443,
+    "nash_product": 0.6283903256979827,
+    "social_welfare": 1.6175588495,
+    "result": "agreement"
+  },
+  {
+    "num_offers": 1323,
+    "agent_3811": "Group62Agent",
+    "utility_3811": 0.9712429215,
+    "agent_3812": "Agent18",
+    "utility_3812": 0.6785189041,
+    "nash_product": 0.6590066827110623,
+    "social_welfare": 1.6497618256000002,
+    "result": "agreement"
+  },
+  {
+    "num_offers": 131,
+    "agent_3813": "Group62Agent",
+    "utility_3813": 0.4341139765,
+    "agent_3814": "Agent19",
+    "utility_3814": 0.9665860456,
+    "nash_product": 0.41960851188482634,
+    "social_welfare": 1.4007000221,
+    "result": "agreement"
+  },
+  {
+    "num_offers": 272,
+    "agent_3815": "Group62Agent",
+    "utility_3815": 0.97454208,
+    "agent_3816": "Agent22",
+    "utility_3816": 0.3492647857,
+    "nash_product": 0.3403732307268323,
+    "social_welfare": 1.3238068657,
+    "result": "agreement"
+  },
+  {
+    "num_offers": 3457,
+    "agent_3817": "Group62Agent",
+    "utility_3817": 0.6941191852,
+    "agent_3818": "Agent24",
+    "utility_3818": 0.8318533696,
+    "nash_product": 0.5774053831126265,
+    "social_welfare": 1.5259725548,
+    "result": "agreement"
+  },
+  {
+    "num_offers": 4055,
+    "agent_3819": "Group62Agent",
+    "utility_3819": 0.4341139765,
+    "agent_3820": "Agent25",
+    "utility_3820": 0.9665860456,
+    "nash_product": 0.41960851188482634,
+    "social_welfare": 1.4007000221,
+    "result": "agreement"
+  },
+  {
+    "num_offers": 2283,
+    "agent_3821": "Group62Agent",
+    "utility_3821": 0.6562302402,
+    "agent_3822": "Agent26",
+    "utility_3822": 0.8800794889,
+    "nash_product": 0.5775347743959403,
+    "social_welfare": 1.5363097291,
+    "result": "agreement"
+  },
+  {
+    "num_offers": 566,
+    "agent_3823": "Group62Agent",
+    "utility_3823": 0.9691971052,
+    "agent_3824": "Agent27",
+    "utility_3824": 0.6483617443,
+    "nash_product": 0.6283903256979827,
+    "social_welfare": 1.6175588495,
+    "result": "agreement"
+  },
+  {
+    "num_offers": 1311,
+    "agent_3825": "Group62Agent",
+    "utility_3825": 0.9712429215,
+    "agent_3826": "Agent29",
+    "utility_3826": 0.6785189041,
+    "nash_product": 0.6590066827110623,
+    "social_welfare": 1.6497618256000002,
+    "result": "agreement"
+  },
+  {
+    "num_offers": 857,
+    "agent_3827": "Group62Agent",
+    "utility_3827": 0.461886093,
+    "agent_3828": "Agent32",
+    "utility_3828": 0.9143688535,
+    "nash_product": 0.42233425730400437,
+    "social_welfare": 1.3762549465,
+    "result": "agreement"
+  },
+  {
+    "num_offers": 606,
+    "agent_3829": "Group62Agent",
+    "utility_3829": 0.9712429215,
+    "agent_3830": "Agent33",
+    "utility_3830": 0.6785189041,
+    "nash_product": 0.6590066827110623,
+    "social_welfare": 1.6497618256000002,
+    "result": "agreement"
+  },
+  {
+    "num_offers": 1008,
+    "agent_3831": "Group62Agent",
+    "utility_3831": 0.9691971052,
+    "agent_3832": "Agent41",
+    "utility_3832": 0.6483617443,
+    "nash_product": 0.6283903256979827,
+    "social_welfare": 1.6175588495,
+    "result": "agreement"
+  },
+  {
+    "num_offers": 2,
+    "agent_3833": "Group62Agent",
+    "utility_3833": 0.9967008415,
+    "agent_3834": "Agent43",
+    "utility_3834": 0.6149477899,
+    "nash_product": 0.6129189796718952,
+    "social_welfare": 1.6116486314,
+    "result": "agreement"
+  },
+  {
+    "num_offers": 677,
+    "agent_3835": "Group62Agent",
+    "utility_3835": 0.9691971052,
+    "agent_3836": "Agent50",
+    "utility_3836": 0.6483617443,
+    "nash_product": 0.6283903256979827,
+    "social_welfare": 1.6175588495,
+    "result": "agreement"
+  },
+  {
+    "num_offers": 3814,
+    "agent_3837": "Group62Agent",
+    "utility_3837": 0.9470383437,
+    "agent_3838": "Agent52",
+    "utility_3838": 0.3826787401,
+    "nash_product": 0.3624114401935068,
+    "social_welfare": 1.3297170837999999,
+    "result": "agreement"
+  },
+  {
+    "num_offers": 3144,
+    "agent_3839": "Group62Agent",
+    "utility_3839": 0.9712429215,
+    "agent_3840": "Agent55",
+    "utility_3840": 0.6785189041,
+    "nash_product": 0.6590066827110623,
+    "social_welfare": 1.6497618256000002,
+    "result": "agreement"
+  },
+  {
+    "num_offers": 1460,
+    "agent_3841": "Group62Agent",
+    "utility_3841": 0.9712429215,
+    "agent_3842": "Agent58",
+    "utility_3842": 0.6785189041,
+    "nash_product": 0.6590066827110623,
+    "social_welfare": 1.6497618256000002,
+    "result": "agreement"
+  },
+  {
+    "num_offers": 2973,
+    "agent_3843": "Group62Agent",
+    "utility_3843": 0.6816881602,
+    "agent_3844": "Agent61",
+    "utility_3844": 0.8165083747,
+    "nash_product": 0.5566040917371352,
+    "social_welfare": 1.4981965349,
+    "result": "agreement"
+  },
+  {
+    "num_offers": 151,
+    "agent_3845": "Group62Agent",
+    "utility_3845": 0.4320681602,
+    "agent_3846": "Agent64",
+    "utility_3846": 0.9364288858,
+    "nash_product": 0.40460110584574194,
+    "social_welfare": 1.368497046,
+    "result": "agreement"
+  },
+  {
+    "num_offers": 1066,
+    "agent_3847": "Group62Agent",
+    "utility_3847": 0.9712429215,
+    "agent_3848": "Agent67",
+    "utility_3848": 0.6785189041,
+    "nash_product": 0.6590066827110623,
+    "social_welfare": 1.6497618256000002,
+    "result": "agreement"
+  },
+  {
+    "num_offers": 2797,
+    "agent_3849": "Group62Agent",
+    "utility_3849": 0.4595718965,
+    "agent_3850": "Agent68",
+    "utility_3850": 0.9030149314,
+    "nash_product": 0.41500028459131544,
+    "social_welfare": 1.3625868279,
+    "result": "agreement"
+  },
+  {
+    "num_offers": 2034,
+    "agent_3851": "Group62Agent",
+    "utility_3851": 0.9808429066,
+    "agent_3852": "Agent2",
+    "utility_3852": 0.6184109281,
+    "nash_product": 0.6065639721908076,
+    "social_welfare": 1.5992538346999998,
+    "result": "agreement"
+  },
+  {
+    "num_offers": 4557,
+    "agent_3853": "Group62Agent",
+    "utility_3853": 0.68017,
+    "agent_3854": "Agent3",
+    "utility_3854": 0.85559,
+    "nash_product": 0.5819466503,
+    "social_welfare": 1.53576,
+    "result": "agreement"
+  },
+  {
+    "num_offers": 4126,
+    "agent_3855": "Group62Agent",
+    "utility_3855": 0.9560520346,
+    "agent_3856": "Agent7",
+    "utility_3856": 0.573321108,
+    "nash_product": 0.5481248117825264,
+    "social_welfare": 1.5293731426,
+    "result": "agreement"
+  },
+  {
+    "num_offers": 3181,
+    "agent_3857": "Group62Agent",
+    "utility_3857": 0.9768689242,
+    "agent_3858": "Agent11",
+    "utility_3858": 0.6396815649,
+    "nash_product": 0.6248850421344355,
+    "social_welfare": 1.6165504891000002,
+    "result": "agreement"
+  },
+  {
+    "num_offers": 1701,
+    "agent_3859": "Group62Agent",
+    "utility_3859": 0.9768689242,
+    "agent_3860": "Agent14",
+    "utility_3860": 0.6396815649,
+    "nash_product": 0.6248850421344355,
+    "social_welfare": 1.6165504891000002,
+    "result": "agreement"
+  },
+  {
+    "num_offers": 1146,
+    "agent_3861": "Group62Agent",
+    "utility_3861": 0.9768689242,
+    "agent_3862": "Agent18",
+    "utility_3862": 0.6396815649,
+    "nash_product": 0.6248850421344355,
+    "social_welfare": 1.6165504891000002,
+    "result": "agreement"
+  },
+  {
+    "num_offers": 153,
+    "agent_3863": "Group62Agent",
+    "utility_3863": 0.574648755,
+    "agent_3864": "Agent19",
+    "utility_3864": 0.9784595328,
+    "nash_product": 0.5622705523414017,
+    "social_welfare": 1.5531082878,
+    "result": "agreement"
+  },
+  {
+    "num_offers": 408,
+    "agent_3865": "Group62Agent",
+    "utility_3865": 0.9768689242,
+    "agent_3866": "Agent22",
+    "utility_3866": 0.6396815649,
+    "nash_product": 0.6248850421344355,
+    "social_welfare": 1.6165504891000002,
+    "result": "agreement"
+  },
+  {
+    "num_offers": 2139,
+    "agent_3867": "Group62Agent",
+    "utility_3867": 0.9768689242,
+    "agent_3868": "Agent24",
+    "utility_3868": 0.6396815649,
+    "nash_product": 0.6248850421344355,
+    "social_welfare": 1.6165504891000002,
+    "result": "agreement"
+  },
+  {
+    "num_offers": 3901,
+    "agent_3869": "Group62Agent",
+    "utility_3869": 0.7643689242,
+    "agent_3870": "Agent25",
+    "utility_3870": 0.9529916288,
+    "nash_product": 0.7284371860774618,
+    "social_welfare": 1.717360553,
+    "result": "agreement"
+  },
+  {
+    "num_offers": 2159,
+    "agent_3871": "Group62Agent",
+    "utility_3871": 0.8653189242,
+    "agent_3872": "Agent26",
+    "utility_3872": 0.8744816288,
+    "nash_product": 0.7567055022658797,
+    "social_welfare": 1.739800553,
+    "result": "agreement"
+  },
+  {
+    "num_offers": 614,
+    "agent_3873": "Group62Agent",
+    "utility_3873": 0.9768689242,
+    "agent_3874": "Agent27",
+    "utility_3874": 0.6396815649,
+    "nash_product": 0.6248850421344355,
+    "social_welfare": 1.6165504891000002,
+    "result": "agreement"
+  },
+  {
+    "num_offers": 1393,
+    "agent_3875": "Group62Agent",
+    "utility_3875": 0.9768689242,
+    "agent_3876": "Agent29",
+    "utility_3876": 0.6396815649,
+    "nash_product": 0.6248850421344355,
+    "social_welfare": 1.6165504891000002,
+    "result": "agreement"
+  },
+  {
+    "num_offers": 643,
+    "agent_3877": "Group62Agent",
+    "utility_3877": 0.7643689242,
+    "agent_3878": "Agent32",
+    "utility_3878": 0.9529916288,
+    "nash_product": 0.7284371860774618,
+    "social_welfare": 1.717360553,
+    "result": "agreement"
+  },
+  {
+    "num_offers": 436,
+    "agent_3879": "Group62Agent",
+    "utility_3879": 0.9768689242,
+    "agent_3880": "Agent33",
+    "utility_3880": 0.6396815649,
+    "nash_product": 0.6248850421344355,
+    "social_welfare": 1.6165504891000002,
+    "result": "agreement"
+  },
+  {
+    "num_offers": 1042,
+    "agent_3881": "Group62Agent",
+    "utility_3881": 0.9768689242,
+    "agent_3882": "Agent41",
+    "utility_3882": 0.6396815649,
+    "nash_product": 0.6248850421344355,
+    "social_welfare": 1.6165504891000002,
+    "result": "agreement"
+  },
+  {
+    "num_offers": 2,
+    "agent_3883": "Group62Agent",
+    "utility_3883": 0.9960260176,
+    "agent_3884": "Agent43",
+    "utility_3884": 0.5737815649,
+    "nash_product": 0.5715013670596429,
+    "social_welfare": 1.5698075825,
+    "result": "agreement"
+  },
+  {
+    "num_offers": 697,
+    "agent_3885": "Group62Agent",
+    "utility_3885": 0.9768689242,
+    "agent_3886": "Agent50",
+    "utility_3886": 0.6396815649,
+    "nash_product": 0.6248850421344355,
+    "social_welfare": 1.6165504891000002,
+    "result": "agreement"
+  },
+  {
+    "num_offers": 3297,
+    "agent_3887": "Group62Agent",
+    "utility_3887": 0.9768689242,
+    "agent_3888": "Agent52",
+    "utility_3888": 0.6396815649,
+    "nash_product": 0.6248850421344355,
+    "social_welfare": 1.6165504891000002,
+    "result": "agreement"
+  },
+  {
+    "num_offers": 2770,
+    "agent_3889": "Group62Agent",
+    "utility_3889": 0.9768689242,
+    "agent_3890": "Agent55",
+    "utility_3890": 0.6396815649,
+    "nash_product": 0.6248850421344355,
+    "social_welfare": 1.6165504891000002,
+    "result": "agreement"
+  },
+  {
+    "num_offers": 1406,
+    "agent_3891": "Group62Agent",
+    "utility_3891": 0.9768689242,
+    "agent_3892": "Agent58",
+    "utility_3892": 0.6396815649,
+    "nash_product": 0.6248850421344355,
+    "social_welfare": 1.6165504891000002,
+    "result": "agreement"
+  },
+  {
+    "num_offers": 2239,
+    "agent_3893": "Group62Agent",
+    "utility_3893": 0.8692929066,
+    "agent_3894": "Agent61",
+    "utility_3894": 0.853210992,
+    "nash_product": 0.7416902631787493,
+    "social_welfare": 1.7225038985999999,
+    "result": "agreement"
+  },
+  {
+    "num_offers": 169,
+    "agent_3895": "Group62Agent",
+    "utility_3895": 0.8653189242,
+    "agent_3896": "Agent64",
+    "utility_3896": 0.8744816288,
+    "nash_product": 0.7567055022658797,
+    "social_welfare": 1.739800553,
+    "result": "agreement"
+  },
+  {
+    "num_offers": 1118,
+    "agent_3897": "Group62Agent",
+    "utility_3897": 0.9768689242,
+    "agent_3898": "Agent67",
+    "utility_3898": 0.6396815649,
+    "nash_product": 0.6248850421344355,
+    "social_welfare": 1.6165504891000002,
+    "result": "agreement"
+  },
+  {
+    "num_offers": 2337,
+    "agent_3899": "Group62Agent",
+    "utility_3899": 0.8653189242,
+    "agent_3900": "Agent68",
+    "utility_3900": 0.8744816288,
+    "nash_product": 0.7567055022658797,
+    "social_welfare": 1.739800553,
+    "result": "agreement"
+  },
+  {
+    "num_offers": 2471,
+    "agent_3901": "Group62Agent",
+    "utility_3901": 0.3761790303,
+    "agent_3902": "Agent2",
+    "utility_3902": 0.9958112621,
+    "nash_product": 0.37460331493859717,
+    "social_welfare": 1.3719902924,
+    "result": "agreement"
+  },
+  {
+    "num_offers": 5185,
+    "agent_3903": "Group62Agent",
+    "utility_3903": 0.3625200159,
+    "agent_3904": "Agent3",
+    "utility_3904": 0.9955834607,
+    "nash_product": 0.36091893200274106,
+    "social_welfare": 1.3581034766,
+    "result": "agreement"
+  },
+  {
+    "num_offers": 4591,
+    "agent_3905": "Group62Agent",
+    "utility_3905": 0.7540834885,
+    "agent_3906": "Agent7",
+    "utility_3906": 0.1507554567,
+    "nash_product": 0.1136822006987467,
+    "social_welfare": 0.9048389452,
+    "result": "agreement"
+  },
+  {
+    "num_offers": 4645,
+    "agent_3907": "Group62Agent",
+    "utility_3907": 0.7464863007,
+    "agent_3908": "Agent11",
+    "utility_3908": 0.5290709457,
+    "nash_product": 0.39494421306344357,
+    "social_welfare": 1.2755572464,
+    "result": "agreement"
+  },
+  {
+    "num_offers": 481,
+    "agent_3909": "Group62Agent",
+    "utility_3909": 0.986415715,
+    "agent_3910": "Agent14",
+    "utility_3910": 0.1550596014,
+    "nash_product": 0.152953227582596,
+    "social_welfare": 1.1414753164,
+    "result": "agreement"
+  },
+  {
+    "num_offers": 2004,
+    "agent_3911": "Group62Agent",
+    "utility_3911": 0.9826754452,
+    "agent_3912": "Agent18",
+    "utility_3912": 0.1550848918,
+    "nash_product": 0.15239811509335885,
+    "social_welfare": 1.137760337,
+    "result": "agreement"
+  },
+  {
+    "num_offers": 253,
+    "agent_3913": "Group62Agent",
+    "utility_3913": 0.295708344,
+    "agent_3914": "Agent19",
+    "utility_3914": 0.993505059,
+    "nash_product": 0.2937877357525123,
+    "social_welfare": 1.289213403,
+    "result": "agreement"
+  },
+  {
+    "num_offers": 1726,
+    "agent_3915": "Group62Agent",
+    "utility_3915": 0.9539603566,
+    "agent_3916": "Agent22",
+    "utility_3916": 0.1542882442,
+    "nash_product": 0.1471848684562199,
+    "social_welfare": 1.1082486008,
+    "result": "agreement"
+  },
+  {
+    "num_offers": 4815,
+    "agent_3917": "Group62Agent",
+    "utility_3917": 0.4445488317,
+    "agent_3918": "Agent24",
+    "utility_3918": 0.9962974763,
+    "nash_product": 0.4429028791148234,
+    "social_welfare": 1.440846308,
+    "result": "agreement"
+  },
+  {
+    "num_offers": 4507,
+    "agent_3919": "Group62Agent",
+    "utility_3919": 0.2588800434,
+    "agent_3920": "Agent25",
+    "utility_3920": 0.9984564405,
+    "nash_product": 0.25848044664964953,
+    "social_welfare": 1.2573364839,
+    "result": "agreement"
+  },
+  {
+    "num_offers": 1839,
+    "agent_3921": "Group62Agent",
+    "utility_3921": 0,
+    "agent_3922": "Agent26",
+    "utility_3922": 0,
+    "nash_product": 0,
+    "social_welfare": 0,
+    "result": "failed"
+  },
+  {
+    "num_offers": 585,
+    "agent_3923": "Group62Agent",
+    "utility_3923": 0.2234271693,
+    "agent_3924": "Agent27",
+    "utility_3924": 0.7403388902,
+    "nash_product": 0.16541182256008952,
+    "social_welfare": 0.9637660594999999,
+    "result": "agreement"
+  },
+  {
+    "num_offers": 1371,
+    "agent_3925": "Group62Agent",
+    "utility_3925": 0.986415715,
+    "agent_3926": "Agent29",
+    "utility_3926": 0.1550596014,
+    "nash_product": 0.152953227582596,
+    "social_welfare": 1.1414753164,
+    "result": "agreement"
+  },
+  {
+    "num_offers": 849,
+    "agent_3927": "Group62Agent",
+    "utility_3927": 0.3625200159,
+    "agent_3928": "Agent32",
+    "utility_3928": 0.9955834607,
+    "nash_product": 0.36091893200274106,
+    "social_welfare": 1.3581034766,
+    "result": "agreement"
+  },
+  {
+    "num_offers": 4141,
+    "agent_3929": "Group62Agent",
+    "utility_3929": 0.6224798277,
+    "agent_3930": "Agent33",
+    "utility_3930": 0.5315404531,
+    "nash_product": 0.33087320966126793,
+    "social_welfare": 1.1540202808,
+    "result": "agreement"
+  },
+  {
+    "num_offers": 2979,
+    "agent_3931": "Group62Agent",
+    "utility_3931": 0.8007469267,
+    "agent_3932": "Agent41",
+    "utility_3932": 0.1572185656,
+    "nash_product": 0.12589228322438234,
+    "social_welfare": 0.9579654923,
+    "result": "agreement"
+  },
+  {
+    "num_offers": 2,
+    "agent_3933": "Group62Agent",
+    "utility_3933": 0.986415715,
+    "agent_3934": "Agent43",
+    "utility_3934": 0.1550596014,
+    "nash_product": 0.152953227582596,
+    "social_welfare": 1.1414753164,
+    "result": "agreement"
+  },
+  {
+    "num_offers": 1618,
+    "agent_3935": "Group62Agent",
+    "utility_3935": 0.986415715,
+    "agent_3936": "Agent50",
+    "utility_3936": 0.1550596014,
+    "nash_product": 0.152953227582596,
+    "social_welfare": 1.1414753164,
+    "result": "agreement"
+  },
+  {
+    "num_offers": 3354,
+    "agent_3937": "Group62Agent",
+    "utility_3937": 0.9474702982,
+    "agent_3938": "Agent52",
+    "utility_3938": 0.1537521691,
+    "nash_product": 0.14567561350607383,
+    "social_welfare": 1.1012224673,
+    "result": "agreement"
+  },
+  {
+    "num_offers": 2728,
+    "agent_3939": "Group62Agent",
+    "utility_3939": 0.9340152064,
+    "agent_3940": "Agent55",
+    "utility_3940": 0.1546152353,
+    "nash_product": 0.14441298091131405,
+    "social_welfare": 1.0886304417,
+    "result": "agreement"
+  },
+  {
+    "num_offers": 214,
+    "agent_3941": "Group62Agent",
+    "utility_3941": 0.9340152064,
+    "agent_3942": "Agent58",
+    "utility_3942": 0.1546152353,
+    "nash_product": 0.14441298091131405,
+    "social_welfare": 1.0886304417,
+    "result": "agreement"
+  },
+  {
+    "num_offers": 2971,
+    "agent_3943": "Group62Agent",
+    "utility_3943": 0.4445488317,
+    "agent_3944": "Agent61",
+    "utility_3944": 0.9962974763,
+    "nash_product": 0.4429028791148234,
+    "social_welfare": 1.440846308,
+    "result": "agreement"
+  },
+  {
+    "num_offers": 263,
+    "agent_3945": "Group62Agent",
+    "utility_3945": 0.4332114951,
+    "agent_3946": "Agent64",
+    "utility_3946": 0.9960393139,
+    "nash_product": 0.43149568035299724,
+    "social_welfare": 1.429250809,
+    "result": "agreement"
+  },
+  {
+    "num_offers": 1649,
+    "agent_3947": "Group62Agent",
+    "utility_3947": 0.3101480034,
+    "agent_3948": "Agent67",
+    "utility_3948": 0.5705723247,
+    "nash_product": 0.1769618673010015,
+    "social_welfare": 0.8807203281,
+    "result": "agreement"
+  },
+  {
+    "num_offers": 2701,
+    "agent_3949": "Group62Agent",
+    "utility_3949": 0,
+    "agent_3950": "Agent68",
+    "utility_3950": 0,
+    "nash_product": 0,
+    "social_welfare": 0,
+    "result": "failed"
+  },
+  {
+    "num_offers": 2071,
+    "agent_3951": "Group62Agent",
+    "utility_3951": 0.5746227809,
+    "agent_3952": "Agent2",
+    "utility_3952": 0.7158339057,
+    "nash_product": 0.41133446955584235,
+    "social_welfare": 1.2904566866,
+    "result": "agreement"
+  },
+  {
+    "num_offers": 4004,
+    "agent_3953": "Group62Agent",
+    "utility_3953": 0.9316698927,
+    "agent_3954": "Agent3",
+    "utility_3954": 0.3132781721,
+    "nash_product": 0.2918718409856591,
+    "social_welfare": 1.2449480648,
+    "result": "agreement"
+  },
+  {
+    "num_offers": 33,
+    "agent_3955": "Group62Agent",
+    "utility_3955": 0.9816086086,
+    "agent_3956": "Agent7",
+    "utility_3956": 0.2015146596,
+    "nash_product": 0.19780852462245863,
+    "social_welfare": 1.1831232682,
+    "result": "agreement"
+  },
+  {
+    "num_offers": 3933,
+    "agent_3957": "Group62Agent",
+    "utility_3957": 0.7894427809,
+    "agent_3958": "Agent11",
+    "utility_3958": 0.5684839057,
+    "nash_product": 0.44878551541270134,
+    "social_welfare": 1.3579266866,
+    "result": "agreement"
+  },
+  {
+    "num_offers": 2003,
+    "agent_3959": "Group62Agent",
+    "utility_3959": 0.9891598927,
+    "agent_3960": "Agent14",
+    "utility_3960": 0.2918781721,
+    "nash_product": 0.28871418139590815,
+    "social_welfare": 1.2810380648000002,
+    "result": "agreement"
+  },
+  {
+    "num_offers": 1755,
+    "agent_3961": "Group62Agent",
+    "utility_3961": 0,
+    "agent_3962": "Agent18",
+    "utility_3962": 0,
+    "nash_product": 0,
+    "social_welfare": 0,
+    "result": "failed"
+  },
+  {
+    "num_offers": 285,
+    "agent_3963": "Group62Agent",
+    "utility_3963": 0.3155356271,
+    "agent_3964": "Agent19",
+    "utility_3964": 0.9740981721,
+    "nash_product": 0.30736267759053726,
+    "social_welfare": 1.2896337992,
+    "result": "agreement"
+  },
+  {
+    "num_offers": 1160,
+    "agent_3965": "Group62Agent",
+    "utility_3965": 0.9891598927,
+    "agent_3966": "Agent22",
+    "utility_3966": 0.2918781721,
+    "nash_product": 0.28871418139590815,
+    "social_welfare": 1.2810380648000002,
+    "result": "agreement"
+  },
+  {
+    "num_offers": 2817,
+    "agent_3967": "Group62Agent",
+    "utility_3967": 0.3836798927,
+    "agent_3968": "Agent24",
+    "utility_3968": 0.9098381721,
+    "nash_product": 0.34908661224569215,
+    "social_welfare": 1.2935180648,
+    "result": "agreement"
+  },
+  {
+    "num_offers": 4181,
+    "agent_3969": "Group62Agent",
+    "utility_3969": 0.3155356271,
+    "agent_3970": "Agent25",
+    "utility_3970": 0.9740981721,
+    "nash_product": 0.30736267759053726,
+    "social_welfare": 1.2896337992,
+    "result": "agreement"
+  },
+  {
+    "num_offers": 3467,
+    "agent_3971": "Group62Agent",
+    "utility_3971": 0.5410098927,
+    "agent_3972": "Agent26",
+    "utility_3972": 0.7838881721,
+    "nash_product": 0.4240912558766201,
+    "social_welfare": 1.3248980648,
+    "result": "agreement"
+  },
+  {
+    "num_offers": 743,
+    "agent_3973": "Group62Agent",
+    "utility_3973": 0.3673803845,
+    "agent_3974": "Agent27",
+    "utility_3974": 0.729822799,
+    "nash_product": 0.2681225805134862,
+    "social_welfare": 1.0972031835,
+    "result": "agreement"
+  },
+  {
+    "num_offers": 1673,
+    "agent_3975": "Group62Agent",
+    "utility_3975": 0.9891598927,
+    "agent_3976": "Agent29",
+    "utility_3976": 0.2918781721,
+    "nash_product": 0.28871418139590815,
+    "social_welfare": 1.2810380648000002,
+    "result": "agreement"
+  },
+  {
+    "num_offers": 651,
+    "agent_3977": "Group62Agent",
+    "utility_3977": 0.2580456271,
+    "agent_3978": "Agent32",
+    "utility_3978": 0.9954981721,
+    "nash_product": 0.2568839500964482,
+    "social_welfare": 1.2535437992,
+    "result": "agreement"
+  },
+  {
+    "num_offers": 2201,
+    "agent_3979": "Group62Agent",
+    "utility_3979": 0.7212985153,
+    "agent_3980": "Agent33",
+    "utility_3980": 0.6327439057,
+    "nash_product": 0.45639723974653323,
+    "social_welfare": 1.354042421,
+    "result": "agreement"
+  },
+  {
+    "num_offers": 2434,
+    "agent_3981": "Group62Agent",
+    "utility_3981": 0.9891598927,
+    "agent_3982": "Agent41",
+    "utility_3982": 0.2918781721,
+    "nash_product": 0.28871418139590815,
+    "social_welfare": 1.2810380648000002,
+    "result": "agreement"
+  },
+  {
+    "num_offers": 2,
+    "agent_3983": "Group62Agent",
+    "utility_3983": 0.9891598927,
+    "agent_3984": "Agent43",
+    "utility_3984": 0.2918781721,
+    "nash_product": 0.28871418139590815,
+    "social_welfare": 1.2810380648000002,
+    "result": "agreement"
+  },
+  {
+    "num_offers": 1358,
+    "agent_3985": "Group62Agent",
+    "utility_3985": 0.9891598927,
+    "agent_3986": "Agent50",
+    "utility_3986": 0.2918781721,
+    "nash_product": 0.28871418139590815,
+    "social_welfare": 1.2810380648000002,
+    "result": "agreement"
+  },
+  {
+    "num_offers": 3238,
+    "agent_3987": "Group62Agent",
+    "utility_3987": 0.9763799659,
+    "agent_3988": "Agent52",
+    "utility_3988": 0.1719386476,
+    "nash_product": 0.16787745088058012,
+    "social_welfare": 1.1483186134999999,
+    "result": "agreement"
+  },
+  {
+    "num_offers": 3560,
+    "agent_3989": "Group62Agent",
+    "utility_3989": 0.9318557344,
+    "agent_3990": "Agent55",
+    "utility_3990": 0.212262968,
+    "nash_product": 0.1977984639315637,
+    "social_welfare": 1.1441187024000001,
+    "result": "agreement"
+  },
+  {
+    "num_offers": 1868,
+    "agent_3991": "Group62Agent",
+    "utility_3991": 0.9891598927,
+    "agent_3992": "Agent58",
+    "utility_3992": 0.2918781721,
+    "nash_product": 0.28871418139590815,
+    "social_welfare": 1.2810380648000002,
+    "result": "agreement"
+  },
+  {
+    "num_offers": 2261,
+    "agent_3993": "Group62Agent",
+    "utility_3993": 0.5984998927,
+    "agent_3994": "Agent61",
+    "utility_3994": 0.7624881721,
+    "nash_product": 0.4563490891868691,
+    "social_welfare": 1.3609880648,
+    "result": "agreement"
+  },
+  {
+    "num_offers": 299,
+    "agent_3995": "Group62Agent",
+    "utility_3995": 0.3836798927,
+    "agent_3996": "Agent64",
+    "utility_3996": 0.9098381721,
+    "nash_product": 0.34908661224569215,
+    "social_welfare": 1.2935180648,
+    "result": "agreement"
+  },
+  {
+    "num_offers": 1639,
+    "agent_3997": "Group62Agent",
+    "utility_3997": 0.7894427809,
+    "agent_3998": "Agent67",
+    "utility_3998": 0.5684839057,
+    "nash_product": 0.44878551541270134,
+    "social_welfare": 1.3579266866,
+    "result": "agreement"
+  },
+  {
+    "num_offers": 3795,
+    "agent_3999": "Group62Agent",
+    "utility_3999": 0.0723598927,
+    "agent_4000": "Agent68",
+    "utility_4000": 0.9226571718,
+    "nash_product": 0.06676337395033347,
+    "social_welfare": 0.9950170644999999,
+    "result": "agreement"
+  }
+]

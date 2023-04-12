@@ -143,10 +143,10 @@ def run_tournament(tournament_settings: dict, ask=True) -> Tuple[list, list]:
     tournament_results = []
     tournament_steps = []
 
-    logger = logging.getLogger("tournament")
-    logger.setLevel(logging.WARNING)
-    count = 0
-    logger.log(logging.WARNING, 'Running normal tournament with {} sessions'.format(num_sessions))
+    # logger = logging.getLogger("tournament")
+    # logger.setLevel(logging.WARNING)
+    # count = 0
+    # logger.log(logging.WARNING, 'Running normal tournament with {} sessions'.format(num_sessions))
 
     for profiles in profile_sets:
         # quick an dirty check
@@ -159,8 +159,8 @@ def run_tournament(tournament_settings: dict, ask=True) -> Tuple[list, list]:
                 "deadline_time_ms": deadline_time_ms,
             }
 
-            count += 1
-            logger.warning('[{}/{}] {} is playing against {}'.format(count, num_sessions, agent_duo[0]['class'].split('.')[-1], agent_duo[1]['class'].split('.')[-1]))
+            # count += 1
+            # logger.warning('[{}/{}] {} is playing against {}'.format(count, num_sessions, agent_duo[0]['class'].split('.')[-1], agent_duo[1]['class'].split('.')[-1]))
             # run a single negotiation session
             _, session_results_summary = run_session(settings)
 

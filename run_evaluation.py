@@ -218,21 +218,23 @@ def run_optimisation(params, path='results', key='', agents=agents_default, prof
         RESULTS_DIR.mkdir(parents=True)
 
     agent_list = [{
-                "class": "agents.group62_agent.group62_agent.Group62Agent",
-                "parameters": {"storage_dir": "agent_storage/Group62Agent",
-                            "bidding_strategy": {
-                                    "conceding_speed": conceding_speed,
-                                    "reservation_value": reservation_value,
-                                    "iso_tolerance": iso_tolerance,
-                            },
-                            "acceptance_strategy": {
-                                    "threshold": threshold,
-                            },
-                            "opponent_model": {
-                                    "decay": (decay_exp >= 0), # true if exp provided
-                                    "decay_exp": decay_exp,
-                            },
-                        }
+                # "class": "agents.group62_agent.group62_agent.Group62Agent",
+                # "parameters": {"storage_dir": "agent_storage/Group62Agent",
+                #             "bidding_strategy": {
+                #                     "conceding_speed": conceding_speed,
+                #                     "reservation_value": reservation_value,
+                #                     "iso_tolerance": iso_tolerance,
+                #             },
+                #             "acceptance_strategy": {
+                #                     "threshold": threshold,
+                #             },
+                #             "opponent_model": {
+                #                     "decay": (decay_exp >= 0), # true if exp provided
+                #                     "decay_exp": decay_exp,
+                #             },
+                #         }
+                "class": "agents.group62_agent_old.group62_agent_old.Group62AgentOld",
+                "parameters": {"storage_dir": "agent_storage/Group62AgentOld",}
             }]
     agent_list.extend(agents)
 
@@ -324,7 +326,7 @@ import numpy as np
 
 #### NOTE: AGENT COMPARISON
 
-
+## CSE AGENTS
 # import threading
 # for i, profile_set in enumerate(profile_sets):
 
@@ -333,17 +335,24 @@ import numpy as np
 #     t = threading.Thread(target=run_comparison, args=(None, f'eval2/comparison_cse_{i}', '', agents_CSE3210, [profile_set]))
 #     t.start()
 
-
+## ANL AGENTS
 # i = 4
 # profile_set = profile_sets[i]
 # print(f'Running tournament for profile set {i}: {profile_set}')
 # # don't use threading for ANL agents
 # run_comparison(None, f'eval/comparison_ANL2022_{i}', '', agents_ANL2022, [profile_set])
 
+## VS ITSELF
+# run optimisation 
+all_agents = agents_default + agents_CSE3210 + agents_ANL2022
+run_optimisation({}, 'eval3/optimisation', '', all_agents, profile_sets)
+
+
+
 # #### NOTE: PARAMETER OPTIMISATION
 # # Generate linspaces for each parameter
 # conceding_speeds = np.logspace(-6, -2, 20).tolist()
-thresholds = np.linspace(0.80, 0.999, 20).tolist()
+# thresholds = np.linspace(0.80, 0.999, 20).tolist()
 # decay_exps = np.linspace(0.1, 1, 20).tolist()
 
 
