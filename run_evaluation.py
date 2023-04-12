@@ -206,8 +206,8 @@ def run_optimisation(params, path='results', key='', agents=agents_default, prof
     threshold = params.get('threshold', 0.98) if params else 0.98
     decay_exp = params.get('decay_exp', 0.4) if params else 0.4
 
-    print(f"Running tournament: {path}{key}")
-    RESULTS_DIR = Path(path, f'{key}')
+    print(f"Running tournament: {path} {key}:{params.get(key)}")
+    RESULTS_DIR = Path(path, f'{params}')
 
     # create results directory if it does not exist
     if not RESULTS_DIR.exists():
@@ -302,8 +302,8 @@ def run_comparison(params, path='results', key='', agents=agents_default, profil
     }
 
     # NOTE: Select a type of tournament. Selfish only runs first profile against every other profile.
-    # tournament_steps, tournament_results, tournament_results_summary = run_tournament(tournament_settings, ask=False)
-    tournament_steps, tournament_results, tournament_results_summary = run_selfish_tournament(tournament_settings, ask=False, play_with_itself=False)
+    tournament_steps, tournament_results, tournament_results_summary = run_tournament(tournament_settings, ask=False)
+    # tournament_steps, tournament_results, tournament_results_summary = run_selfish_tournament(tournament_settings, ask=False, play_with_itself=False)
 
     # save the tournament settings for reference
     with open(RESULTS_DIR.joinpath("tournament_steps.json"), "w", encoding="utf-8") as f:
@@ -330,16 +330,15 @@ import numpy as np
 
 #     # use threading for CSE agents
 #     print(f'Running tournament for profile set {i}: {profile_set}')
-#     t = threading.Thread(target=run, args=(None, f'eval/comparison_cse_{i}', '', agents_CSE3210, [profile_set]))
+#     t = threading.Thread(target=run_comparison, args=(None, f'eval2/comparison_cse_{i}', '', agents_CSE3210, [profile_set]))
 #     t.start()
-#     pass
 
 
 # i = 4
 # profile_set = profile_sets[i]
 # print(f'Running tournament for profile set {i}: {profile_set}')
 # # don't use threading for ANL agents
-# run(None, f'eval/comparison_ANL2022_{i}', '', agents_ANL2022, [profile_set])
+# run_comparison(None, f'eval/comparison_ANL2022_{i}', '', agents_ANL2022, [profile_set])
 
 # #### NOTE: PARAMETER OPTIMISATION
 # # Generate linspaces for each parameter
@@ -359,7 +358,20 @@ thresholds = np.linspace(0.80, 0.999, 20).tolist()
 
 # print(f'Running tournament for thresholds: {thresholds}')
 # for threshold in thresholds:
+#     print(f'Running tournament for threshold {threshold}')
 #     run_optimisation({'threshold': threshold}, path="eval/cse/", key='threshold', agents=agents_CSE3210, profile_sets=profile_sets)
+
+# Do the threshold thingy above but on multiple threads 
+# import threading
+# for i, profile_set in enumerate(profile_sets):
+#     print(f'Running tournament for profile set {i}: {profile_set}')
+#     t = threading.Thread(target=run_optimisation, args=({'threshold': 0.9}, f'eval/cse/', 'threshold', agents_CSE3210, [profile_set]))
+#     t.start()
+
+# for i, threshold in enumerate(thresholds):
+#     print(f'Running tournament for threshold {i}: {threshold}')
+#     t = threading.Thread(target=run_optimisation, args=({'threshold': threshold}, f'eval/cse/', 'threshold', agents_CSE3210, profile_sets))
+#     t.start()
 
 # print(f'Running tournament for decay exps: {decay_exps}')
 # for decay_exp in decay_exps:
