@@ -22,8 +22,8 @@ tournament_settings = {
             "parameters": {"storage_dir": "agent_storage/Group62Agent"}
         },
         {
-            "class": "agents.group62_agent.group62_agent.Group62Agent",
-            "parameters": {"storage_dir": "agent_storage/Group62Agent"}
+            "class": "agents.group62_agent_old.group62_agent_old.Group62AgentOld",
+            "parameters": {"storage_dir": "agent_storage/Group62AgentOld"}
         },
         # {
             # "class": "agents.template_agent.template_agent.TemplateAgent",
@@ -140,11 +140,16 @@ tournament_settings = {
         # },
     ],
     "profile_sets": [
-        ["domains/domain00/profileA.json", "domains/domain00/profileB.json"],
-        ["domains/domain01/profileA.json", "domains/domain01/profileB.json"],
-        ["domains/domain02/profileA.json", "domains/domain02/profileB.json"],
-        ["domains/domain03/profileA.json", "domains/domain03/profileB.json"],
-        ["domains/domain04/profileA.json", "domains/domain04/profileB.json"],
+        # ["domains/domain00/profileA.json", "domains/domain00/profileB.json"],
+        # ["domains/domain01/profileA.json", "domains/domain01/profileB.json"],
+        # ["domains/domain02/profileA.json", "domains/domain02/profileB.json"],
+        # ["domains/domain03/profileA.json", "domains/domain03/profileB.json"],
+        # ["domains/domain04/profileA.json", "domains/domain04/profileB.json"],
+        ["domains/domain05/profileA.json", "domains/domain05/profileB.json"],
+        ["domains/domain06/profileA.json", "domains/domain06/profileB.json"],
+        ["domains/domain07/profileA.json", "domains/domain07/profileB.json"],
+        ["domains/domain08/profileA.json", "domains/domain08/profileB.json"],
+        ["domains/domain09/profileA.json", "domains/domain09/profileB.json"],
     ],
     "deadline_time_ms": 10000,
 }
