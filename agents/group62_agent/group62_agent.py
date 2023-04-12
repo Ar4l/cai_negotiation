@@ -89,11 +89,9 @@ class Group62Agent(DefaultParty):
             self.domain = self.profile.getDomain()
             profile_connection.close()
 
-            # TODO: Initialize the agent's components
             self.opponent_model = OpponentModel(self.domain, self.parameters.get("opponent_model"))
             self.bidding_strat = BiddingStrategy(self.profile, self.opponent_model, self.domain, self.parameters.get("bidding_strategy"))
             self.boulware = self.bidding_strat.reservation_value
-            # self.acceptance_strat = AcceptanceStrategy(self.progress, self.profile)
 
         # ActionDone informs you of an action (an Offer or an Accept) that is performed by one of the agents (including yourself)
         elif isinstance(data, ActionDone):
@@ -150,7 +148,6 @@ class Group62Agent(DefaultParty):
         Returns:
             str: Agent description
         """
-        # TODO: finalize the description
         return "Group 62 agent, implementing a hybrid Trade-off and T4T bidding strategy with boulware time dependency" \
                "and ac_combi_max_w and ac_combi_avg_w as acceptance strategies"
 
@@ -167,13 +164,12 @@ class Group62Agent(DefaultParty):
                 self.opponent_model = OpponentModel(self.domain)
 
             bid = cast(Offer, action).getBid()
-
             self.opponent_model.update(bid, self.progress)
+
             # Set the last received bid from the opponent
             self.last_received_bid = bid
             self.received_bids.append(self.last_received_bid)
 
-            # self.opponent_model.update_frequencies(self._last_received_bid)
 
     def my_turn(self):
         """This method is called when it is our turn. It should decide upon an action
@@ -220,67 +216,9 @@ class Group62Agent(DefaultParty):
         # progress of the negotiation session between 0 and 1 (1 is deadline)
         progress = self.progress.get(time() * 1000)
 
-        # very basic approach that accepts if the offer is valued above 0.7 and
-        # 95% of the time towards the deadline has passed
-        # conditions = [
-        #    self.profile.getUtility(bid) > 0.8,
-        #    progress > 0.95,
-        # ]
-        # return all(conditions)
-
         ac = AcceptanceStrategy(progress, self.profile, self.opponent_model, self.received_bids, received_bid, bid, self.parameters.get("acceptance_strategy"))
         return ac.ac_combi_max_w()
 
     # Decrease the boulware value in time based on the conceding speed
     def decrease_boulware(self):
         self.boulware = self.boulware - (self.bidding_strat.conceding_speed * self.progress.get(time() * 1000))
-
-    # TODO: Delete the old template code and clean-up once we're sure our agent works
-    """
-    # Original find_bid method from the template
-    def find_bid(self) -> Bid:
-        # compose a list of all possible bids
-        domain = self.profile.getDomain()
-        all_bids = AllBidsList(domain)
-
-        best_bid_score = 0.0
-        best_bid = None
-
-        # take 500 attempts to find a bid according to a heuristic score
-        for _ in range(500):
-            bid = all_bids.get(randint(0, all_bids.size() - 1))
-            bid_score = self.score_bid(bid)
-            if bid_score > best_bid_score:
-                best_bid_score, best_bid = bid_score, bid
-
-        return best_bid
-    """
-
-    """
-    def score_bid(self, bid: Bid, alpha: float = 0.95, eps: float = 0.1) -> float:
-        Calculate heuristic score for a bid
-
-        Args:
-            bid (Bid): Bid to score
-            alpha (float, optional): Trade-off factor between self interested and
-                altruistic behaviour. Defaults to 0.95.
-            eps (float, optional): Time pressure factor, balances between conceding
-                and Boulware behaviour over time. Defaults to 0.1.
-
-        Returns:
-            float: score
-  
-        progress = self.progress.get(time() * 1000)
-
-        our_utility = float(self.profile.getUtility(bid))
-
-        time_pressure = 1.0 - progress ** (1 / eps)
-        score = alpha * time_pressure * our_utility
-
-        if self.opponent_model is not None:
-            opponent_utility = self.opponent_model.get_predicted_utility(bid)
-            opponent_score = (1.0 - alpha * time_pressure) * opponent_utility
-            score += opponent_score
-
-        return score
-    """

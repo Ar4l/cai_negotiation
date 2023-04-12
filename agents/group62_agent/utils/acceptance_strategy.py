@@ -55,11 +55,6 @@ class AcceptanceStrategy:
         result = decimal.Decimal(scale_factor) * own_utility + decimal.Decimal(utility_gap) \
                  >= self.profile.getUtility(self.next_bid)
 
-        # TODO: play with these values and see what improves performance
-        # opponent_util = self._opponent_model.predict_utility(self.received_bid)
-        # constant = own_utility > decimal.Decimal(0.70)
-        # difference = decimal.Decimal(own_utility - decimal.Decimal(opponent_util)).__abs__() < decimal.Decimal(0.50)
-
         return result  # and constant and difference
 
     def _ac_time(self, threshold):

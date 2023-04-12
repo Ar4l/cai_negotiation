@@ -10,19 +10,14 @@ DECAY_EXP = 0.3
 # agent creates an opponent model using frequency modeling
 class OpponentModel:
     def __init__(self, domain: Domain, params=None):
-        # we do not use the offers, we just need the frequencies
-        #self.offers = []
-        self._domain = domain
-        # stores frequencies of offers made by the opponent
-        self._freqs = {}
+        
+        self._domain = domain # we do not use the offers, we just need the frequencies
+        self._freqs = {} # stores frequencies of offers made by the opponent
+
         # controls effect of time in decay over time - can be modified to improve performance
         self._exp = params.get('decay_exp', DECAY_EXP) if params else DECAY_EXP
-        # controls if updates have decay over time or not
         self._decay = params.get('decay', True) if params else True
-        # template code
-        #self.issue_estimators = {
-        #    i: IssueEstimator(v) for i, v in domain.getIssuesValues().items()
-        #}
+
         for i in self._domain.getIssues():
             self._freqs[i] = {}
 
@@ -61,8 +56,6 @@ class OpponentModel:
                 util_weights[i] = 0
             else:
                 util_weights[i] = max_frequencies[i] / highest_freq
-
-
 
         # frequency normalization and multiply with weights:
         normalised_freqs = []

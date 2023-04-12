@@ -12,7 +12,6 @@ CONCEDING_SPEED = 0.00001
 class BiddingStrategy:
 
     def __init__(self, profile, opponent_model, domain, params=None):
-                #  conceding_speed=CONCEDING_SPEED, reservation_value=RESERVATION_VALUE, iso_tolerance=ISO_TOLERANCE):
         self._profile = profile
         self._opponent_model = opponent_model
         self._domain = domain
